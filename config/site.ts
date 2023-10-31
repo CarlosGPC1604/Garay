@@ -5,58 +5,38 @@ export const siteConfig = {
 	description: "Planeamos, proyectamos, construimos y supervisamos.",
 	navItems: [
 		{
-			label: "Home",
+			label: "Inicio",
 			href: "/",
-		},
-		{
-			label: "Docs",
-			href: "/docs",
-		},
-		{
-			label: "Pricing",
-			href: "/pricing",
 		},
 		{
 			label: "Blog",
 			href: "/blog",
 		},
 		{
-			label: "About",
-			href: "/about",
-		}
+			label: "Proyectos",
+			href: "/proyectos",
+		},
+		{
+			label: "Contacto",
+			href: "/contacto",
+		},
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Inicio",
+			href: "/",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "Blog",
+			href: "/blog",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Proyectos",
+			href: "/proyecto",
 		},
 		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
+			label: "Contacto",
+			href: "/contacto",
 		},
 	],
 	links: {

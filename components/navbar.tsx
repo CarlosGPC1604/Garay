@@ -25,6 +25,7 @@ import {
 	DiscordIcon,
 	HeartFilledIcon,
 	SearchIcon,
+	FacebookIcon,
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
@@ -32,7 +33,7 @@ import { Logo } from "@/components/icons";
 export const Navbar = () => {
 	const searchInput = (
 		<Input
-			aria-label="Search"
+			aria-label="Buscar proyecto"
 			classNames={{
 				inputWrapper: "bg-default-100",
 				input: "text-sm",
@@ -43,7 +44,7 @@ export const Navbar = () => {
 				</Kbd>
 			}
 			labelPlacement="outside"
-			placeholder="Search..."
+			placeholder="Buscar proyecto..."
 			startContent={
 				<SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
 			}
@@ -57,7 +58,7 @@ export const Navbar = () => {
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<p className="font-bold text-inherit">Garay Arquitectos</p>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -83,30 +84,12 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-						<TwitterIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-						<DiscordIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-default-500" />
+					<Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
+						<FacebookIcon className="text-default-500" />
 					</Link>
 					<ThemeSwitch />
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-				<NavbarItem className="hidden md:flex">
-					<Button
-            isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
-						variant="flat"
-					>
-						Sponsor
-					</Button>
-				</NavbarItem>
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
