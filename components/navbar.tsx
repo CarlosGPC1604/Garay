@@ -90,8 +90,8 @@ export const Navbar = () => {
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
+				<Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
+					<FacebookIcon className="text-default-500" />
 				</Link>
 				<ThemeSwitch />
 				<NavbarMenuToggle />
@@ -103,14 +103,8 @@ export const Navbar = () => {
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
-								href="#"
+							color="foreground"
+								href= {item.href}
 								size="lg"
 							>
 								{item.label}

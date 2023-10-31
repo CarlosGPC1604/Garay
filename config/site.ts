@@ -32,7 +32,7 @@ export const siteConfig = {
 		},
 		{
 			label: "Proyectos",
-			href: "/proyecto",
+			href: "/proyectos",
 		},
 		{
 			label: "Contacto",
