@@ -13,7 +13,7 @@ export default function App() {
                 <Image
                     alt="Card background"
                     className="object-cover rounded-xl"
-                    src="http://placekitten.com/g/200/300"
+                    src="http://placekitten.com/g/300/300"
                     width={300}
                 />
             </CardBody>
