@@ -20,7 +20,9 @@ export default function Home() {
 					Planeamos, proyectamos, construimos y supervisamos.
 				</h2>
 			</div>
-			<CardTest />
+			<div className="gap-2 grid grid-cols-2">
+				<CardTest /><CardTest /><CardTest /><CardTest />
+			</div>
 		</section>
 	);
 }
