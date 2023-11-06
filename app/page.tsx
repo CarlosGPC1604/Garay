@@ -21,17 +21,16 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="inline-block max-w-lg text-center">
-				<h1 className={title({ color: "red" })}>
-					Garay&nbsp;
-				</h1>
-				<h2 className={title()}>Acerca de nosotros</h2>
-				<h3 className={subtitle({ class: "mt-4" })}>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+			<div className="inline-block max-w-lg text-center mt-4">
+				<h2 size={60}css={{textGradient: "45deg, $purple600 -20%, $pink600 100%",}}weight="bold">
+					Acerca de nosotros
+				</h2>
+				<h3 className="mt-4">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
 				</h3>
 			</div>
 
-			<div className="gap-2 grid grid-cols-2">
+			<div className="gap-2 grid grid-cols-3">
 				<CardTest /><CardTest /><CardTest />
 			</div>
 		</section>
