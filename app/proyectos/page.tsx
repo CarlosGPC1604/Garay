@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import CardTest from "@/components/cardTest";
-import popoverTest from "@/components/popoverTest";
+import testpop from "@/components/testpop";
 
 export default function DocsPage() {
 	return (
@@ -10,7 +10,7 @@ export default function DocsPage() {
 				<CardTest /><CardTest /><CardTest />
 				<CardTest /><CardTest /><CardTest />
 				<CardTest /><CardTest /><CardTest />
-				<popoverTest/>
+				<testpop />
 			</div>
 		</div>
 	);
