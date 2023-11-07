@@ -1,8 +1,7 @@
-"use-client";
 import React from "react";
 import {Popover, PopoverTrigger, PopoverContent, Button} from "@nextui-org/react";
 
-export default function App() {
+export default function testpop() {
   return (
     <Popover placement="bottom" showArrow={true}>
       <PopoverTrigger>

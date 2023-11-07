@@ -10,8 +10,9 @@ export default function DocsPage() {
 				<CardTest /><CardTest /><CardTest />
 				<CardTest /><CardTest /><CardTest />
 				<CardTest /><CardTest /><CardTest />
-				<testpop />
+				
 			</div>
+			<testpop />
 		</div>
 	);
 }
