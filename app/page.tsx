@@ -8,6 +8,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import CardTest from "@/components/cardTest";
 import AccordionTest from "@/components/AccordionTest";
+import AccordionImg from "@/components/AccordionImg";
 
 
 export default function Home() {
@@ -36,10 +37,10 @@ export default function Home() {
 				<CardTest /><CardTest /><CardTest />
 			</div>
 
-			<div className="gap-2 grid grid-cols-2">
-				<CardTest />
+			<div className="container-fluid grid grid-cols-2 mt-10 gap-5">
+				<AccordionImg /><AccordionTest />
 			</div>
-			<AccordionTest />
 		</section>
 	);
 }
+
