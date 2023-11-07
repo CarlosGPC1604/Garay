@@ -9,6 +9,7 @@ import { GithubIcon } from "@/components/icons";
 import CardTest from "@/components/cardTest";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
+import { color } from "framer-motion";
 
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
 			</div>
 
 			<div className="inline-block max-w-lg text-center mt-4">
-				<h2>
+				<h2 className="text-[2.3rem] text-[#d6292c]">
 					Acerca de nosotros
 				</h2>
 				<h3 className="mt-4">
@@ -37,12 +38,19 @@ export default function Home() {
 				<CardTest /><CardTest /><CardTest />
 			</div>
 
-			<div className="grid grid-cols-2 mt-10 gap-5">
+			<div className="sm md lg xl xxl grid grid-cols-2 mt-10 gap-5">
 				<div>
-					<h2>Ofreciendo servicios a tu medida y necesidades</h2>
-					<AccordionImg />
+					<div>
+						<h2 className="text-[2.3rem] text-[#d6292c]">Te ofrecemos</h2>
+						<h2 className="text-[2.3rem]">los mejores servicios</h2>
+					</div>
+					<div className="mt-5">
+						<AccordionImg />
+					</div>
 				</div>
-				<AccordionTest />
+				<div className="content-center">
+					<AccordionTest />
+				</div>
 			</div>
 		</section>
 	);
