@@ -7,6 +7,8 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import CardTest from "@/components/cardTest";
+import AccordionTest from "@/components/AccordionTest";
+
 
 export default function Home() {
 	return (
@@ -22,7 +24,7 @@ export default function Home() {
 			</div>
 
 			<div className="inline-block max-w-lg text-center mt-4">
-				<h2 size={60}css={{textGradient: "45deg, $purple600 -20%, $pink600 100%",}}weight="bold">
+				<h2>
 					Acerca de nosotros
 				</h2>
 				<h3 className="mt-4">
@@ -32,6 +34,10 @@ export default function Home() {
 
 			<div className="gap-2 grid grid-cols-3">
 				<CardTest /><CardTest /><CardTest />
+			</div>
+
+			<div className="gap-2 grid grid-cols-2">
+				<CardTest /><AccordionTest/>
 			</div>
 		</section>
 	);
