@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import {Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function App() {
   const defaultContent =
@@ -11,13 +11,13 @@ export default function App() {
 
     <Accordion>
       <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-        <p>esto es una prueba para el accordion</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-        <p>esto es una prueba para el accordion</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-        <p>esto es una prueba para el accordion</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
       </AccordionItem>
     </Accordion>
 
