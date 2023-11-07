@@ -37,8 +37,12 @@ export default function Home() {
 				<CardTest /><CardTest /><CardTest />
 			</div>
 
-			<div className="container-fluid grid grid-cols-2 mt-10 gap-5">
-				<AccordionImg /><AccordionTest />
+			<div className="grid grid-cols-2 mt-10 gap-5">
+				<div>
+					<h2>Ofreciendo servicios a tu medida y necesidades</h2>
+					<AccordionImg />
+				</div>
+				<AccordionTest />
 			</div>
 		</section>
 	);
