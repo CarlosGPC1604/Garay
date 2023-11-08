@@ -8,7 +8,7 @@ export default function TestPop() {
         <Button>Mas información</Button>
       </PopoverTrigger>
       <PopoverContent>
-        <div className="px-2 pt-4 pb-2">
+        <div className="pr-4 pt-4 pb-2">
           <div className="container">
             <div className="grid grid-cols-2 divide-x">
 
