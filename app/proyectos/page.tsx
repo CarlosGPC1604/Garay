@@ -10,10 +10,26 @@ export default function DocsPage() {
 			</div>
 			<div className="container w-full mt-4">
 				<div className="grid xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3 gap-5">
-					<CardTest /><CardTest /><CardTest /><CardTest /><CardTest /><CardTest />
+					<div>
+						<CardTest /><TestPop />
+					</div>
+					<div>
+						<CardTest /><TestPop />
+					</div>
+					<div>
+						<CardTest /><TestPop />
+					</div>
+					<div>
+						<CardTest /><TestPop />
+					</div>
+					<div>
+						<CardTest /><TestPop />
+					</div>
+					<div>
+						<CardTest /><TestPop />
+					</div>
 				</div>
 			</div>
-			<TestPop />
 		</div>
 	);
 }

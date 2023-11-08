@@ -5,7 +5,7 @@ export default function testpop() {
   return (
     <Popover placement="bottom" showArrow={true}>
       <PopoverTrigger>
-        <Button>Open Popover</Button>
+        <Button>Mas información</Button>
       </PopoverTrigger>
       <PopoverContent>
         <div className="px-1 py-2">
