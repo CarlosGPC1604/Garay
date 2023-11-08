@@ -1,6 +1,7 @@
 import { title } from "@/components/primitives";
 import CardTest from "@/components/cardTest";
 import TestPop from "@/components/Testpop"
+import MultipleCards from "@/components/MultipleCards";
 
 export default function DocsPage() {
 	return (
@@ -27,6 +28,9 @@ export default function DocsPage() {
 					</div>
 					<div>
 						<CardTest /><TestPop />
+					</div>
+					<div>
+						<MultipleCards />
 					</div>
 				</div>
 			</div>
