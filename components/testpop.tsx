@@ -39,7 +39,6 @@ export default function TestPop() {
 
           <div className="container mt-4">
             <div className="grid grid-cols-4">
-
               <div className="text-center">
                 <div className="flex justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
