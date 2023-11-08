@@ -5,7 +5,7 @@ import TestPop from "@/components/Testpop"
 export default function DocsPage() {
 	return (
 		<div className="container w-full">
-			<div className="title-section">
+			<div className="container w-full">
 				<h1 className={title({ color: "red" })}>Proyectos</h1>
 			</div>
 			<div className="container w-full mt-4">
