@@ -26,17 +26,17 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="inline-block max-w-lg text-center mt-4">
+			<div className="inline-block max-w-lg text-center">
 				<h2 className="text-[2.3rem] text-[#d6292c]">
 					Acerca de nosotros
 				</h2>
-				<h3 className="mt-4">
+				<h3 className="my-4">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
 				</h3>
 			</div>
 
 			<div className="gap-2 grid grid-cols-3">
-				<LandingCards /><LandingCards /><LandingCards />
+				<LandingCards />
 			</div>
 
 			<div className="sm md lg xl xxl grid grid-cols-2 mt-10 gap-5">
