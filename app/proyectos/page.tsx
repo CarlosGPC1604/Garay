@@ -1,7 +1,7 @@
 import { title } from "@/components/primitives";
 import CardTest from "@/components/cardTest";
 import TestPop from "@/components/testpop"
-import MultipleCards from "@/components/MultipleCards";
+import TestCards from "@/components/TestCards";
 
 export default function Proyectos() {
 	return (
@@ -29,8 +29,10 @@ export default function Proyectos() {
 					<div>
 						<CardTest /><TestPop />
 					</div>
+					
 				</div>
 			</div>
+			<TestCards />
 		</div>
 	);
 }

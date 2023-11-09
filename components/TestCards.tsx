@@ -1,47 +1,32 @@
+'use client';
 import React from "react";
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 
 export default function App() {
   const list = [
     {
-      title: "Orange",
-      img: "/images/fruit-1.jpeg",
-      price: "$5.50",
+      img: "http://placekitten.com/g/200/201",
     },
     {
-      title: "Tangerine",
-      img: "/images/fruit-2.jpeg",
-      price: "$3.00",
+      img: "http://placekitten.com/g/200/202",
     },
     {
-      title: "Raspberry",
-      img: "/images/fruit-3.jpeg",
-      price: "$10.00",
+      img: "http://placekitten.com/g/200/203",
     },
     {
-      title: "Lemon",
-      img: "/images/fruit-4.jpeg",
-      price: "$5.30",
+      img: "http://placekitten.com/g/200/204",
     },
     {
-      title: "Avocado",
-      img: "/images/fruit-5.jpeg",
-      price: "$15.70",
+      img: "http://placekitten.com/g/200/205",
     },
     {
-      title: "Lemon 2",
-      img: "/images/fruit-6.jpeg",
-      price: "$8.00",
+      img: "http://placekitten.com/g/200/206",
     },
     {
-      title: "Banana",
-      img: "/Recurso 2.svg",
-      price: "$7.50",
+      img: "http://placekitten.com/g/200/207",
     },
     {
-      title: "Watermelon",
-      img: "/images/fruit-8.jpeg",
-      price: "$12.20",
+      img: "http://placekitten.com/g/200/208",
     },
   ];
 
@@ -54,14 +39,12 @@ export default function App() {
               shadow="sm"
               radius="lg"
               width="100%"
-              alt={item.title}
               className="w-full object-cover h-[140px]"
               src={item.img}
             />
           </CardBody>
           <CardFooter className="text-small justify-between">
-            <b>{item.title}</b>
-            <p className="text-default-500">{item.price}</p>
+            <p className="text-default-500">PRECIO</p>
           </CardFooter>
         </Card>
       ))}
