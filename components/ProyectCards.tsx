@@ -33,7 +33,7 @@ export default function App() {
   return (
     <>
       {list.map((item, index) => (
-        <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+        <Card className="py-2" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">Prueba</p>
             <small className="text-default-500">Uso de la card</small>
