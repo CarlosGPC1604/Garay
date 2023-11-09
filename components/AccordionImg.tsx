@@ -5,7 +5,7 @@ export default function App() {
         <Image
             width={1200}
             height={600}
-            src="http://placekitten.com/g/1200/600"
+            src="/Hero.webp"
             alt="Default Image"
         />
     );
