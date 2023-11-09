@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import PopoverTest from "@/components/PopoverTest"
-import ProyectCrds from "@/components/ProyectCards";
+import ProyectCards from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
@@ -10,7 +10,7 @@ export default function Proyectos() {
 			</div>
 			<div className="container w-full mt-12">
 				<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4">
-					<ProyectCrds />
+					<ProyectCards />					
 				</div>
 			</div>
 		</div>
