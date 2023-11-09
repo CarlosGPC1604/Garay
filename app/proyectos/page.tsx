@@ -1,5 +1,5 @@
 import { title } from "@/components/primitives";
-import TestPop from "@/components/testpop"
+import PopoverTest from "@/components/PopoverTest"
 import ProyectCrds from "@/components/ProyectCards";
 
 export default function Proyectos() {
