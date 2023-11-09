@@ -31,7 +31,7 @@ export default function App() {
   ];
 
   return (
-    <div className="gap-2 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4">
+    <>
       {list.map((item, index) => (
         <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -49,7 +49,7 @@ export default function App() {
           </CardBody>
         </Card>
       ))}
-    </div>
+    </>
   );
 }
 
