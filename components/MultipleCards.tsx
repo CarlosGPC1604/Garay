@@ -35,7 +35,7 @@ export default function App() {
     },
     {
       title: "Banana",
-      img: "/images/fruit-7.jpeg",
+      img: "/Recurso 2.svg",
       price: "$7.50",
     },
     {

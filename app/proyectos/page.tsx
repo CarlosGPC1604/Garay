@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import CardTest from "@/components/cardTest";
-import TestPop from "@/components/Testpop"
+import TestPop from "@/components/testpop"
 import MultipleCards from "@/components/MultipleCards";
 
 export default function DocsPage() {
@@ -28,9 +28,6 @@ export default function DocsPage() {
 					</div>
 					<div>
 						<CardTest /><TestPop />
-					</div>
-					<div>
-						<MultipleCards />
 					</div>
 				</div>
 			</div>
