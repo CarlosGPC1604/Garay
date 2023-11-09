@@ -5,28 +5,28 @@ import { Card, CardBody, CardFooter, Image, CardHeader } from "@nextui-org/react
 export default function App() {
   const list = [
     {
-      img: "http://placekitten.com/g/200/201",
+      img: "./proyect-cards-img/IMG-20231107-WA0012_8_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/202",
+      img: "./proyect-cards-img/IMG-20231106-WA0143_7_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/203",
+      img: "./proyect-cards-img/IMG-20231106-WA0135_6_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/204",
+      img: "./proyect-cards-img/IMG-20231106-WA0120_5_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/205",
+      img: "./proyect-cards-img/IMG-20231103-WA0033_4_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/206",
+      img: "./proyect-cards-img/IMG-20231030-WA0050_3_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/207",
+      img: "./proyect-cards-img/IMG-20231026-WA0025_2_11zon.webp",
     },
     {
-      img: "http://placekitten.com/g/200/208",
+      img: "./proyect-cards-img/IMG-20231026-WA0021_1_11zon.webp",
     },
   ];
 
