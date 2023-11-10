@@ -1,15 +1,7 @@
-import NextLink from "next/link";
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import LandingCards from "@/components/LandingCards";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
-import { color } from "framer-motion";
 
 
 export default function Home() {
@@ -31,15 +23,15 @@ export default function Home() {
 					Acerca de nosotros
 				</h2>
 				<h3 className="my-4">
-				Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación. En [Nombre de la Empresa], nuestra misión es transformar sueños en realidad arquitectónica, y lo hacemos con una combinación de innovación, creatividad y experiencia.
+				Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
 				</h3>
 			</div>
 
-			<div className="gap-2 grid grid-cols-3">
+			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 				<LandingCards />
 			</div>
 
-			<div className="sm md lg xl xxl grid grid-cols-2 mt-10 gap-5">
+			<div className="sm md lg xl xxl grid sm:grid-cols-1 md:grid-cols-2 mt-10 mx-8 gap-5">
 				<div>
 					<div>
 						<h2 className="text-[2.3rem] text-[#d6292c]">Te ofrecemos</h2>
@@ -49,7 +41,7 @@ export default function Home() {
 						<AccordionImg />
 					</div>
 				</div>
-				<div className="content-center">
+				<div className="content-center flex justify-center items-center">
 					<AccordionTest />
 				</div>
 			</div>
