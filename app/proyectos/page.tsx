@@ -1,7 +1,6 @@
 import { title } from "@/components/primitives";
-import CardTest from "@/components/cardTest";
-import TestPop from "@/components/Testpop"
-import MultipleCards from "@/components/MultipleCards";
+import PopoverTest from "@/components/PopoverTest"
+import ProyectCards from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
@@ -10,28 +9,8 @@ export default function Proyectos() {
 				<h1 className={title({ color: "red" }) + " py-8"}>Proyectos</h1>
 			</div>
 			<div className="container w-full mt-12">
-				<div className="grid xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3 gap-5">
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<CardTest /><TestPop />
-					</div>
-					<div>
-						<MultipleCards />
-					</div>
+				<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4">
+					<ProyectCards />					
 				</div>
 			</div>
 		</div>
