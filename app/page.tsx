@@ -18,14 +18,17 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="inline-block max-w-lg text-center">
-				<h2 className="text-[2.3rem] text-[#d6292c]">
-					Acerca de nosotros
-				</h2>
-				<h3 className="my-4">
-				Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
-				</h3>
+			<div className="w-screen flex justify-center" style={{backgroundColor:"#ee5050"}}>
+				<div className="inline-block max-w-lg text-center">
+					<h2 className="text-[2.3rem]">
+						Acerca de nosotros
+					</h2>
+					<h3 className="my-4">
+						Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
+					</h3>
+				</div>
 			</div>
+
 
 			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 				<LandingCards />
