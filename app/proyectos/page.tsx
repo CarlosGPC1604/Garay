@@ -4,14 +4,17 @@ import ProyectCards from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
-		<div className="container w-full py-8 md:py-10">
-			<div className="container w-full">
-				<h1 className={title({ color: "red" }) + " py-8"}>Proyectos</h1>
-			</div>
-			<div className="container w-full mt-12">
-				<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4">
-					<ProyectCards />					
+		<div className="py-8 md:py-10">
+			<div className="">
+				<div className="">
+					<h1 className={title({ color: "red" }) + " py-8"}>Proyectos</h1>
 				</div>
+				<div>
+					<p>Cada proyecto en nuestro catálogo es una obra maestra única que cuenta una historia arquitectónica. ¿Listo para inspirarte? Explora nuestro catálogo y déjate llevar por la fascinante fusión de forma y función en el mundo de la arquitectura.</p>
+				</div>
+			</div>
+			<div className=" py-8 pt-8" style={{backgroundColor:""}}>
+					<ProyectCards />
 			</div>
 		</div>
 	);

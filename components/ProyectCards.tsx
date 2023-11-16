@@ -31,24 +31,23 @@ export default function App() {
   ];
 
   return (
-    <>
-      {list.map((item, index) => (
-        <Card className="py-2" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <p className="text-tiny uppercase font-bold">Prueba</p>
-            <small className="text-default-500">Uso de la card</small>
-            <h4 className="font-bold text-large">Imagen de ejemplo</h4>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-            <Image
-              alt="Card background"
-              className="object-cover rounded-xl"
-              src={item.img}
-              width={300}
-            />
-          </CardBody>
-        </Card>
-      ))}
-    </>
+      <div className="gap-5 container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3">
+        {list.map((item, index) => (
+          <Card className="py-2 hover:bg-[#f04b57]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+            <CardBody className="overflow-visible py-2">
+              <div className="mx-auto my-auto">
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src={item.img}
+                />
+              </div>
+            </CardBody>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+              <h4 className="font-bold text-large">Click para saber mas →</h4>
+            </CardHeader>
+          </Card>
+        ))}
+      </div>
   );
 }
