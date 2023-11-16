@@ -1,4 +1,4 @@
-import { title, subtitle } from "@/components/primitives";
+import { title, subtitle, bgcolor  } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
@@ -19,14 +19,16 @@ export default function Home() {
 			</div>
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
-			<div className="w-screen flex justify-center" style={{ backgroundColor: "#f04b57" }}>
-				<div className="inline-block max-w-lg text-center">
-					<h2 className="text-[2.3rem]">
-						Acerca de nosotros
-					</h2>
-					<h3 className="my-4">
-						Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
-					</h3>
+			<div className="w-screen flex justify-center">
+				<div style={{backgroundColor:"foreground"}} className={bgcolor({ color: "testcolor" })}>
+					<div className="inline-block max-w-lg text-center">
+						<h2 className="text-[2.3rem]">
+							Acerca de nosotros
+						</h2>
+						<h3 className="my-4">
+							Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
+						</h3>
+					</div>
 				</div>
 			</div>
 			{/* ACERCA DE NOSOTROS */}

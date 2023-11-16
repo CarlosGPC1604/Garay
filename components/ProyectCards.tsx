@@ -33,7 +33,7 @@ export default function App() {
   return (
       <div className="gap-5 container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3">
         {list.map((item, index) => (
-          <Card className="py-2 hover:bg-[#f04b57]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+          <Card className="py-2 hover:bg-[red]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
             <CardBody className="overflow-visible py-2">
               <div className="mx-auto my-auto">
                 <Image

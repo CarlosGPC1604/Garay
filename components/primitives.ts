@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import { tv } from "tailwind-variants";
 
 export const title = tv({
@@ -12,6 +13,7 @@ export const title = tv({
 			pink: "from-[#FF72E1] to-[#F54C7A]",
 			red: "from-[#FF1C1C] to-[#c92d31]",
 			foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
+
 		},
 		size: {
 			sm: "text-3xl lg:text-4xl",
@@ -52,4 +54,20 @@ export const subtitle = tv({
 	defaultVariants: {
 		fullWidth: true
 	}
+});
+
+
+export const bgcolor = tv({
+	variants: {
+		color: {
+			testcolor: "dark:from-[#0288d1] dark:to-[#693c1f]",
+		},
+	},
+	compoundVariants: [
+		{
+			color: [
+				"testcolor",
+			],
+		},
+	],
 });
