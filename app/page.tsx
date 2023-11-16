@@ -7,7 +7,7 @@ import AccordionImg from "@/components/AccordionImg";
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-
+			{/* TITULO */}
 			<div className="inline-block max-w-lg text-center">
 				<h1 className={title({ color: "red" })}>
 					Garay&nbsp;
@@ -17,7 +17,8 @@ export default function Home() {
 					Planeamos, proyectamos, construimos y supervisamos.
 				</h2>
 			</div>
-
+			{/* TITULO */}
+			{/* ACERCA DE NOSOTROS */}
 			<div className="w-screen flex justify-center" style={{ backgroundColor: "#f04b57" }}>
 				<div className="inline-block max-w-lg text-center">
 					<h2 className="text-[2.3rem]">
@@ -28,12 +29,13 @@ export default function Home() {
 					</h3>
 				</div>
 			</div>
-
-
+			{/* ACERCA DE NOSOTROS */}
+			{/* LANDING CARDS */}
 			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 				<LandingCards />
 			</div>
-
+			{/* LANDING CARDS */}
+			{/* ACCORDION */}
 			<div className="w-screen flex items-center justify-center" style={{ backgroundColor: "#f04b57" }}>
 				<div className="container">
 					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
@@ -52,6 +54,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			{/* ACCORDION */}
 		</section>
 	);
 }
