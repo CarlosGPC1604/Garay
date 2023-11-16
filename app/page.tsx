@@ -1,4 +1,4 @@
-import { title, subtitle, bgcolor  } from "@/components/primitives";
+import { title, subtitle, } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
@@ -20,7 +20,7 @@ export default function Home() {
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
 			<div className="w-screen flex justify-center">
-				<div style={{backgroundColor:"foreground"}} className={bgcolor({ color: "testcolor" })}>
+				<div>
 					<div className="inline-block max-w-lg text-center">
 						<h2 className="text-[2.3rem]">
 							Acerca de nosotros
