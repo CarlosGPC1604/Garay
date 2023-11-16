@@ -18,7 +18,7 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="w-screen flex justify-center" style={{backgroundColor:"#ee5050"}}>
+			<div className="w-screen flex justify-center" style={{ backgroundColor: "#f04b57" }}>
 				<div className="inline-block max-w-lg text-center">
 					<h2 className="text-[2.3rem]">
 						Acerca de nosotros
@@ -34,18 +34,22 @@ export default function Home() {
 				<LandingCards />
 			</div>
 
-			<div className="sm md lg xl xxl grid sm:grid-cols-1 md:grid-cols-2 mt-10 mx-8 gap-5">
-				<div>
-					<div>
-						<h2 className="text-[2.3rem] text-[#d6292c]">Te ofrecemos</h2>
-						<h2 className="text-[2.3rem]">los mejores servicios</h2>
+			<div className="w-screen flex items-center justify-center" style={{ backgroundColor: "#f04b57" }}>
+				<div className="container">
+					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
+						<div>
+							<div>
+								<h2 className="text-[2.3rem]">Te ofrecemos</h2>
+								<h2 className="text-[2.3rem]">los mejores servicios</h2>
+							</div>
+							<div className="mt-5">
+								<AccordionImg />
+							</div>
+						</div>
+						<div className="content-center flex justify-center items-center">
+							<AccordionTest />
+						</div>
 					</div>
-					<div className="mt-5">
-						<AccordionImg />
-					</div>
-				</div>
-				<div className="content-center flex justify-center items-center">
-					<AccordionTest />
 				</div>
 			</div>
 		</section>
