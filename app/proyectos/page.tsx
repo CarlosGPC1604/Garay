@@ -1,6 +1,7 @@
 import { title } from "@/components/primitives";
 import PopoverTest from "@/components/PopoverTest"
 import ProyectCards from "@/components/ProyectCards";
+import MyTooltip from "@/components/MyTooltip"
 
 export default function Proyectos() {
 	return (
@@ -15,6 +16,7 @@ export default function Proyectos() {
 			</div>
 			<div className=" py-8 pt-8" style={{backgroundColor:""}}>
 					<ProyectCards />
+					<MyTooltip/>
 			</div>
 		</div>
 	);
