@@ -6,7 +6,7 @@ import AccordionImg from "@/components/AccordionImg";
 
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 ">
 			{/* TITULO */}
 			<div className="inline-block max-w-lg text-center">
 				<h1 className={title({ color: "red" })}>
@@ -33,7 +33,7 @@ export default function Home() {
 			</div>
 			{/* ACERCA DE NOSOTROS */}
 			{/* LANDING CARDS */}
-			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
 				<LandingCards />
 			</div>
 			{/* LANDING CARDS */}
