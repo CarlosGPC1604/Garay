@@ -53,3 +53,27 @@ export const subtitle = tv({
 		fullWidth: true
 	}
 });
+
+export const MyBgColor = tv({
+  base: "bg-opacity-90",
+  variants: {
+    color: {
+      violet: "bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]",
+      yellow: "bg-gradient-to-b from-[#FF705B] to-[#FFB457]",
+      blue: "bg-gradient-to-b from-[#5EA2EF] to-[#0072F5]",
+      cyan: "bg-gradient-to-b from-[#00b7fa] to-[#01cfea]",
+      green: "bg-gradient-to-b from-[#6FEE8D] to-[#17c964]",
+      pink: "bg-gradient-to-b from-[#FF72E1] to-[#F54C7A]",
+      red: "bg-gradient-to-b from-[#FF1C1C] to-[#c92d31]",
+      foreground: "dark:bg-gradient-to-b dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
+    },
+  },
+  defaultVariants: {
+    color: "red",
+  },
+});
+
+
+
+
+

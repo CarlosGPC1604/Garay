@@ -1,4 +1,4 @@
-import { title, subtitle, } from "@/components/primitives";
+import { title, subtitle, MyBgColor, } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
@@ -19,7 +19,7 @@ export default function Home() {
 			</div>
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
-			<div className="w-screen flex justify-center">
+			<div className="w-screen flex justify-center dark dark:bg-gray-800 dark:text-white bg-white text-black light light:bg-gray-300 light:text-black bg-black text-white">
 				<div>
 					<div className="inline-block max-w-lg text-center">
 						<h2 className="text-[2.3rem]">
@@ -33,12 +33,12 @@ export default function Home() {
 			</div>
 			{/* ACERCA DE NOSOTROS */}
 			{/* LANDING CARDS */}
-			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+			<div className="gap-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 				<LandingCards />
 			</div>
 			{/* LANDING CARDS */}
 			{/* ACCORDION */}
-			<div className="w-screen flex items-center justify-center">
+			<div className="w-screen flex items-center justify-center dark dark:bg-gray-800 dark:text-white bg-white text-black light light:bg-gray-300 light:text-black bg-black text-white">
 				<div className="container">
 					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
 						<div>
