@@ -5,15 +5,15 @@ export default function AboutPage() {
 		<div>
 			{/* Titulo */}
 			<div className="text-center">
-				<h2 className={title()}>¿Tienes alguna idea en mente?</h2>
-				<h2>Contactanos y te ayudamos a hacerlo realidad</h2>
+				<h2 className={title({ color: "red" })}>¿Tienes alguna idea en mente?</h2>
+				<h2 className="mt-4">Contactanos y te ayudamos a hacerlo realidad</h2>
 			</div>
 			{/* Titulo */}
 			<div>
 				{/* contacto */}
 				<div className="mt-5">
 					<div className="text-center">
-						<h2>Contacto</h2>
+						<h2 className="text-[2.0rem]">Contacto</h2>
 					</div>
 					<div className="text-left mt-5">
 						<p><strong>Dirección:</strong>Av. Insurgentes 76 pte. Col. Centro , 63000 Tepic, Nay.</p>
@@ -27,7 +27,7 @@ export default function AboutPage() {
 				{/*Redes sociales*/}
 				<div className="mt-5">
 					<div>
-						<h2>Siguenos en nuestras redes sociales</h2>
+						<h2 className="text-[2.0rem]">Siguenos en nuestras redes sociales</h2>
 					</div>
 					<div className="text-center">
 						<a href="https://www.facebook.com/garay.arquitectos/" target="_blank">
@@ -41,7 +41,7 @@ export default function AboutPage() {
 				{/*Redes sociales*/}
 				{/* Horario */}
 				<div className="mt-5">
-					<h2>Horario de Atención</h2>
+					<h2 className="text-[2.0rem]">Horario de Atención</h2>
 					<p>Lunes a Viernes: 9:00 AM - 2:00 PM & 4:00 PM - 7:00 PM</p>
 					<p>Sabado: 9:00 AM - 2:00 PM</p>
 					<p>Domingo: Cerrado</p>

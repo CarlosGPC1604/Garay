@@ -10,7 +10,7 @@ export default function Proyectos() {
 				<div className="">
 					<h1 className={title({ color: "red" }) + " py-8"}>Proyectos</h1>
 				</div>
-				<div>
+				<div className="mt-5">
 					<p>Cada proyecto en nuestro catálogo es una obra maestra única que cuenta una historia arquitectónica. ¿Listo para inspirarte? Explora nuestro catálogo y déjate llevar por la fascinante fusión de forma y función en el mundo de la arquitectura.</p>
 				</div>
 			</div>
