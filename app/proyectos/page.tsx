@@ -16,7 +16,6 @@ export default function Proyectos() {
 			</div>
 			<div className=" py-8 pt-8" style={{backgroundColor:""}}>
 					<ProyectCards />
-					<MyTooltip/>
 			</div>
 		</div>
 	);

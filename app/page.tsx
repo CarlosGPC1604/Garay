@@ -19,7 +19,7 @@ export default function Home() {
 			</div>
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
-			<div className="w-screen flex justify-center" style={{backgroundColor:"#ff7f7f"}}>
+			<div className="w-screen flex justify-center">
 				<div>
 					<div className="inline-block max-w-lg text-center">
 						<h2 className="text-[2.3rem]">
@@ -38,7 +38,7 @@ export default function Home() {
 			</div>
 			{/* LANDING CARDS */}
 			{/* ACCORDION */}
-			<div className="w-screen flex items-center justify-center" style={{backgroundColor:"#ff7f7f"}}>
+			<div className="w-screen flex items-center justify-center">
 				<div className="container">
 					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
 						<div>
