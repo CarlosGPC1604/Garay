@@ -3,7 +3,6 @@ import LandingCards from "@/components/LandingCards";
 import AccordionTest from "@/components/AccordionTest";
 import AccordionImg from "@/components/AccordionImg";
 
-
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 ">
@@ -25,8 +24,8 @@ export default function Home() {
 						<h2 className="text-[2.3rem]">
 							Acerca de nosotros
 						</h2>
-						<h3 className="my-4">
-							Somos un estudio de arquitectura apasionado por la creación de espacios excepcionales que inspiran, mejoran la vida y desafían los límites de la imaginación.
+						<h3 className="my-4 text-wrap-balance">
+							En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
 						</h3>
 					</div>
 				</div>
@@ -47,7 +46,7 @@ export default function Home() {
 								<h2 className="text-[2.3rem]">los mejores servicios</h2>
 							</div>
 							<div className="mt-5">
-								<AccordionImg/>
+								<AccordionImg />
 							</div>
 						</div>
 						<div className="content-center flex justify-center items-center">
