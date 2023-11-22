@@ -14,7 +14,7 @@ export default function Proyectos() {
 					<p>Cada proyecto en nuestro catálogo es una obra maestra única que cuenta una historia arquitectónica. ¿Listo para inspirarte? Explora nuestro catálogo y déjate llevar por la fascinante fusión de forma y función en el mundo de la arquitectura.</p>
 				</div>
 			</div>
-			<div className=" py-8 pt-8" style={{backgroundColor:""}}>
+			<div className="py-8 pt-8">
 					<ProyectCards />
 			</div>
 		</div>

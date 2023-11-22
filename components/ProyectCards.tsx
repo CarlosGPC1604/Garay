@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3">
       {list.map((item, index) => (
-        <Card className="py-2 hover:bg-[]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+        <Card isFooterBlurred radius="lg" className="py-2 border-none hover:bg-[]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
           <CardBody className="overflow-visible py-2">
             <div className="mx-auto my-auto">
               <Image
@@ -52,7 +52,6 @@ export default function App() {
                 <div className="pr-4 pt-4 pb-2">
                   <div className="container">
                     <div className="grid grid-cols-2 divide-x">
-
                       <div className="grid grid-cols-2">
                         <div className="content-center flex justify-center">
                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
@@ -120,7 +119,7 @@ export default function App() {
 
               }
             >
-                <Button variant="bordered">Más información →</Button>
+              <Button variant="light">Más información →</Button>
             </Tooltip>
           </CardHeader>
         </Card>
@@ -128,3 +127,5 @@ export default function App() {
     </div>
   );
 }
+
+
