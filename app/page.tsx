@@ -1,6 +1,6 @@
 import { title, subtitle, MyBgColor, } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
-import AccordionTest from "@/components/AccordionTest";
+import Accordion from "@/components/Accordion";
 import AccordionImg from "@/components/AccordionImg";
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="content-center flex justify-center items-center">
-							<AccordionTest />
+							<Accordion/>
 						</div>
 					</div>
 				</div>
