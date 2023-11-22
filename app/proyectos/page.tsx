@@ -6,7 +6,7 @@ import MyTooltip from "@/components/MyTooltip"
 export default function Proyectos() {
 	return (
 		<div className="py-8 md:py-10">
-			<div className="">
+			<div>
 				<div className="">
 					<h1 className={title({ color: "red" }) + " py-8"}>Proyectos</h1>
 				</div>
