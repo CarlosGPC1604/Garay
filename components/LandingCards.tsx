@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
       {list.map((item, index) => (
-        <Card className="py-2" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+        <Card className="py-2 bg-gradient-to-r from-red-500 to-red-700" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="font-semibold">{item.title}</p>       
           </CardHeader>

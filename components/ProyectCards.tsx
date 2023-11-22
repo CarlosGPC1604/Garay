@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3">
       {list.map((item, index) => (
-        <Card isFooterBlurred radius="lg" className="py-2 border-none hover:bg-[]" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+        <Card isFooterBlurred radius="lg" className="py-2 border-none bg-gradient-to-r from-red-500 to-red-700" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
           <CardBody className="overflow-visible py-2">
             <div className="mx-auto my-auto">
               <Image
