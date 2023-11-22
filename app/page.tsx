@@ -19,7 +19,7 @@ export default function Home() {
 			</div>
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
-			<div className="w-screen flex justify-center dark dark:bg-gray-800 dark:text-white bg-white text-black light light:bg-gray-300 light:text-black bg-black text-white">
+			<div className={`w-screen flex items-center justify-center text-white ${MyBgColor({ color: "red" })}`}>
 				<div>
 					<div className="inline-block max-w-lg text-center">
 						<h2 className="text-[2.3rem]">
@@ -38,7 +38,7 @@ export default function Home() {
 			</div>
 			{/* LANDING CARDS */}
 			{/* ACCORDION */}
-			<div className="w-screen flex items-center justify-center dark dark:bg-gray-800 dark:text-white bg-white text-black light light:bg-gray-300 light:text-black bg-black text-white">
+			<div className={`w-screen flex items-center justify-center${MyBgColor({ color: "red" })}`}>
 				<div className="container">
 					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
 						<div>
@@ -50,7 +50,7 @@ export default function Home() {
 								<AccordionImg />
 							</div>
 						</div>
-						<div className="content-center flex justify-center items-center">
+						<div className="content-center flex justify-center items-center ">
 							<AccordionTest />
 						</div>
 					</div>
