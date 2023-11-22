@@ -38,7 +38,7 @@ export default function Home() {
 			</div>
 			{/* LANDING CARDS */}
 			{/* ACCORDION */}
-			<div className={`w-screen flex items-center justify-center${MyBgColor({ color: "red" })}`}>
+			<div className={`w-screen flex items-center justify-center text-white ${MyBgColor({ color: "red" })}`}>
 				<div className="container">
 					<div className=" grid sm:grid-cols-1 md:grid-cols-2 mt-10 mb-10 mx-8 gap-5">
 						<div>
