@@ -18,7 +18,7 @@ export default function Home() {
 			</div>
 			{/* TITULO */}
 			{/* ACERCA DE NOSOTROS */}
-			<div className={`"max-w-[50%]" flex items-center justify-center text-white ${MyBgColor({ color: "red" })}`}>
+			<div className={`"max-w-[50%]" flex items-center justify-center text-white rounded-lg ${MyBgColor({ color: "red" })}`}>
 				<div>
 					<div className="inline-block text-center">
 						<h2 className="text-[2.3rem]">
