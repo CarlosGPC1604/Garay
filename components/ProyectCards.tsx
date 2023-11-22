@@ -3,7 +3,6 @@ import React from "react";
 import { Card, CardBody, CardFooter, Image, CardHeader } from "@nextui-org/react";
 import { Tooltip, Button } from "@nextui-org/react";
 
-
 export default function App() {
   const list = [
     {
@@ -74,7 +73,6 @@ export default function App() {
                       </div>
                     </div>
                   </div>
-
                   <div className="container mt-4">
                     <div className="grid grid-cols-4">
                       <div className="text-center">
@@ -103,7 +101,6 @@ export default function App() {
                         </div>
                         <p>2</p>
                       </div>
-
                       <div className="text-center">
                         <div className="flex justify-center">
                           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
@@ -112,13 +109,12 @@ export default function App() {
                         </div>
                         <p>2</p>
                       </div>
-
                     </div>
                   </div>
                 </div>
               }
             >
-                <Button variant="light">Más información →</Button>
+              <Button variant="light">Más información →</Button>
             </Tooltip>
           </CardHeader>
         </Card>
@@ -126,5 +122,3 @@ export default function App() {
     </div>
   );
 }
-
-
