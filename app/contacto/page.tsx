@@ -17,16 +17,16 @@ export default function AboutPage() {
 					</div>
 					<div className="text-left mt-5 text-center">
 						<p><strong>Dirección:</strong>Av. Insurgentes 76 pte. Col. Centro , 63000 Tepic, Nay.</p>
-						<a href="tel:311 456 7907" target="_blank">
-							<p><strong>Teléfono:</strong>tel: 311 456 7907</p>
-						</a>
+						
+							<p><strong>Teléfono:</strong> <a href="tel:311 456 7907" target="_blank">311 456 7907</a></p>
+						
 						<p><strong>Correo Electrónico:</strong> <a href="mailto:garay.arquitectos@gmail.com">garay.arquitectos@gmail.com</a></p>
 					</div>
 				</div>
 				{/* contacto */}
 				{/* Mapa */}
 				<div className="mt-5">
-					<h2>Visitanos</h2>
+					<h2 className="text-[2.0rem]">Visitanos</h2>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.468960221434!2d-104.89810813798556!3d21.504856622501443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737ad5ef58b63%3A0x29a086ee978a3aeb!2sGaray%20Arquitectos!5e0!3m2!1sen!2smx!4v1700590660418!5m2!1sen!2smx" width="1200" height="450" loading="lazy"></iframe>
 				</div>
 				{/* Mapa */}
