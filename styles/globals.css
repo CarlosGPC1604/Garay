@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-wrap-balance{
+body {
+    min-width: 375px;
+}
+
+.text-wrap-balance {
     text-wrap: balance;
 }
-.accordion-p{
+
+.accordion-p {
     background: linear-gradient(to right, #FF1C1C, #c92d31);
 }

@@ -14,16 +14,13 @@ export const title = tv({
 			foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
 		},
 		size: {
-			sm: "text-3xl lg:text-4xl",
-			md: "text-[2.3rem] lg:text-5xl leading-9",
-			lg: "text-4xl lg:text-6xl",
+	
 		},
 		fullWidth: {
 			true: "w-full block",
 		},
 	},
 	defaultVariants: {
-		size: "md",
 	},
 	compoundVariants: [
 		{
@@ -43,7 +40,7 @@ export const title = tv({
 });
 
 export const subtitle = tv({
-	base: "w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full",
+	base: "",
 	variants: {
 		fullWidth: {
 			true: "!w-full",
@@ -54,24 +51,6 @@ export const subtitle = tv({
 	}
 });
 
-export const MyBgColor = tv({
-  base: "bg-opacity-90",
-  variants: {
-    color: {
-      violet: "bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]",
-      yellow: "bg-gradient-to-b from-[#FF705B] to-[#FFB457]",
-      blue: "bg-gradient-to-b from-[#5EA2EF] to-[#0072F5]",
-      cyan: "bg-gradient-to-b from-[#00b7fa] to-[#01cfea]",
-      green: "bg-gradient-to-b from-[#6FEE8D] to-[#17c964]",
-      pink: "bg-gradient-to-b from-[#FF72E1] to-[#F54C7A]",
-      red: "bg-gradient-to-b from-[#FF1C1C] to-[#c92d31]",
-      foreground: "dark:bg-gradient-to-b dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
-    },
-  },
-  defaultVariants: {
-    color: "red",
-  },
-});
 
 
 
