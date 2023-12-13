@@ -6,9 +6,9 @@ import AccordionImg from "@/components/AccordionImg";
 export default function Home() {
 	return (
 		<section>
-			<div className="py-[40px] px-[10px]">
+			<div className="container mx-auto py-[40px] px-[10px]">
 				{/* TITULO */}
-				<div className="text-center">
+				<div className="container mx-auto text-center">
 					<h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
 						Garay&nbsp;
 					</h1>
@@ -21,7 +21,7 @@ export default function Home() {
 				</div>
 				{/* TITULO */}
 				{/* ACERCA DE NOSOTROS */}
-				<div className="text-center mt-8">
+				<div className="container mx-auto text-center mt-8">
 					<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
 						Acerca de nosotros
 					</h2>
@@ -31,18 +31,22 @@ export default function Home() {
 				</div>
 				{/* ACERCA DE NOSOTROS */}
 				{/* LANDING CARDS */}
-				<div className="gap-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8">
+				<div className="container mx-auto mt-8">
 					<LandingCards />
 				</div>
 				{/* LANDING CARDS */}
 				{/* ACCORDION */}
-				<div className=" grid sm:grid-cols-1 md:grid-cols-2  gap-1">
+				<div className="container mx- mt-8 grid sm:grid-cols-1 md:grid-cols-2  gap-1">
 					<div>
 						<div>
-							<h2 className="text-[]">Te ofrecemos</h2>
-							<h2 className="text-[]">los mejores servicios</h2>
+							<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+								Te ofrecemos
+							</h2>
+							<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+								los mejores servicios
+							</h2>
 						</div>
-						<div className="mt-5">
+						<div className="mt-3">
 							<AccordionImg />
 						</div>
 					</div>

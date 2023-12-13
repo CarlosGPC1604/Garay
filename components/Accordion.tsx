@@ -4,7 +4,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function App() {
   return (
-    <div>
+    <div className="w-full">
       <Accordion variant="splitted">
         <AccordionItem className="font-semibold accordion-p p-0" key="1" aria-label="Accordion 1" title="Diseño arquitectónico">
           <p className="font-normal text-white pt-0 pb-4">Contamos con experiencia en el diseño de edificios y espacios, Ofrecemos servicios de diseño arquitectónico que incluyen la creación de planos, dibujos y representaciones visuales de edificios y estructuras, trabajamos en estrecha colaboración con los clientes para entender sus necesidades y preferencias, y luego desarrollamos diseños que sean funcionales, estéticos y cumplan con los códigos de construcción y regulaciones locales.</p>
