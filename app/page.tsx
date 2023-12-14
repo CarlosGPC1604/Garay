@@ -6,9 +6,9 @@ import AccordionImg from "@/components/AccordionImg";
 export default function Home() {
 	return (
 		<section>
-			<div className="container mx-auto py-[40px] px-[10px]">
-				{/* TITULO */}
+			<div className="hero w-full py-[225px]">
 				<div className="container mx-auto text-center">
+					{/* TITULO */}
 					<h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
 						Garay&nbsp;
 					</h1>
@@ -18,8 +18,10 @@ export default function Home() {
 					<h2 className={subtitle({})}>
 						Planeamos, proyectamos, construimos y supervisamos.
 					</h2>
+					{/* TITULO */}
 				</div>
-				{/* TITULO */}
+			</div>
+			<div className="container mx-auto py-[40px] px-[10px]">
 				{/* ACERCA DE NOSOTROS */}
 				<div className="container mx-auto text-center mt-8">
 					<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
@@ -59,4 +61,3 @@ export default function Home() {
 		</section>
 	);
 }
-

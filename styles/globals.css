@@ -5,7 +5,29 @@
 body {
     min-width: 375px;
 }
-
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/hero_p.webp);
+    background-position: 50% 50%;
+    overflow: hidden;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    background-attachment: fixed;
+}
 .text-wrap-balance {
     text-wrap: balance;
 }
+
+
+
+
+
+
+
+
+
+
+
+
