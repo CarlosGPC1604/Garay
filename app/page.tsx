@@ -1,7 +1,6 @@
 import { title, subtitle } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
 import Accordion from "@/components/Accordion";
-import AccordionImg from "@/components/AccordionImg";
 import Collague from "../components/collague"
 
 export default function Home() {
