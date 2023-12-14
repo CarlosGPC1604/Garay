@@ -22,33 +22,33 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Hero */}
-				{/* ACERCA DE NOSOTROS */}
-				<div className="container mx-auto text-center mt-8 mx-auto py-[40px] px-[10px]">
-					<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-						Acerca de nosotros
-					</h2>
-					<div className="2xl:w-[65%] mx-auto">
-						<p className="text-wrap-balance mt-2">
-							En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
-						</p>
-					</div>
+			{/* ACERCA DE NOSOTROS */}
+			<div className="container mx-auto text-center mt-8 mx-auto py-[40px] px-[10px]">
+				<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+					Acerca de nosotros
+				</h2>
+				<div className="2xl:w-[65%] mx-auto">
+					<p className="text-wrap-balance mt-2">
+						En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
+					</p>
 				</div>
-				{/* ACERCA DE NOSOTROS */}
-				{/* LANDING CARDS */}
-				<div className="container mx-auto mt-8 md:mt-12 mx-auto py-[40px] px-[10px]">
-					<LandingCards />
-				</div>
-				{/* LANDING CARDS */}
-				{/* Collague */}
-				<div className="container mx-auto mt-[50px] mx-auto py-[40px] px-[10px]">
-					<Collague />
-				</div>
-				{/* Collague */}
-				{/* ACCORDION */}
-				<div className="w-full">
-					<Accordion />
-				</div>
-				{/* ACCORDION */}
+			</div>
+			{/* ACERCA DE NOSOTROS */}
+			{/* LANDING CARDS */}
+			<div className="container mx-auto mt-8 md:mt-12 mx-auto py-[40px] px-[10px]">
+				<LandingCards />
+			</div>
+			{/* LANDING CARDS */}
+			{/* Collague */}
+			<div className="container mx-auto mt-[50px] mx-auto py-[40px] px-[10px]">
+				<Collague />
+			</div>
+			{/* Collague */}
+			{/* ACCORDION */}
+			<div className="w-full">
+				<Accordion />
+			</div>
+			{/* ACCORDION */}
 		</section>
 	);
 }
