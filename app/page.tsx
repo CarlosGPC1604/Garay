@@ -22,7 +22,7 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Hero */}
-			<div className="container mx-auto py-[40px] px-[10px]">
+			<div className="mx-auto py-[40px] px-[10px]">
 				{/* ACERCA DE NOSOTROS */}
 				<div className="container mx-auto text-center mt-8">
 					<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
@@ -40,27 +40,14 @@ export default function Home() {
 					<LandingCards />
 				</div>
 				{/* LANDING CARDS */}
-				<div className="container mx auto">
+				{/* Collague */}
+				<div className="container mx-auto mt-[50px]">
 					<Collague />
 				</div>
+				{/* Collague */}
 				{/* ACCORDION */}
-				<div className="container mx-auto mt-8 grid sm:grid-cols-1 md:grid-cols-2  gap-1">
-					<div>
-						<div>
-							<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-								Te ofrecemos
-							</h2>
-							<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-								los mejores servicios
-							</h2>
-						</div>
-						<div className="mt-3">
-							<AccordionImg />
-						</div>
-					</div>
-					<div className="content-center flex justify-center items-center">
-						<Accordion />
-					</div>
+				<div className="w-full">
+					<Accordion />
 				</div>
 				{/* ACCORDION */}
 			</div>
