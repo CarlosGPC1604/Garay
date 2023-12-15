@@ -6,20 +6,20 @@ export default function App() {
   const list = [
     {
       title: "Diseño Arquitectónico",
-      img: "./landing-cards/IMG-20231106-WA0135_6_11zon.webp",
+      img: "./landing-cards/diesño.webp",
     },
     {
       title: "Planificación de proyectos",
-      img: "./landing-cards/IMG-20231106-WA0143_7_11zon.webp",
+      img: "./landing-cards/plan.webp",
     },
     {
       title: "Supervisión de obras",
-      img: "./landing-cards/IMG-20231107-WA0012_8_11zon.webp",
+      img: "./landing-cards/supervision.webp",
     }
   ];
 
   return (
-    <div className="paralax w-screen ">
+    <div className="paralax w-screen py-[30px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {list.map((item, index) => (
           <Card className="py-2 max-w-[100%] mx-auto" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
