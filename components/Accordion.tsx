@@ -7,17 +7,19 @@ export default function App() {
     <div className="paralax-1 py-[125px] w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         {/* Title */}
-        <div>
-          <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-            Te ofrecemos
-          </h2>
-          <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-            los mejores servicios
-          </h2>
+        <div className="text-center lg:hidden">
+          <div>
+            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+              Te ofrecemos
+            </h2>
+            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+              los mejores servicios
+            </h2>
+          </div>
         </div>
         {/* Title */}
         {/* Accordion */}
-        <div>
+        <div className="md:px-8 lg:px-10 mt-[30px] lg:mt-0">
           <Accordion variant="splitted">
             <AccordionItem className="font-semibold p-0" key="1" aria-label="Accordion 1" title="Diseño arquitectónico">
               <p className="font-normal text-white pt-0 pb-4">Contamos con experiencia en el diseño de edificios y espacios, Ofrecemos servicios de diseño arquitectónico que incluyen la creación de planos, dibujos y representaciones visuales de edificios y estructuras, trabajamos en estrecha colaboración con los clientes para entender sus necesidades y preferencias, y luego desarrollamos diseños que sean funcionales, estéticos y cumplan con los códigos de construcción y regulaciones locales.</p>
@@ -31,6 +33,18 @@ export default function App() {
           </Accordion>
         </div>
         {/* Accordion */}
+        {/* Title */}
+        <div className="flex items-center justify-center text-center hidden lg:block mt-[50px]">
+          <div>
+            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+              Te ofrecemos
+            </h2>
+            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+              los mejores servicios
+            </h2>
+          </div>
+        </div>
+        {/* Title */}
       </div>
     </div>
   );

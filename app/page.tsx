@@ -43,6 +43,7 @@ export default function Home() {
 				<Collague />
 			</div>
 			{/* Collague */}
+			
 			{/* ACCORDION */}
 			<div className="w-full">
 				<Accordion />
