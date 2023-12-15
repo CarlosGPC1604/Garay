@@ -19,24 +19,26 @@ export default function App() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {list.map((item, index) => (
-        <Card className="py-2 max-w-[100%] mx-auto" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
-          <CardHeader>
-            <p className="font-semibold">{item.title}</p>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-            <div className="flex justify-center">
-              <Image
-                alt="Card background"
-                className="object-cover rounded-xl mx-auto"
-                src={item.img}
-                width={300}
-              />
-            </div>
-          </CardBody>
-        </Card>
-      ))}
+    <div className="paralax w-screen ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {list.map((item, index) => (
+          <Card className="py-2 max-w-[100%] mx-auto" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+            <CardHeader>
+              <p className="font-semibold">{item.title}</p>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+              <div className="flex justify-center">
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl mx-auto"
+                  src={item.img}
+                  width={300}
+                />
+              </div>
+            </CardBody>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }

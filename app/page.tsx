@@ -34,7 +34,7 @@ export default function Home() {
 			</div>
 			{/* ACERCA DE NOSOTROS */}
 			{/* LANDING CARDS */}
-			<div className="container mx-auto mt-8 md:mt-12 mx-auto py-[40px] px-[10px]">
+			<div className=" mx-auto mt-8 md:mt-12 py-[40px]">
 				<LandingCards />
 			</div>
 			{/* LANDING CARDS */}
