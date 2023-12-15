@@ -4,7 +4,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = React.useState('md')
+  const [size, setSize] = React.useState('lg')
 
   const sizes = ["3xl"];
 
@@ -35,9 +35,6 @@ export default function App() {
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
                 </Button>
               </ModalFooter>
             </>
