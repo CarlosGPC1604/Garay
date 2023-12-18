@@ -1,7 +1,6 @@
 import { title, subtitle } from "@/components/primitives";
 import LandingCards from "@/components/LandingCards";
 import Accordion from "@/components/Accordion";
-import Collague from "../components/collague"
 import App from "../components/Modal"
 
 export default function Home() {
@@ -39,14 +38,11 @@ export default function Home() {
 				<LandingCards />
 			</div>
 			{/* LANDING CARDS */}
-			{/* Collague */}
+			{/* Modal & Collague */}
 			<div className="container mx-auto mt-[50px] mx-auto py-[40px] px-[10px]">
-				<Collague />
+				<App />
 			</div>
-			{/* Modal */}
-			<App />
-			{/* Modal */}
-			{/* Collague */}
+			{/* Modal & Collague */}
 			{/* ACCORDION */}
 			<div className="w-full">
 				<Accordion />
