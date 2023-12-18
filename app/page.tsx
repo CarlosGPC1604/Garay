@@ -4,9 +4,7 @@ import Accordion from "@/components/Accordion";
 import Collague from "../components/collague"
 import App from "../components/Modal"
 
-
 export default function Home() {
-
 	return (
 		<section>
 			{/* Hero */}
@@ -45,7 +43,9 @@ export default function Home() {
 			<div className="container mx-auto mt-[50px] mx-auto py-[40px] px-[10px]">
 				<Collague />
 			</div>
+			{/* Modal */}
 			<App />
+			{/* Modal */}
 			{/* Collague */}
 			{/* ACCORDION */}
 			<div className="w-full">

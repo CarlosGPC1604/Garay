@@ -20,7 +20,7 @@ function Collague() {
                 </div>
             </div>
             <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className='col-span-1 lg:col-span-1 overflow-hidden'>
+                <div className='col-span-1 lg:col-span-1 overflow-hidden' >
                     <img className='zoom' src="/collague/casa-ciruelos.jpg" alt="" style={imageStyle} />
                 </div>
                 <div className='col-span-2 lg:col-span-3 overflow-hidden'>
