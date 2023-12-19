@@ -22,7 +22,7 @@ export default function Home() {
 			</div>
 			{/* Hero */}
 			{/* Acerca de nosotros */}
-			<div className="container mx-auto text-center mt-8 mx-auto py-[40px] px-[10px]">
+			<div className="container mx-auto text-center  mx-auto py-[40px] px-[10px] lg:px-[0px]">
 				<h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
 					Acerca de nosotros
 				</h2>
@@ -34,12 +34,12 @@ export default function Home() {
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
-			<div className="mx-auto mt-8 md:mt-12]">
+			<div className="mx-auto">
 				<LandingCards />
 			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-			<div className="container mx-auto mt-[50px] mx-auto py-[40px] px-[10px]">
+			<div className="container mx-auto mx-auto py-[40px] px-[10px] xl:px-[0px]">
 				<App />
 			</div>
 			{/* Modal & Collague */}
