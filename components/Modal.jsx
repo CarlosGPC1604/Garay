@@ -19,7 +19,7 @@ export default function App() {
     './collague/casa-ciruelos.webp',
     '/collague/Casa-Mari-Trini.webp',
     '/collague/casa-lindavista.webp',
-    "/collague/Casa-Senderos.webp",
+    "/collague/escaleras.webp",
     "/collague/Fotos.webp",
     "/collague/Planta-Tomates.webp"
   ];
@@ -76,7 +76,7 @@ export default function App() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/Casa-Senderos.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/escaleras.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
@@ -107,10 +107,12 @@ export default function App() {
               <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
               <ModalBody>
                 <div>
-                  <div className="flex justify-center">
-                    <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="carousel-image" style={{ delay: "0.3s" }} />
-                    <div>
-                    <a className="hover:text-[#e12527]" href="/proyectos">Proyectos</a>
+                  <div>
+                    <div className="flex justify-center">
+                      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="" style={{ delay: "0.3s" }} />
+                    </div>
+                    <div className="text-center mt-5">
+                      <a className="hover:text-[red]" href="/proyectos">Descubre más</a>
                     </div>
                   </div>
                   <div className="flex justify-center">
