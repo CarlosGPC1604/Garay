@@ -19,7 +19,7 @@ export default function App() {
   ];
 
   return (
-    <div className="paralax w-screen py-[30px]">
+    <div className="paralax w-full py-[30px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {list.map((item, index) => (
           <Card className="py-2 max-w-[100%] mx-auto" shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
