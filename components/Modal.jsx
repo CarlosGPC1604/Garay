@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
-import { Link } from "@nextui-org/link";
+import { title, subtitle } from "@/components/primitives";
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -43,8 +43,11 @@ export default function App() {
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
         <div className='flex items-center'>
           <div className='text-center'>
-            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-              Armonía Urbana
+            <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+              Armonia&nbsp;
+            </h2>
+            <h2 className={` ${title()} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+              urbana
             </h2>
             <p className='mt-5'>
               Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a "Armonía Urbana"!
