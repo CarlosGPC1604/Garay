@@ -44,7 +44,7 @@ export default function RootLayout({
 						<main className="mx-auto flex-grow">
 							{children}
 						</main>
-						<footer className="w-full py-4">
+						<footer className="w-full py-4 bg-default-100">
 							<div className="text-center space-x-4">
 								<a className="hover:text-[#e12527]" href="/">Inicio</a>
 								<a className="hover:text-[#e12527]" href="/blog">Blog</a>

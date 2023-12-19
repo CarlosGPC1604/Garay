@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Link } from "@nextui-org/link";
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -15,9 +16,12 @@ export default function App() {
   }
 
   const images = [
-    'https://costar.brightspotcdn.com/dims4/default/3e2f728/2147483647/strip/true/crop/2100x1181+0+106/resize/1200x675!/quality/90/?url=http%3A%2F%2Fcostar-brightspot.s3.us-east-1.amazonaws.com%2F75%2Fcf%2F36ae84a3402088b1053d8697c851%2Fgettyimages-501234002.jpg',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuuERwUbpzk9f-FoFbwSUjJPpxAhs0bLc9hw&usqp=CAU',
-    'https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005844/Land-Conversion-in-Telangana.jpg',
+    './collague/casa-ciruelos.webp',
+    '/collague/Casa-Mari-Trini.webp',
+    '/collague/casa-lindavista.webp',
+    "/collague/Casa-Senderos.webp",
+    "/collague/Fotos.webp",
+    "/collague/Planta-Tomates.webp"
   ];
 
   const handleNextImage = () => {
@@ -48,43 +52,50 @@ export default function App() {
           </div>
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-
           <div className='col-span-1 lg:col-span-1 overflow-hidden' >
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/casa-ciruelos.jpg" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/casa-ciruelos.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-
           <div className='col-span-2 lg:col-span-3 overflow-hidden'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/Casa-Mari-Trini.jpg" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/Casa-Mari-Trini.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-
           <div className='col-span-2 lg:col-span-1 overflow-hidden'>
-            <img className='zoom' src="/collague/casa-lindavista.jpg" alt="" style={imageStyle} />
+            {sizes.map((size) => (
+              <a key={size} onClick={() => handleOpen(size)}>
+                <img className='zoom' src="/collague/casa-lindavista.webp" style={imageStyle} alt={`Open ${size}`} />
+              </a>
+            ))}
           </div>
-
           <div className='col-span-1 lg:col-span-1 overflow-hidden'>
-            <img className='zoom' src="/collague/Casa-Senderos.jpg" alt="" style={imageStyle} />
+            {sizes.map((size) => (
+              <a key={size} onClick={() => handleOpen(size)}>
+                <img className='zoom' src="/collague/Casa-Senderos.webp" style={imageStyle} alt={`Open ${size}`} />
+              </a>
+            ))}
           </div>
-
           <div className='col-span-1 lg:col-span-1 overflow-hidden'>
-            <img className='zoom' src="/collague/Fotos.jpeg" alt="" style={imageStyle} />
+            {sizes.map((size) => (
+              <a key={size} onClick={() => handleOpen(size)}>
+                <img className='zoom' src="/collague/Fotos.webp" style={imageStyle} alt={`Open ${size}`} />
+              </a>
+            ))}
           </div>
-
           <div className='col-span-2 lg:col-span-3 overflow-hidden'>
-            <img className='zoom' src="/collague/Planta-Tomates.jpg" alt="" style={imageStyle} />
+            {sizes.map((size) => (
+              <a key={size} onClick={() => handleOpen(size)}>
+                <img className='zoom' src="/collague/Planta-Tomates.webp" style={imageStyle} alt={`Open ${size}`} />
+              </a>
+            ))}
           </div>
-
         </div>
-
       </div>
-
       <Modal
         size={size}
         isOpen={isOpen}
@@ -98,6 +109,9 @@ export default function App() {
                 <div>
                   <div className="flex justify-center">
                     <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="carousel-image" style={{ delay: "0.3s" }} />
+                    <div>
+                    <a className="hover:text-[#e12527]" href="/proyectos">Proyectos</a>
+                    </div>
                   </div>
                   <div className="flex justify-center">
                     <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left">
@@ -111,7 +125,7 @@ export default function App() {
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Close
+                  Cerrar
                 </Button>
               </ModalFooter>
             </div>
