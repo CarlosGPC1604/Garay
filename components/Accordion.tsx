@@ -6,7 +6,7 @@ import { title, subtitle } from "@/components/primitives";
 
 export default function App() {
   return (
-    <div className="paralax-1 py-[125px] w-full">
+    <div className="paralax-2 py-[125px] w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         {/* Title */}
         <div className="text-center lg:hidden">

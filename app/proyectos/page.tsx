@@ -1,5 +1,5 @@
 import { title } from "@/components/primitives";
-import ProyectCards from "@/components/ProyectCards";
+import App from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
@@ -18,7 +18,7 @@ export default function Proyectos() {
 				</div>
 			</div>
 			<div className="container mx-auto py-8">
-				<ProyectCards />
+				<App />
 			</div>
 		</section>
 	);

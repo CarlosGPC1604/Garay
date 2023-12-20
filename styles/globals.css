@@ -11,16 +11,16 @@ body {
 }
 
 .paralax-1 {
-    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-1.jpg);
+    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-1.webp);
 }
 
-.paralax {
-    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax.webp);
+.paralax-2 {
+    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-2.webp);
 }
 
 .hero,
-.paralax,
-.paralax-1 {
+.paralax-1,
+.paralax-2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000;

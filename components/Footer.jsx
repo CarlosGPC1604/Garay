@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="w-full py-4 bg-default-100"
+    <footer className="w-full py-[40px] bg-default-100"
       style={{
         background: 'rgba(0, 0, 0, 0.7)',
         backdropFilter: 'blur(10px)',

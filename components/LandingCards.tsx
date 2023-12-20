@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 
@@ -19,18 +18,19 @@ export default function LandingCrds() {
   ];
 
   return (
-    <div className="paralax w-full py-[60px]">
+    <div className="paralax-1 w-full py-[60px]">
       <div className="container mx-auto">
-        <div className="gap-2 grid grid-cols-3">
+        <div className="gap-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {list.map((item, index) => (
-            <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
-              <CardBody className="overflow-visible p-0">
+            <Card key={index} className="w-[70%] mx-auto"> 
+              <CardBody className="p-0">
                 <Image
                   shadow="sm"
                   radius="lg"
-                  width="100%"
+                  height="auto"
+                  width="100%" 
                   alt={item.title}
-                  className="w-full object-cover h-[140px]"
+                  className=""
                   src={item.img}
                 />
               </CardBody>
