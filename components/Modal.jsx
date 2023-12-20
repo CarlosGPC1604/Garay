@@ -55,42 +55,42 @@ export default function App() {
           </div>
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-          <div className='col-span-1 lg:col-span-1 overflow-hidden' >
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]' >
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/casa-ciruelos.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-3 overflow-hidden'>
+          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/Casa-Mari-Trini.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-1 overflow-hidden'>
+          <div className='col-span-2 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/casa-lindavista.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-          <div className='col-span-1 lg:col-span-1 overflow-hidden'>
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/escaleras.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-          <div className='col-span-1 lg:col-span-1 overflow-hidden'>
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/Fotos.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-3 overflow-hidden'>
+          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/Planta-Tomates.webp" style={imageStyle} alt={`Open ${size}`} />
@@ -112,10 +112,10 @@ export default function App() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="" style={{ delay: "0.3s" }} />
+                      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} />
                     </div>
-                    <div className="text-center mt-5">
-                      <a className="hover:text-[red]" href="/proyectos">Descubre más</a>
+                    <div className="text-center mt-[15px]">
+                      <a className="hover:text-[red] text-[18px]" href="/proyectos">Descubre más</a>
                     </div>
                   </div>
                   <div className="flex justify-center">
