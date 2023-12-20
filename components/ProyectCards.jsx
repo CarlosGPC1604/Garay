@@ -5,25 +5,8 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 export default function ProyectCards() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const list = [
-    {
-      img: "./landing-cards/diesño.webp",
-    },
-    {
-      img: "./landing-cards/plan.webp",
-    },
-    {
-      img: "./landing-cards/supervision.webp",
-    }
-  ];
-
   return (
     <>
-      {list.map((item, index) => (
-        <div key={index}>
-          <img src={item.img} alt={`Project ${index}`} />
-        </div>
-      ))}
       <Button onPress={onOpen}>Open Modal</Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
@@ -31,7 +14,7 @@ export default function ProyectCards() {
             <>
               <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
               <ModalBody>
-                {/* Contenido del cuerpo del modal */}
+
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
