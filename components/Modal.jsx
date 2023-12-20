@@ -16,7 +16,7 @@ export default function App() {
   }
 
   const images = [
-    './collague/casa-ciruelos.webp',
+    '/collague/casa-ciruelos.webp',
     '/collague/Casa-Mari-Trini.webp',
     '/collague/casa-lindavista.webp',
     "/collague/escaleras.webp",
