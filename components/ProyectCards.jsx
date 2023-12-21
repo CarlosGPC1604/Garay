@@ -1,40 +1,143 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 export default function ProyectCards() {
-
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = React.useState('lg');
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  const [size, setSize] = useState('lg');
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const sizes = ["3xl"];
+  const projects = [
+    [
+      '/carruseles/proyecto-1/item-1.webp',
+      '/carruseles/proyecto-1/item-2.webp',
+      '/carruseles/proyecto-1/item-3.webp',
+      '/carruseles/proyecto-1/item-4.webp',
+      '/carruseles/proyecto-1/item-5.webp',
+      '/carruseles/proyecto-1/item-6.webp',
+      '/carruseles/proyecto-1/item-7.webp',
+      '/carruseles/proyecto-1/item-8.webp',
+      '/carruseles/proyecto-1/item-9.webp',
+      '/carruseles/proyecto-1/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-2/item-1.webp',
+      '/carruseles/proyecto-2/item-2.webp',
+      '/carruseles/proyecto-2/item-3.webp',
+      '/carruseles/proyecto-2/item-4.webp',
+      '/carruseles/proyecto-2/item-5.webp',
+      '/carruseles/proyecto-2/item-6.webp',
+      '/carruseles/proyecto-2/item-7.webp',
+      '/carruseles/proyecto-2/item-8.webp',
+      '/carruseles/proyecto-2/item-9.webp',
+      '/carruseles/proyecto-2/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-3/item-1.webp',
+      '/carruseles/proyecto-3/item-2.webp',
+      '/carruseles/proyecto-3/item-3.webp',
+      '/carruseles/proyecto-3/item-4.webp',
+      '/carruseles/proyecto-3/item-5.webp',
+      '/carruseles/proyecto-3/item-6.webp',
+      '/carruseles/proyecto-3/item-7.webp',
+      '/carruseles/proyecto-3/item-8.webp',
+      '/carruseles/proyecto-3/item-9.webp',
+      '/carruseles/proyecto-3/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-4/item-1.webp',
+      '/carruseles/proyecto-4/item-2.webp',
+      '/carruseles/proyecto-4/item-3.webp',
+      '/carruseles/proyecto-4/item-4.webp',
+      '/carruseles/proyecto-4/item-5.webp',
+      '/carruseles/proyecto-4/item-6.webp',
+      '/carruseles/proyecto-4/item-7.webp',
+      '/carruseles/proyecto-4/item-8.webp',
+      '/carruseles/proyecto-4/item-9.webp',
+      '/carruseles/proyecto-4/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-5/item-1.webp',
+      '/carruseles/proyecto-5/item-2.webp',
+      '/carruseles/proyecto-5/item-3.webp',
+      '/carruseles/proyecto-5/item-4.webp',
+      '/carruseles/proyecto-5/item-5.webp',
+      '/carruseles/proyecto-5/item-6.webp',
+      '/carruseles/proyecto-5/item-7.webp',
+      '/carruseles/proyecto-5/item-8.webp',
+      '/carruseles/proyecto-5/item-9.webp',
+      '/carruseles/proyecto-5/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-6/item-1.webp',
+      '/carruseles/proyecto-6/item-2.webp',
+      '/carruseles/proyecto-6/item-3.webp',
+      '/carruseles/proyecto-6/item-4.webp',
+      '/carruseles/proyecto-6/item-5.webp',
+      '/carruseles/proyecto-6/item-6.webp',
+      '/carruseles/proyecto-6/item-7.webp',
+      '/carruseles/proyecto-6/item-8.webp',
+      '/carruseles/proyecto-6/item-9.webp',
+      '/carruseles/proyecto-6/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-7/item-1.webp',
+      '/carruseles/proyecto-7/item-2.webp',
+      '/carruseles/proyecto-7/item-3.webp',
+      '/carruseles/proyecto-7/item-4.webp',
+      '/carruseles/proyecto-7/item-5.webp',
+    ],
+    [
+      '/carruseles/proyecto-8/item-1.webp',
+      '/carruseles/proyecto-8/item-2.webp',
+      '/carruseles/proyecto-8/item-3.webp',
+      '/carruseles/proyecto-8/item-4.webp',
+      '/carruseles/proyecto-8/item-5.webp',
+      '/carruseles/proyecto-8/item-6.webp',
+      '/carruseles/proyecto-8/item-7.webp',
+      '/carruseles/proyecto-8/item-8.webp',
+      '/carruseles/proyecto-8/item-9.webp',
+      '/carruseles/proyecto-8/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-9/item-1.webp',
+      '/carruseles/proyecto-9/item-2.webp',
+      '/carruseles/proyecto-9/item-3.webp',
+      '/carruseles/proyecto-9/item-4.webp',
+      '/carruseles/proyecto-9/item-5.webp',
+      '/carruseles/proyecto-9/item-6.webp',
+      '/carruseles/proyecto-9/item-7.webp',
+      '/carruseles/proyecto-9/item-8.webp',
+      '/carruseles/proyecto-9/item-9.webp',
+      '/carruseles/proyecto-9/item-10.webp',
+    ],
+    [
+      '/carruseles/proyecto-10/item-1.webp',
+      '/carruseles/proyecto-10/item-2.webp',
+      '/carruseles/proyecto-10/item-3.webp',
+      '/carruseles/proyecto-10/item-4.webp',
+      '/carruseles/proyecto-10/item-5.webp',
+      '/carruseles/proyecto-10/item-6.webp',
+      '/carruseles/proyecto-10/item-7.webp',
+      '/carruseles/proyecto-10/item-8.webp',
+      '/carruseles/proyecto-10/item-9.webp',
+      '/carruseles/proyecto-10/item-10.webp',
+    ],
+  ];
 
-  const handleOpen = (size) => {
+  const handleOpen = (projectIndex, size) => {
+    setCurrentProjectIndex(projectIndex);
     setSize(size);
     onOpen();
   };
 
-  const images = [
-    '/carruseles/proyecto-1/item-1.webp',
-    '/carruseles/proyecto-1/item-2.webp',
-    '/carruseles/proyecto-1/item-3.webp',
-    '/carruseles/proyecto-1/item-4.webp',
-    '/carruseles/proyecto-1/item-5.webp',
-    '/carruseles/proyecto-1/item-6.webp',
-    '/carruseles/proyecto-1/item-7.webp',
-    '/carruseles/proyecto-1/item-8.webp',
-    '/carruseles/proyecto-1/item-9.webp',
-    '/carruseles/proyecto-1/item-10.webp',
-
-  ];
-
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projects[currentProjectIndex].length);
   };
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + projects[currentProjectIndex].length) % projects[currentProjectIndex].length);
   };
 
   const imageStyle = {
@@ -46,76 +149,13 @@ export default function ProyectCards() {
   return (
     <>
       <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-1.webp" style={imageStyle} alt={`Open ${size}`} />
+        {projects.map((project, projectIndex) => (
+          <div key={projectIndex} className='overflow-hidden rounded-[15px]'>
+            <a onClick={() => handleOpen(projectIndex, 'lg')}>
+              <img className='zoom' src={project[0]} style={imageStyle} alt={`Open`} />
             </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-2.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-3.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-4.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-5.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-6.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-7.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-8.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-9.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
-        <div className='overflow-hidden rounded-[15px]' >
-          {sizes.map((size) => (
-            <a key={size} onClick={() => handleOpen(size)}>
-              <img className='zoom' src="/proyectos/proyecto-10.webp" style={imageStyle} alt={`Open ${size}`} />
-            </a>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
       <Modal
         size={size}
@@ -130,7 +170,7 @@ export default function ProyectCards() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} />
+                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} />
                     </div>
                   </div>
                   <div className="flex justify-center">
