@@ -3,6 +3,7 @@ import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 export default function ProyectCards() {
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState('lg');
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
@@ -15,7 +16,7 @@ export default function ProyectCards() {
   };
 
   const images = [
-    '/collague/casa-ciruelos.webp',
+    '/proyecto/casa-ciruelos.webp',
     '/collague/Casa-Mari-Trini.webp',
     '/collague/casa-lindavista.webp',
     "/collague/escaleras.webp",
