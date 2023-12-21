@@ -4,9 +4,10 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 export default function ProyectCards() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = useState('lg');
+  const [size, setSize] = useState('3xl');
   const [currentProjectIndex, setCurrentProjectIndex] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const sizes = ["5xl"];
 
   const projects = [
     [
@@ -148,7 +149,7 @@ export default function ProyectCards() {
 
   return (
     <>
-      <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-2">
         {projects.map((project, projectIndex) => (
           <div key={projectIndex} className='overflow-hidden rounded-[15px]'>
             <a onClick={() => handleOpen(projectIndex, 'lg')}>
