@@ -16,12 +16,17 @@ export default function ProyectCards() {
   };
 
   const images = [
-    '/proyecto/casa-ciruelos.webp',
-    '/collague/Casa-Mari-Trini.webp',
-    '/collague/casa-lindavista.webp',
-    "/collague/escaleras.webp",
-    "/collague/Fotos.webp",
-    "/collague/Planta-Tomates.webp"
+    '/carruseles/proyecto-1/item-1.webp',
+    '/carruseles/proyecto-1/item-2.webp',
+    '/carruseles/proyecto-1/item-3.webp',
+    '/carruseles/proyecto-1/item-4.webp',
+    '/carruseles/proyecto-1/item-5.webp',
+    '/carruseles/proyecto-1/item-6.webp',
+    '/carruseles/proyecto-1/item-7.webp',
+    '/carruseles/proyecto-1/item-8.webp',
+    '/carruseles/proyecto-1/item-9.webp',
+    '/carruseles/proyecto-1/item-10.webp',
+
   ];
 
   const handleNextImage = () => {
