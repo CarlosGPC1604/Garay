@@ -16,12 +16,12 @@ export default function App() {
   }
 
   const images = [
-    '/collague/casa-ciruelos.webp',
-    '/collague/Casa-Mari-Trini.webp',
-    '/collague/casa-lindavista.webp',
-    "/collague/escaleras.webp",
-    "/collague/Fotos.webp",
-    "/collague/Planta-Tomates.webp"
+    '/collague/item-1.webp',
+    '/collague/item-2.webp',
+    '/collague/item-3.webp',
+    '/collague/item-4.webp',
+    '/collague/item-5.webp',
+    '/collague/item-6.webp'
   ];
 
   const handleNextImage = () => {
@@ -58,42 +58,42 @@ export default function App() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]' >
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/casa-ciruelos.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-1.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
           <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/Casa-Mari-Trini.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-2.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
           <div className='col-span-2 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/casa-lindavista.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-3.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/escaleras.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-4.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/Fotos.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-5.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
           <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img className='zoom' src="/collague/Planta-Tomates.webp" style={imageStyle} alt={`Open ${size}`} />
+                <img className='zoom' src="/collague/item-6.webp" style={imageStyle} alt={`Open ${size}`} />
               </a>
             ))}
           </div>
