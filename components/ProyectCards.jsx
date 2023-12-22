@@ -95,11 +95,6 @@ export default function ProyectCards() {
       '/carruseles/proyecto-8/item-3.webp',
       '/carruseles/proyecto-8/item-4.webp',
       '/carruseles/proyecto-8/item-5.webp',
-      '/carruseles/proyecto-8/item-6.webp',
-      '/carruseles/proyecto-8/item-7.webp',
-      '/carruseles/proyecto-8/item-8.webp',
-      '/carruseles/proyecto-8/item-9.webp',
-      '/carruseles/proyecto-8/item-10.webp',
     ],
     [
       '/carruseles/proyecto-9/item-1.webp',
@@ -132,7 +127,6 @@ export default function ProyectCards() {
     setSize(size);
     onOpen();
   };
-  
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projects[currentProjectIndex].length);
