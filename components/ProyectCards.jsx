@@ -149,7 +149,7 @@ export default function ProyectCards() {
 
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-2">
+      <div className="px-[10px] grid grid-cols-2 lg:grid-cols-5 gap-2">
         {projects.map((project, projectIndex) => (
           <div key={projectIndex} className='overflow-hidden rounded-[15px]'>
             <a onClick={() => handleOpen(projectIndex, 'lg')}>
