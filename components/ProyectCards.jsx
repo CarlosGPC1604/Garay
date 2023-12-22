@@ -132,6 +132,7 @@ export default function ProyectCards() {
     setSize(size);
     onOpen();
   };
+  
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projects[currentProjectIndex].length);
