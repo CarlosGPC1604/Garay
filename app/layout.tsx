@@ -35,7 +35,7 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"font-sans antialiased light light:text-white light:bg-gray-700 dark dark:bg-[#080c15]",
+					"font-sans antialiased light light:text-white light:bg-[#202020] dark dark:bg-[#080c15]",
 					fontSans.variable
 				)}
 			>
