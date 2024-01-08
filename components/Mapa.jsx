@@ -8,8 +8,8 @@ function Mapa() {
                 width="100%"
                 height="450"
                 loading="lazy"
-                style={{ filter: 'grayscale(100%) invert(92%) contrast(83%)' }}
-            ></iframe>
+                style={{ filter: 'grayscale(100%) invert(92%) contrast(83%)' }}>
+            </iframe>
         </div>
     );
 }

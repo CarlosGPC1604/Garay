@@ -148,7 +148,7 @@ export default function ProyectCards() {
         {projects.map((project, projectIndex) => (
           <div key={projectIndex} className='overflow-hidden rounded-[15px]'>
             <a onClick={() => handleOpen(projectIndex, 'lg')}>
-              <img className='zoom' src={project[0]} style={imageStyle} alt={`Open`} />
+              <img className='zoom' src={project[0]} style={imageStyle} alt={`Open`} loading="lazy"/>
             </a>
           </div>
         ))}
@@ -166,7 +166,7 @@ export default function ProyectCards() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} />
+                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy"/>
                     </div>
                   </div>
                   <div className="flex justify-center">

@@ -32,6 +32,7 @@ export default function LandingCrds() {
                   alt={item.title}
                   className=""
                   src={item.img}
+                  loading="lazy"
                 />
               </CardBody>
               <CardFooter className="text-small justify-between">
