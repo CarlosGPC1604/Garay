@@ -5,15 +5,12 @@ export default function LandingCrds() {
   const list = [
     {
       title: "Diseño Arquitectónico",
-      img: "./landing-cards/diesño.webp",
     },
     {
       title: "Planificación de proyectos",
-      img: "./landing-cards/plan.webp",
     },
     {
       title: "Supervisión de obras",
-      img: "./landing-cards/supervision.webp",
     }
   ];
 
@@ -24,16 +21,7 @@ export default function LandingCrds() {
           {list.map((item, index) => (
             <Card key={index} className="w-[70%] mx-auto"> 
               <CardBody className="p-0">
-                <Image
-                  shadow="sm"
-                  radius="lg"
-                  height="auto"
-                  width="100%" 
-                  alt={item.title}
-                  className=""
-                  src={item.img}
-                  loading="lazy"
-                />
+        
               </CardBody>
               <CardFooter className="text-small justify-between">
                 <b>{item.title}</b>
