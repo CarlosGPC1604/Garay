@@ -15,7 +15,6 @@ body {
 }
 
 .paralax-2 {
-    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-2.webp);
 }
 
 .hero,
