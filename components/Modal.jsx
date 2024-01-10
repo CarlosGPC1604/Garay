@@ -107,7 +107,7 @@ export default function App() {
         <ModalContent className="my-auto">
           {(onClose) => (
             <div>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Garay Arquitectos</ModalHeader>
               <ModalBody>
                 <div>
                   <div>
