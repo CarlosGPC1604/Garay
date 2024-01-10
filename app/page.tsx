@@ -3,6 +3,7 @@ import LandingCards from "@/components/LandingCards";
 import Accordion from "@/components/Accordion";
 import App from "../components/Modal"
 import Mapa from "../components/Mapa"
+import PresentationCards from "../components/PresentationCrds"
 
 export default function Home() {
 	return (
@@ -40,6 +41,9 @@ export default function Home() {
 			{/* Landing cards */}
 			<div className="mx-auto">
 				<LandingCards />
+			</div>
+			<div className="container mx-auto">
+				<PresentationCards />
 			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
