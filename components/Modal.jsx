@@ -104,7 +104,7 @@ export default function App() {
         isOpen={isOpen}
         onClose={onClose}
       >
-        <ModalContent className="bottom-[25%] sm:bottom-auto mx-auto">
+        <ModalContent className="my-auto">
           {(onClose) => (
             <div>
               <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
@@ -115,7 +115,7 @@ export default function App() {
                       <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy"/>
                     </div>
                     <div className="text-center mt-[15px]">
-                      <a className="hover:text-[red] text-[18px]" href="/proyectos">Descubre más</a>
+                      <a className="hover:text-[red] text-[18px]" href="/proyectos" alt="descubre mas">Descubre más</a>
                     </div>
                   </div>
                   <div className="flex justify-center">
