@@ -40,9 +40,8 @@ export default function Home() {
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
 			<div className="mx-auto">
-				<LandingCards />
+				<PresentationCards />
 			</div>
-		
 			{/* Landing cards */}
 			{/* Modal & Collague */}
 			<div className="container mx-auto mx-auto py-[40px] px-[10px] xl:px-[0px]">
