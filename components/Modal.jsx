@@ -55,42 +55,42 @@ export default function App() {
           </div>
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]' >
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-1.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
+          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-2.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-1 overflow-hidden rounded-[15px]'>
+          <div className='col-span-2 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-3.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
               </a>
             ))}
           </div>
-          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-4.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
               </a>
             ))}
           </div>
-          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px]'>
+          <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-5.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
               </a>
             ))}
           </div>
-          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px]'>
+          <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
                 <img className='zoom' src="/collague/item-6.webp" style={imageStyle} alt={`Open ${size}`} loading="lazy"/>
