@@ -3,7 +3,7 @@ import React from "react";
 export default function PresentationCards() {
 
     return (
-        <div className=" w-full py-[60px]">
+        <div className="paralax-1 w-full py-[60px]">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                     {/* Card 1 */}
