@@ -146,10 +146,14 @@ export default function ProyectCards() {
     <>
       <div className="px-[10px] grid grid-cols-2 lg:grid-cols-5 gap-2">
         {projects.map((project, projectIndex) => (
-          <div key={projectIndex} className='overflow-hidden rounded-[15px]'>
-            <a onClick={() => handleOpen(projectIndex, 'lg')}>
-              <img className='zoom' src={project[0]} style={imageStyle} alt={`Open`} loading="lazy"/>
-            </a>
+
+          <div onClick={() => handleOpen(projectIndex, 'lg')} key={projectIndex} className='relative group cursor-pointer'>
+            <div >
+              <img className="rounded-[15px]" src={project[0]} style={imageStyle} alt={`Open`} loading="lazy" />
+            </div>
+            <div className="absolute inset-x-0 bottom-0 py-[15px] rounded-b-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+              <p className="text-white text-center">Titulo de proyecto</p>
+            </div>
           </div>
         ))}
       </div>
@@ -166,7 +170,7 @@ export default function ProyectCards() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy"/>
+                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy" />
                     </div>
                   </div>
                   <div className="flex justify-center">
