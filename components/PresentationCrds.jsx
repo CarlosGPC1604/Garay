@@ -5,9 +5,9 @@ export default function PresentationCards() {
     return (
         <div className="paralax-1 w-full py-[60px]">
             <div className="container mx-auto">
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                     {/* Card 1 */}
-                    <div className="rounded-[15px] w-[80%]">
+                    <div className="rounded-[15px] w-[80%] mx-auto">
                         <div className="relative">
                             <div >
                                 <img className="rounded-[15px]" src="/design.webp" alt="design" />
@@ -26,7 +26,7 @@ export default function PresentationCards() {
                     </div>
                     {/* Card 1 */}
                     {/* Card 2 */}
-                    <div className="rounded-[15px] w-[80%]">
+                    <div className="rounded-[15px] w-[80%] mx-auto">
                         <div className="relative">
                             <div >
                                 <img className="rounded-[15px]" src="/plan.webp" alt="design" />
@@ -45,7 +45,7 @@ export default function PresentationCards() {
                     </div>
                     {/* Card 2 */}
                     {/* Card 3 */}
-                    <div className="rounded-[15px] w-[80%]">
+                    <div className="rounded-[15px] w-[80%] mx-auto">
                         <div className="relative">
                             <div >
                                 <img className="rounded-[15px]" src="/supervision.webp" alt="design" />
