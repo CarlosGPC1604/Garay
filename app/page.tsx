@@ -42,9 +42,7 @@ export default function Home() {
 			<div className="mx-auto">
 				<LandingCards />
 			</div>
-			<div className="container mx-auto">
-				<PresentationCards />
-			</div>
+		
 			{/* Landing cards */}
 			{/* Modal & Collague */}
 			<div className="container mx-auto mx-auto py-[40px] px-[10px] xl:px-[0px]">
