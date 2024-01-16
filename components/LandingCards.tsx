@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 
 export default function LandingCrds() {
   const list = [
@@ -20,25 +20,29 @@ export default function LandingCrds() {
   return (
     <div className="paralax-1 w-full py-[60px]">
       <div className="container mx-auto">
-        <div className="gap-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="gap-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {list.map((item, index) => (
-            <Card key={index} className="w-[70%] mx-auto"> 
-              <CardBody className="p-0">
+            <div>
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className="border-none w-[80%] mx-auto"
+              >
                 <Image
-                  shadow="sm"
-                  radius="lg"
+                  alt="card"
+                  className="object-cover"
                   height="auto"
-                  width="100%" 
-                  alt={item.title}
-                  className=""
                   src={item.img}
-                  loading="lazy"
+                  width="100%"
                 />
-              </CardBody>
-              <CardFooter className="text-small justify-between">
-                <b>{item.title}</b>
-              </CardFooter>
-            </Card>
+                <CardFooter className=" border-white/20 border-1 overflow-hidden py-[10%] absolute before:rounded-xl rounded-large bottom-1  z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                  <div className="font-black">
+                    {item.title}
+                  </div>
+                </CardFooter>
+              </Card>
+            </div>
+
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "@nextui-org/react";
 
 export default function PresentationCards() {
 
@@ -10,7 +11,14 @@ export default function PresentationCards() {
                     <div className="rounded-[15px] w-[80%] mx-auto">
                         <div className="relative">
                             <div >
-                                <img className="rounded-[15px]" src="/design.webp" alt="design" />
+                                <Image
+                                    height="auto"
+                                    width="100%"
+                                    alt="cards"
+                                    className="rounded-[15px]"
+                                    src="/design.webp"
+                                    loading="lazy"
+                                />
                             </div>
                             <div className="absolute bottom-0 py-[15px] rounded-b-[15px] w-full" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
                                 <div className="w-[30%] mx-auto">

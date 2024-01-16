@@ -40,7 +40,7 @@ export default function Home() {
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
 			<div className="mx-auto">
-				<PresentationCards />
+				<LandingCards />
 			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
