@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 
 export default function LandingCrds() {
   const list = [

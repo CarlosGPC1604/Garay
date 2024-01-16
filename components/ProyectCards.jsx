@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image } from "@nextui-org/react";
 
 export default function ProyectCards() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -149,9 +149,9 @@ export default function ProyectCards() {
 
           <div onClick={() => handleOpen(projectIndex, 'lg')} key={projectIndex} className='relative group cursor-pointer'>
             <div >
-              <img className="rounded-[15px]" src={project[0]} style={imageStyle} alt={`Open`} loading="lazy" />
+              <Image className="rounded-[15px]" src={project[0]} style={imageStyle} alt={`Open`} loading="lazy" />
             </div>
-            <div className="absolute inset-x-0 bottom-0 py-[15px] rounded-b-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+            <div className="absolute inset-x-0 bottom-0 py-[15px] rounded-b-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
               <p className="text-white text-center">Titulo de proyecto</p>
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function ProyectCards() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy" />
+                      <Image src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy" />
                     </div>
                   </div>
                   <div className="flex justify-center">
