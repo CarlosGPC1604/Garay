@@ -11,7 +11,7 @@ export default function PresentationCards() {
                     <div className="rounded-[15px] w-[80%] mx-auto">
                         <div className="relative">
                             <div >
-                                <Image
+                                <img
                                     height="auto"
                                     width="100%"
                                     alt="cards"
