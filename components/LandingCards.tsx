@@ -42,7 +42,6 @@ export default function LandingCrds() {
                 </CardFooter>
               </Card>
             </div>
-
           ))}
         </div>
       </div>
