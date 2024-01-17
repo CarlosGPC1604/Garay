@@ -58,7 +58,7 @@ export default function App() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-1.webp"
                   style={{ objectFit: "cover" }}
@@ -70,7 +70,7 @@ export default function App() {
           <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-2.webp"
                   style={{ objectFit: "cover" }}
@@ -82,7 +82,7 @@ export default function App() {
           <div className='col-span-2 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-3.webp"
                   style={{ objectFit: "cover" }}
@@ -94,7 +94,7 @@ export default function App() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-4.webp"
                   style={{ objectFit: "cover" }}
@@ -106,7 +106,7 @@ export default function App() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-5.webp"
                   style={{ objectFit: "cover" }}
@@ -118,7 +118,7 @@ export default function App() {
           <div className='col-span-2 lg:col-span-3 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <Image
+                <img
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-6.webp"
                   style={{ objectFit: "cover" }}

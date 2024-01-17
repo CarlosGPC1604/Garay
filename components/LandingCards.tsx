@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Card, CardFooter, Image } from "@nextui-org/react";
 
@@ -29,7 +28,7 @@ export default function LandingCrds() {
                 radius="lg"
                 className="border-none w-[80%] mx-auto"
               >
-                <Image
+                <img
                   alt="card"
                   className="object-cover"
                   height="auto"
