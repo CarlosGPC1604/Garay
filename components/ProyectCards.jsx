@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 export default function ProyectCards() {
   const { isOpen, onOpen, onClose } = useDisclosure();
