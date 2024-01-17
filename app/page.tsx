@@ -1,7 +1,5 @@
 import { title, subtitle } from "@/components/primitives";
-import LandingCards from "@/components/LandingCards";
 import Accordion from "@/components/Accordion";
-import App from "../components/Modal"
 import Mapa from "../components/Mapa"
 
 export default function Home() {
