@@ -19,11 +19,6 @@ export default function Proyectos() {
 			</div>
 			<div className="container mx-auto py-8">
 				<ProyectCards />
-				<div className="mt-2">
-				<ProyectCards />
-
-				</div>
-
 			</div>
 		</section>
 	);
