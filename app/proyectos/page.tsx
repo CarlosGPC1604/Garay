@@ -1,5 +1,4 @@
 import { title } from "@/components/primitives";
-import ProyectCards from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
