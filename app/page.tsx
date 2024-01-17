@@ -40,7 +40,6 @@ export default function Home() {
 
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-		
 			{/* Modal & Collague */}
 			{/* Accordion */}
 			<div className="w-full">
