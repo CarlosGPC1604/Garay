@@ -1,7 +1,8 @@
 import { title, subtitle } from "@/components/primitives";
+import LandingCards from "@/components/LandingCards";
 import Accordion from "@/components/Accordion";
+import App from "../components/Modal"
 import Mapa from "../components/Mapa"
-
 
 export default function Home() {
 	return (
@@ -37,9 +38,14 @@ export default function Home() {
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
-
+			<div className="mx-auto">
+				<LandingCards />
+			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
+			<div className="container mx-auto mx-auto py-[40px] px-[10px] xl:px-[0px]">
+				<App />
+			</div>
 			{/* Modal & Collague */}
 			{/* Accordion */}
 			<div className="w-full">
