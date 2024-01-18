@@ -23,23 +23,25 @@ export default function Home() {
 			{/* Hero */}
 			{/* Acerca de nosotros */}
 			<div className="container mx-auto text-center  mx-auto py-[100px] px-[10px] lg:px-[0px]">
-				<h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
-					Acerca de&nbsp;
-				</h2>
-				<h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
-					nosotros
-				</h2>
-				<div className="2xl:w-[65%] mx-auto">
-					<p className="text-wrap-balance mt-2">
-						En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
-					</p>
+				<div className="grid grid-cols-2">
+					<div className="text-right">
+						<h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+							Acerca de&nbsp;
+						</h2>
+						<h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+							nosotros
+						</h2>
+						<p className="text-wrap-balance mt-2 text-balance">
+							En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
+						</p>
+					</div>
 				</div>
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-			<div className="container mx-auto py-8">
+			<div className="container mx-auto px-[10px] py-8">
 				<Collague />
 			</div>
 			{/* Modal & Collague */}
