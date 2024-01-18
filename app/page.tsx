@@ -51,7 +51,7 @@ export default function Home() {
 			</div>
 			{/* Modal & Collague */}
 			{/* Carrucel */}
-			<div className="w-full">
+			<div className="w-full bg-[#161a1c]">
 				<div className="container mx-auto">
 					<RenderCarrucel/>
 				</div>
