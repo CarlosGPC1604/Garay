@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image } from "@nextui-org/react";
 import { title, subtitle } from "@/components/primitives";
 
 export default function Collague() {
@@ -58,7 +58,7 @@ export default function Collague() {
           <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
             {sizes.map((size) => (
               <a key={size} onClick={() => handleOpen(size)}>
-                <img
+                <Image
                   className='zoom h-[167px] sm:h-[307px] md:h-[371px]'
                   src="/collague/item-1.webp"
                   style={{ objectFit: "cover" }}
