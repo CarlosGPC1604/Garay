@@ -136,7 +136,13 @@ export default function Collague() {
                                 <div>
                                     <div>
                                         <div className="flex justify-center">
-                                            <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy" />
+                                            <Image
+                                                src={images[currentImageIndex]}
+                                                alt={`Image ${currentImageIndex + 1}`}
+                                                className="rounded-[15px]"
+                                                style={{ delay: "0.3s" }}
+                                                loading="lazy"
+                                            />
                                         </div>
                                         <div className="text-center mt-[15px]">
                                             <a className="hover:text-[red] text-[18px]" href="/proyectos" alt="descubre mas">Descubre más</a>
