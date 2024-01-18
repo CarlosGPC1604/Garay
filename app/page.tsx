@@ -2,6 +2,8 @@ import { title, subtitle } from "@/components/primitives";
 import Accordion from "@/components/Accordion";
 import Mapa from "../components/Mapa"
 import Collague from "../components/Collague"
+import CardsHome from "../components/CardsHome"
+import RenderCarrucel from "../components/RenderCarrucel"
 
 export default function Home() {
 	return (
@@ -22,9 +24,9 @@ export default function Home() {
 			</div>
 			{/* Hero */}
 			{/* Acerca de nosotros */}
-			<div className="container mx-auto text-center  mx-auto py-[100px] px-[10px] lg:px-[0px]">
-				<div className="grid grid-cols-2">
-					<div className="text-right">
+			<div className="bg-[#161a1c] w-full">
+				<div className="container mx-auto text-center  mx-auto py-[100px] px-[10px] lg:px-[0px]">
+					<div className="text-center col-span-2">
 						<h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
 							Acerca de&nbsp;
 						</h2>
@@ -39,14 +41,24 @@ export default function Home() {
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
+			<CardsHome />
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-			<div className="container mx-auto px-[10px] py-8">
-				<Collague />
+			<div className="w-full bg-[#1f1e23] ">
+				<div className="container mx-auto px-[10px] py-8">
+					<Collague />
+				</div>
 			</div>
 			{/* Modal & Collague */}
-			{/* Accordion */}
+			{/* Carrucel */}
 			<div className="w-full">
+				<div className="container mx-auto">
+					<RenderCarrucel/>
+				</div>
+			</div>
+			{/* Carrucel */}
+			{/* Accordion */}
+			<div className="w-full bg-[#161a1c] ">
 				<Accordion />
 			</div>
 			{/* Accordion */}
