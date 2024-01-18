@@ -41,7 +41,11 @@ export default function Home() {
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
-			<CardsHome />
+			<div className='w-full paralax-2 px-[10px] py-8'>
+				<div className="container mx-auto">
+					<CardsHome />
+				</div>
+			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
 			<div className="w-full bg-[#1f1e23] ">
@@ -52,8 +56,8 @@ export default function Home() {
 			{/* Modal & Collague */}
 			{/* Carrucel */}
 			<div className="w-full bg-[#161a1c]">
-				<div className="container mx-auto">
-					<RenderCarrucel/>
+				<div className="container mx-auto px-8">
+					<RenderCarrucel />
 				</div>
 			</div>
 			{/* Carrucel */}
