@@ -3,7 +3,7 @@ import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import { title, subtitle } from "@/components/primitives";
 
-export default function App() {
+export default function Collague() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState('lg');
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);

@@ -1,6 +1,7 @@
 import { title, subtitle } from "@/components/primitives";
 import Accordion from "@/components/Accordion";
 import Mapa from "../components/Mapa"
+import Collague from "../components/Collague"
 
 export default function Home() {
 	return (
@@ -36,10 +37,11 @@ export default function Home() {
 			</div>
 			{/* Acerca de nosotros */}
 			{/* Landing cards */}
-
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-	
+			<div className="container mx-auto py-8">
+				<Collague />
+			</div>
 			{/* Modal & Collague */}
 			{/* Accordion */}
 			<div className="w-full">
