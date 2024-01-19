@@ -1,10 +1,11 @@
 import { title } from "@/components/primitives";
 import ProyectCards from "@/components/ProyectCards";
+import RendersCards from "@/components/RendersCards"
 
 export default function Proyectos() {
 	return (
 		<section>
-			<div className="container mx-auto text-center py-5">
+			<div className="w-full bg-[#000000] mx-auto text-center py-[100px]">
 				<h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
 					Proyectos
 				</h1>
@@ -17,7 +18,12 @@ export default function Proyectos() {
 					</p>
 				</div>
 			</div>
-			<ProyectCards/>
+			<div className="bg-[#1b1919] w-full py-[100px]">
+				<ProyectCards />
+			</div>
+			<div className="bg-[#000000] w-full py-[100px]">
+				<RendersCards />
+			</div>
 		</section>
 	);
 }

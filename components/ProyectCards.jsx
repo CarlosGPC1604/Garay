@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image } from "@nextui-org/react";
 
 export default function ProyectCards() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -143,14 +143,17 @@ export default function ProyectCards() {
   };
 
   return (
-    <>
-      <div className="px-[10px] grid grid-cols-2 lg:grid-cols-5 gap-2">
+    <section>
+      <div className="container mx-auto grid grid-cols-2 lg:grid-cols-5 gap-2">
         {projects.map((project, projectIndex) => (
-
           <div onClick={() => handleOpen(projectIndex, 'lg')} key={projectIndex} className='relative group cursor-pointer'>
-            <div >
-              <img className="rounded-[15px]" src={project[0]} style={imageStyle} alt={`Open`} loading="lazy" />
-            </div>
+            <Image
+              className="rounded-[15px]"
+              src={project[0]}
+              style={imageStyle}
+              alt={`Open`}
+              loading="lazy"
+            />
             <div className="absolute inset-x-0 bottom-0 py-[15px] rounded-b-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
               <p className="text-white text-center">Titulo de proyecto</p>
             </div>
@@ -161,6 +164,7 @@ export default function ProyectCards() {
         size={size}
         isOpen={isOpen}
         onClose={onClose}
+        className="bg-[#1b1919]"
       >
         <ModalContent className="my-auto">
           {(onClose) => (
@@ -170,14 +174,20 @@ export default function ProyectCards() {
                 <div>
                   <div>
                     <div className="flex justify-center">
-                      <img src={projects[currentProjectIndex][currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="rounded-[15px]" style={{ delay: "0.3s" }} loading="lazy" />
+                      <Image
+                        src={projects[currentProjectIndex][currentImageIndex]}
+                        alt={`Image ${currentImageIndex + 1}`}
+                        className="rounded-[15px]"
+                        style={{ delay: "0.3s" }}
+                        loading="lazy"
+                      />
                     </div>
                   </div>
-                  <div className="flex justify-center">
-                    <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left">
+                  <div className="flex justify-center mt-3">
+                    <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left text-white">
                       &lt; Anterior
                     </Button>
-                    <Button variant="light" onPress={handleNextImage} className="carousel-button carousel-button-right">
+                    <Button variant="light" onPress={handleNextImage} className="carousel-button carousel-button-right text-white">
                       Siguiente &gt;
                     </Button>
                   </div>
@@ -192,6 +202,6 @@ export default function ProyectCards() {
           )}
         </ModalContent>
       </Modal>
-    </>
+    </section>
   );
 }
