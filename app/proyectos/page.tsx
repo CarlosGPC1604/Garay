@@ -1,4 +1,5 @@
 import { title } from "@/components/primitives";
+import ProyectCards from "@/components/ProyectCards";
 
 export default function Proyectos() {
 	return (
@@ -16,7 +17,7 @@ export default function Proyectos() {
 					</p>
 				</div>
 			</div>
-	
+			<ProyectCards/>
 		</section>
 	);
 }
