@@ -7,16 +7,16 @@ function RenderCarrucel() {
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
     const images = [
-        "/Renders-Carrucel/IMG-20240105-WA0028.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0030.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0035.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0081.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0108.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0046.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0024.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0091.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0052.JPG",
-        "/Renders-Carrucel/IMG-20240105-WA0058.JPG"
+        "/Renders-Carrucel/IMG-20240105-WA0028.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0030.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0035.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0081.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0108.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0046.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0024.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0091.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0052.webp",
+        "/Renders-Carrucel/IMG-20240105-WA0058.webp"
     ];
 
     const handleNextImage = () => {

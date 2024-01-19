@@ -7,7 +7,6 @@ import { title, subtitle } from "@/components/primitives";
 export default function App() {
   return (
     <div className="container mx-auto">
-
       {/* Title */}
       <div className="text-center flex items-center justify-center">
         <div className="text-center">
