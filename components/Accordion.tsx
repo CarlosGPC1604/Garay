@@ -15,7 +15,9 @@ export default function App() {
             Calidad&nbsp;
           </h2>
           <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-            y compromiso
+            y
+            <br />
+            compromiso
           </h2>
           <h3>
             ¿En que consiste muetsros servicios?
