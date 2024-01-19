@@ -36,7 +36,7 @@ export default function Collague() {
         <div>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 {/* Collague */}
-                <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 order-2 lg:order-1">
                     <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
                         {sizes.map((size) => (
                             <Image
@@ -83,7 +83,6 @@ export default function Collague() {
                     </div>
                     <div className='col-span-1 lg:col-span-1 overflow-hidden rounded-[15px] cursor-pointer'>
                         {sizes.map((size) => (
-
                             <Image
                                 key={size} onClick={() => handleOpen(size)}
                                 className='zoom h-[167px]  w-[112px] sm:h-[307px] md:h-[371px]'
@@ -106,8 +105,9 @@ export default function Collague() {
                     </div>
                 </div>
                 {/* Collague */}
-                <div className='flex items-center'>
-                    <div className='text-left'>
+                {/* Tittle */}
+                <div className='flex items-center order-1 lg:order-2'>
+                    <div className='text-center lg:text-left text-balance'>
                         <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             Armonia&nbsp;
                         </h2>
@@ -119,6 +119,7 @@ export default function Collague() {
                         </p>
                     </div>
                 </div>
+                {/* Tittle */}
             </div>
             {/* Modal */}
             <Modal
