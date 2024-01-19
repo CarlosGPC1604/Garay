@@ -5,11 +5,12 @@ function CardsHome() {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
             <div className="w-full">
-                <div className="text-center  mx-auto py-[100px] px-[10px] lg:px-[0px]">
-                    <div className="text-center text-right text-balaance">
+                <div className="text-center mx-auto py-0 lg:py-[100px]">
+                    <div className="text-center text-center lg:text-right text-balaance">
                         <h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
-                            Te ofrecemos los mejores&nbsp;
+                            Te ofrecemos los mejores
                         </h2>
+                        <br />
                         <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             servicios
                         </h2>
