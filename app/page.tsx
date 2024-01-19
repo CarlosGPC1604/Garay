@@ -23,39 +23,22 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Hero */}
-			{/* Acerca de nosotros */}
-			<div className="bg-[#161a1c] w-full">
-				<div className="container mx-auto text-center  mx-auto py-[100px] px-[10px] lg:px-[0px]">
-					<div className="text-center col-span-2">
-						<h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
-							Acerca de&nbsp;
-						</h2>
-						<h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
-							nosotros
-						</h2>
-						<p className="text-wrap-balance mt-2 text-balance">
-							En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
-						</p>
-					</div>
-				</div>
-			</div>
-			{/* Acerca de nosotros */}
 			{/* Landing cards */}
-			<div className='w-full paralax-2 px-[10px] py-8'>
+			<div className='w-full px-[10px] py-[100px] lg:px-0 bg-[#000000]'>
 				<div className="container mx-auto">
 					<CardsHome />
 				</div>
 			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-			<div className="w-full bg-[#1f1e23] ">
+			<div className="w-full bg-[#1b1919] ">
 				<div className="container mx-auto px-[10px] py-8">
 					<Collague />
 				</div>
 			</div>
 			{/* Modal & Collague */}
 			{/* Carrucel */}
-			<div className="w-full bg-[#161a1c]">
+			<div className="w-full  bg-[#000000]">
 				<div className="container mx-auto px-8">
 					<RenderCarrucel />
 				</div>

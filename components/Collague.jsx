@@ -126,7 +126,7 @@ export default function Collague() {
                 isOpen={isOpen}
                 onClose={onClose}
             >
-                <ModalContent className="my-auto">
+                <ModalContent className="my-auto bg-[#1b1919]">
                     {(onClose) => (
                         <div>
                             <ModalHeader className="flex flex-col gap-1">Garay Arquitectos</ModalHeader>
