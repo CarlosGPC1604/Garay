@@ -30,6 +30,11 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Landing cards */}
+			{/* Accordion */}
+			<div className="w-full paralax-1 ">
+				<Accordion />
+			</div>
+			{/* Accordion */}
 			{/* Modal & Collague */}
 			<div className="w-full py-[100px] bg-[#1b1919] ">
 				<div className="container mx-auto px-[10px] py-8">
@@ -44,11 +49,6 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Carrucel */}
-			{/* Accordion */}
-			<div className="w-full bg-[#161a1c] ">
-				<Accordion />
-			</div>
-			{/* Accordion */}
 			{/* Mapa */}
 			<Mapa />
 			{/* Mapa */}
