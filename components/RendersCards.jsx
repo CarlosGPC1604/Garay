@@ -71,7 +71,9 @@ export default function RenderCards() {
                 <ModalContent className="my-auto bg-[#1b1919]">
                     {(onClose) => (
                         <div>
-                            <ModalHeader className="flex flex-col gap-1">Garay Arquitectos</ModalHeader>
+                            <ModalHeader className="flex flex-col gap-1">
+                                Garay Arquitectos
+                            </ModalHeader>
                             <ModalBody>
                                 {/* Slider */}
                                 <div>
@@ -84,15 +86,12 @@ export default function RenderCards() {
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div className="text-center mt-[15px]">
-                                        <a className="hover:text-[red] text-[18px]" href="/proyectos" alt="descubre mas">Descubre más</a>
-                                    </div>
                                 </div>
                                 <div className="flex justify-center">
-                                    <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left">
+                                    <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left text-white">
                                         &lt; Anterior
                                     </Button>
-                                    <Button variant="light" onPress={handleNextImage} className="carousel-button carousel-button-right">
+                                    <Button variant="light" onPress={handleNextImage} className="carousel-button carousel-button-right text-white">
                                         Siguiente &gt;
                                     </Button>
                                 </div>
