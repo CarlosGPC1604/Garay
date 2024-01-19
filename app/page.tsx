@@ -31,14 +31,14 @@ export default function Home() {
 			</div>
 			{/* Landing cards */}
 			{/* Modal & Collague */}
-			<div className="w-full bg-[#1b1919] ">
+			<div className="w-full py-[100px] bg-[#1b1919] ">
 				<div className="container mx-auto px-[10px] py-8">
 					<Collague />
 				</div>
 			</div>
 			{/* Modal & Collague */}
 			{/* Carrucel */}
-			<div className="w-full  bg-[#000000]">
+			<div className="w-full py-[100px]  bg-[#000000]">
 				<div className="container mx-auto px-8">
 					<RenderCarrucel />
 				</div>
