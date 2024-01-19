@@ -31,20 +31,20 @@ export default function Home() {
 			</div>
 			{/* Landing cards */}
 			{/* Accordion */}
-			<div className="w-full py-[100px] px-[10px] paralax-1 ">
+			<div className="w-full py-[100px] px-[10px] lg:px-0 paralax-1 ">
 				<Accordion />
 			</div>
 			{/* Accordion */}
 			{/* Modal & Collague */}
-			<div className="w-full py-[100px] bg-[#1b1919] ">
-				<div className="container mx-auto px-[10px] py-8">
+			<div className="w-full py-[100px] px-[10px] lg:px-0 bg-[#1b1919]">
+				<div className="container mx-auto">
 					<Collague />
 				</div>
 			</div>
 			{/* Modal & Collague */}
 			{/* Carrucel */}
-			<div className="w-full py-[100px]  bg-[#000000]">
-				<div className="container mx-auto px-8">
+			<div className="w-full py-[100px] px-[10px] lg:px-0 bg-[#000000]">
+				<div className="container mx-auto">
 					<RenderCarrucel />
 				</div>
 			</div>
