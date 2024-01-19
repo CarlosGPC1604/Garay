@@ -18,7 +18,7 @@ export default function AboutPage() {
 			{/* Titulo */}
 			{/* Cards */}
 			<div className="w-full  bg-[#000000]">
-				<div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 px-[10px] py-[30px] break-words">
+				<div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 px-[10px] py-[30px] break-words">
 					<div className="border-solid">
 						<div>
 							<svg className="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
