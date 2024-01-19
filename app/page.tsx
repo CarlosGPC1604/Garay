@@ -31,7 +31,7 @@ export default function Home() {
 			</div>
 			{/* Landing cards */}
 			{/* Accordion */}
-			<div className="w-full paralax-1 ">
+			<div className="w-full py-[100px] px-[10px] paralax-1 ">
 				<Accordion />
 			</div>
 			{/* Accordion */}
