@@ -1,8 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Button } from "@nextui-org/react";
-import { title, subtitle } from "@/components/primitives";
-
+import { title } from "@/components/primitives";
 
 function HeroTest() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -43,6 +41,18 @@ function HeroTest() {
         }, 500);
     };
 
+    const autoPlayInterval = 5000;
+
+    useEffect(() => {
+        const autoPlayTimer = setInterval(() => {
+            handleNextImage();
+        }, autoPlayInterval);
+
+        return () => {
+            clearInterval(autoPlayTimer);
+        };
+    }, [currentImageIndex]);
+
     const currentContent = content[currentImageIndex];
 
     const divStyle = {
@@ -54,13 +64,15 @@ function HeroTest() {
         overflow: 'hidden',
         backdropFilter: 'blur(0)',
         WebkitBackdropFilter: 'blur(0)',
+        backgroundAttachment: "fixed",
     };
 
     return (
         <div className='w-full py-[250px] flex justify-between fade-container' style={divStyle}>
-            <Button variant="light" onClick={handlePrevImage} className="carousel-button carousel-button-left text-white">
+            <button onClick={handlePrevImage}
+                className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &lt;
-            </Button>
+            </button>
             <div className={` text-center ${fadeAnimation ? 'fade-out' : 'fade-in'}`}>
                 <h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
                     Garay&nbsp;
@@ -73,9 +85,10 @@ function HeroTest() {
                     {currentContent.text}
                 </div>
             </div>
-            <Button variant="light" onClick={handleNextImage} className="carousel-button carousel-button-right text-white">
+            <button onClick={handleNextImage}
+                className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &gt;
-            </Button>
+            </button>
         </div>
     );
 }
