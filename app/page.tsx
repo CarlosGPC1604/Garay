@@ -10,10 +10,8 @@ export default function Home() {
 	return (
 		<section>
 			{/* Hero */}
-
-			{/* Hero */}
 			<HeroTest />
-
+			{/* Hero */}
 			{/* Landing cards */}
 			<div className='w-full px-[10px] py-[100px] lg:px-0 bg-[#000000]'>
 				<div className="container mx-auto">
