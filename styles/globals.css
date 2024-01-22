@@ -6,7 +6,6 @@ body {
     min-width: 360px;
 }
 
-
 .fade-in {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -28,8 +27,6 @@ body {
 .paralax-2 {
     background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-2.webp);
 }
-
-
 
 .hero,
 .paralax-1,
