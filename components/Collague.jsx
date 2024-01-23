@@ -108,10 +108,10 @@ export default function Collague() {
                 {/* Tittle */}
                 <div className='flex items-center order-1 lg:order-2'>
                     <div className='text-center lg:text-left text-balance'>
-                        <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                        <h2 className={` ${title({ color: "red" })} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             Armonia&nbsp;
                         </h2>
-                        <h2 className={` ${title()} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                        <h2 className={` ${title()} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             urbana
                         </h2>
                         <p className='mt-2 text-balance'>

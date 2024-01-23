@@ -7,11 +7,11 @@ function CardsHome() {
             <div className="w-full">
                 <div className="text-center mx-auto py-0 lg:py-[100px]">
                     <div className="text-center text-center lg:text-right text-balaance">
-                        <h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                        <h2 className={` ${title({})} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             Te ofrecemos los mejores
                         </h2>
                         <br />
-                        <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                        <h2 className={` ${title({ color: "red" })} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             servicios
                         </h2>
                         <p className="text-wrap-balance mt-2 text-balance">

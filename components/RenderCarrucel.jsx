@@ -31,10 +31,10 @@ function RenderCarrucel() {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
             <div className='flex items-center justify-center'>
                 <div className='text-center lg:text-right text-balance'>
-                    <h2 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                    <h2 className={` ${title({})} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                         Perspectivas&nbsp;
                     </h2>
-                    <h2 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+                    <h2 className={` ${title({ color: "red" })} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                         Tridimensionales
                     </h2>
                     <p className='text-balance mt-2'>
