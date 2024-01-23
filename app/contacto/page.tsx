@@ -20,8 +20,8 @@ export default function AboutPage() {
 			<div className="w-full py-[40px] bg-[#000000]">
 				<div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 px-[10px] py-[30px] break-words">
 					{/* card-1 */}
-					<a className="bg-[#1b1919] flex justify-center items-center p-4" href="tel:311 456 7907" target="_blank">
-						<div className="bg-[#1b1919]">
+					<a className="bg-[#1b1919] hover:bg-[#2c2a2a] flex justify-center items-center p-4" href="tel:311 456 7907" target="_blank">
+						<div>
 							<div>
 								<svg className="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
 									<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
@@ -39,8 +39,8 @@ export default function AboutPage() {
 					</a>
 					{/* card-1 */}
 					{/* card-2 */}
-					<a className="bg-[#1b1919] flex justify-center items-center p-4" href="https://www.google.com/maps/place/Garay+Arquitectos,+INEGI,+Av.+Insurgentes+76+pte.+Col.+Centro+frente+al,+63000+Tepic,+Nay./@21.5048858,-104.8959446,17z/data=!4m6!3m5!1s0x842737ad5ef58b63:0x29a086ee978a3aeb!8m2!3d21.5048858!4d-104.8959446!16s%2Fg%2F11qp0qml2k" target="blank">
-						<div className="bg-[#1b1919] ">
+					<a className="bg-[#1b1919] hover:bg-[#2c2a2a] flex justify-center items-center p-4" href="https://www.google.com/maps/place/Garay+Arquitectos,+INEGI,+Av.+Insurgentes+76+pte.+Col.+Centro+frente+al,+63000+Tepic,+Nay./@21.5048858,-104.8959446,17z/data=!4m6!3m5!1s0x842737ad5ef58b63:0x29a086ee978a3aeb!8m2!3d21.5048858!4d-104.8959446!16s%2Fg%2F11qp0qml2k" target="blank">
+						<div>
 
 							<div>
 								<svg className="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@ export default function AboutPage() {
 					</a>
 					{/* card-2 */}
 					{/* card-3 */}
-					<a className="bg-[#1b1919] flex justify-center items-center p-4" href="mailto:garay.arquitectos@gmail.com">
+					<a className="bg-[#1b1919] hover:bg-[#2c2a2a] flex justify-center items-center p-4" href="mailto:garay.arquitectos@gmail.com">
 						<div >
 							<div>
 								<svg className="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
@@ -79,7 +79,7 @@ export default function AboutPage() {
 					</a>
 					{/* card-3 */}
 					{/* card-4 */}
-					<div className="bg-[#1b1919] p-4">
+					<div className="bg-[#1b1919] hover:bg-[#2c2a2a] p-4 hover:">
 						<div>
 							<svg className="mx-auto" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
 								<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
