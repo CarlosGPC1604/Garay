@@ -1,5 +1,6 @@
 import { title } from "@/components/primitives";
 import RendersCards from "@/components/RendersCards"
+import ScrollTop from "@/components/ScrollTop";
 
 export default function RendersPage() {
 	return (
@@ -18,6 +19,9 @@ export default function RendersPage() {
 			{/* RenderCards */}
 			<RendersCards />
 			{/* RenderCards */}
+			{/* Botones flotantes */}
+			<ScrollTop />
+			{/* Botones flotantes */}
 		</section>
 	);
 }
