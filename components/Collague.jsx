@@ -149,10 +149,10 @@ export default function Collague() {
                                         </div>
                                     </div>
                                     <div className="flex justify-center">
-                                        <Button variant="light" onPress={handlePrevImage} className="carousel-button carousel-button-left">
+                                        <Button variant="light" onPress={handlePrevImage} className="text-white">
                                             &lt; Anterior
                                         </Button>
-                                        <Button variant="light" onPress={handleNextImage} className="carousel-button carousel-button-right">
+                                        <Button variant="light" onPress={handleNextImage} className="text-white">
                                             Siguiente &gt;
                                         </Button>
                                     </div>
