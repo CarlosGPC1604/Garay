@@ -19,9 +19,6 @@ export default function Proyectos() {
 			<div className="bg-[#1b1919] w-full py-[100px]">
 				<ProyectCards />
 			</div>
-			<div className="bg-[#000000] w-full py-[100px]">
-				<RendersCards />
-			</div>
 		</section>
 	);
 }

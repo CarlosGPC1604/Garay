@@ -1,11 +1,23 @@
 import { title } from "@/components/primitives";
+import RendersCards from "@/components/RendersCards"
 
 export default function BlogPage() {
 	return (
-		<div className="h-full text-center py-[1000px]">
-			<h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
-				Blog
-			</h1>
-		</div>
+		<section>
+			<div className="w-full bg-[#000000] mx-auto text-center py-[100px]">
+				<h1 className={` ${title({})} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+					Explora&nbsp;
+				</h1>
+				<h1 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
+					nuestros renders
+				</h1>
+				<p className='text-balance'>
+					Inspiración en Cada Diseño
+				</p>
+			</div>
+			<div className="bg-[#1b1b1b] w-full py-[100px]">
+				<RendersCards />
+			</div>
+		</section>
 	);
 }
