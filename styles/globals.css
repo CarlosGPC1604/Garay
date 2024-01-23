@@ -28,9 +28,19 @@ body {
     background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/paralax-2.webp);
 }
 
+.renders-paralax {
+    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/renders-paaralax.webp);
+}
+
+.proyects-paralax {
+    background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/proyects-paralax.webp);
+}
+
 .hero,
 .paralax-1,
-.paralax-2 {
+.paralax-2,
+.renders-paralax,
+.proyects-paralax {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000;
