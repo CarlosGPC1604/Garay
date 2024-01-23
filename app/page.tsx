@@ -12,37 +12,23 @@ export default function Home() {
 			{/* Hero */}
 			<HeroTest />
 			{/* Hero */}
-			{/* Landing cards */}
-			<div className='w-full px-[10px] py-[100px] lg:px-0 bg-[#000000]'>
-				<div className="container mx-auto">
-					<CardsHome />
-				</div>
-			</div>
-			{/* Landing cards */}
+			{/* CardsHome */}
+			<CardsHome />
+			{/* CardsHome */}
 			{/* Accordion */}
-			<div className="w-full py-[100px] px-[10px] lg:px-0 paralax-1 ">
-				<Accordion />
-			</div>
+			<Accordion />
 			{/* Accordion */}
 			{/* Modal & Collague */}
-			<div className="w-full py-[100px] px-[10px] lg:px-0 bg-[#1b1919]">
-				<div className="container mx-auto">
-					<Collague />
-				</div>
-			</div>
+			<Collague />
 			{/* Modal & Collague */}
 			{/* Carrucel */}
-			<div className="w-full py-[100px] px-[10px] lg:px-0 bg-[#000000]">
-				<div className="container mx-auto">
-					<RenderCarrucel />
-				</div>
-			</div>
+			<RenderCarrucel />
 			{/* Carrucel */}
 			{/* Mapa */}
 			<Mapa />
 			{/* Mapa */}
 			{/* Botones flotantes */}
-			<ScrollTop/>
+			<ScrollTop />
 			{/* Botones flotantes */}
 		</section>
 	);
