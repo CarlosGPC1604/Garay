@@ -15,9 +15,9 @@ export default function Proyectos() {
 					Inspiración en Cada Diseño
 				</p>
 			</div>
-			<div className="bg-[#1b1919] w-full py-[40px]">
-				<ProyectCards />
-			</div>
+			{/* ProyectCards */}
+			<ProyectCards />
+			{/* ProyectCards */}
 		</section>
 	);
 }

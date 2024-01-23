@@ -143,7 +143,7 @@ export default function ProyectCards() {
   };
 
   return (
-    <section>
+    <div className="bg-[#1b1919] w-full py-[40px]">
       <div className="container mx-auto grid grid-cols-2 lg:grid-cols-5 gap-2">
         {projects.map((project, projectIndex) => (
           <div onClick={() => handleOpen(projectIndex, 'lg')} key={projectIndex} className='relative group cursor-pointer'>
@@ -202,6 +202,6 @@ export default function ProyectCards() {
           )}
         </ModalContent>
       </Modal>
-    </section>
+    </div>
   );
 }
