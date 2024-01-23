@@ -10,7 +10,7 @@ function Footer() {
       }}>
       <div className="text-center space-x-4">
         <a className="hover:text-[#e12527]" href="/">Inicio</a>
-        <a className="hover:text-[#e12527]" href="/blog">Blog</a>
+        <a className="hover:text-[#e12527]" href="/renders">renders</a>
         <a className="hover:text-[#e12527]" href="/proyectos">Proyectos</a>
         <a className="hover:text-[#e12527]" href="/contacto">Contacto</a>
       </div>

@@ -1,7 +1,7 @@
 import { title } from "@/components/primitives";
 import RendersCards from "@/components/RendersCards"
 
-export default function BlogPage() {
+export default function RendersPage() {
 	return (
 		<section>
 			<div className="w-full bg-[#000000] mx-auto text-center py-[100px]">
