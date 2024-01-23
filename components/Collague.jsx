@@ -114,7 +114,7 @@ export default function Collague() {
                         <h2 className={` ${title()} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
                             urbana
                         </h2>
-                        <p className='mt-5 text-balance'>
+                        <p className='mt-2 text-balance'>
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
                     </div>
