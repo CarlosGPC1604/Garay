@@ -1,10 +1,10 @@
-import { title, subtitle } from "@/components/primitives";
 import Accordion from "@/components/Accordion";
 import Mapa from "../components/Mapa"
 import Collague from "../components/Collague"
 import CardsHome from "../components/CardsHome"
 import RenderCarrucel from "../components/RenderCarrucel"
 import HeroTest from "@/components/HeroTest"
+import ScrollTop from "@/components/ScrollTop"
 
 export default function Home() {
 	return (
@@ -41,6 +41,9 @@ export default function Home() {
 			{/* Mapa */}
 			<Mapa />
 			{/* Mapa */}
+			{/* Botones flotantes */}
+			<ScrollTop/>
+			{/* Botones flotantes */}
 		</section>
 	);
 }
