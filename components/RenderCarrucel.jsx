@@ -40,6 +40,11 @@ function RenderCarrucel() {
                     <p className='text-balance mt-2'>
                         Ofrecemos servicios de renders fotorealistas, visualización 3D, recorridos virtuales y presentaciones impactantes. Nuestro equipo comprometido y experimentado da vida a tus ideas arquitectónicas con creatividad y precisión técnica. Destaca entre la competencia con imágenes cautivadoras. Colabora con nosotros para proyectos personalizados y entregas puntuales. Transforma tus conceptos en experiencias visuales impresionantes. ¡Contáctanos hoy para obtener más información!
                     </p>
+                    <a href="/renders">
+                        <button className="mt-4 py-1 px-3 lg:right-10 bg-[#e12527] hover:bg-[#e0323c]">
+                            Descubre más
+                        </button>
+                    </a>
                 </div>
             </div>
             {/* Slider */}

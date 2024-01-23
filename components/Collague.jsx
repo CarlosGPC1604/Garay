@@ -117,8 +117,14 @@ export default function Collague() {
                         <p className='mt-2 text-balance'>
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
+                        <a href="/proyectos">
+                            <button className="mt-4 py-1 px-3 lg:right-10 bg-[#e12527] hover:bg-[#e0323c]">
+                                Descubre más
+                            </button>
+                        </a>
                     </div>
                 </div>
+
                 {/* Tittle */}
             </div>
             {/* Modal */}
@@ -143,9 +149,6 @@ export default function Collague() {
                                                 style={{ delay: "0.3s" }}
                                                 loading="lazy"
                                             />
-                                        </div>
-                                        <div className="text-center mt-[15px]">
-                                            <a className="hover:text-[red] text-[18px]" href="/proyectos" alt="descubre mas">Descubre más</a>
                                         </div>
                                     </div>
                                     <div className="flex justify-center">
