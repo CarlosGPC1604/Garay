@@ -49,7 +49,7 @@ export default function RenderCards() {
     };
 
     return (
-        <section>
+        <div className="bg-[#1b1b1b] w-full py-[40px]">
             {/* Collague */}
             <div className="container mx-auto grid grid-cols-2 lg:grid-cols-5 gap-2">
                 {images.map((image, index) => (
@@ -106,6 +106,6 @@ export default function RenderCards() {
                 </ModalContent>
             </Modal>
             {/* Modal */}
-        </section>
+        </div>
     );
 }

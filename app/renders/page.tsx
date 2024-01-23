@@ -15,9 +15,9 @@ export default function RendersPage() {
 					Inspiración en Cada Diseño
 				</p>
 			</div>
-			<div className="bg-[#1b1b1b] w-full py-[40px]">
-				<RendersCards />
-			</div>
+			{/* RenderCards */}
+			<RendersCards />
+			{/* RenderCards */}
 		</section>
 	);
 }
