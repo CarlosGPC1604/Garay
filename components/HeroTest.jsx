@@ -8,19 +8,19 @@ function HeroTest() {
 
     const content = [
         {
-            text: "Planeamos",
+            text: "Soluciones arquitectónicas profesionales",
             backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0044.webp")',
         },
         {
-            text: "proyectamos",
+            text: "Proyectos originales y creativos",
             backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0030.webp")',
         },
         {
-            text: " construimos",
+            text: "Innovando en cada proyecto",
             backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0108.webp")',
         },
         {
-            text: "supervisamos",
+            text: "Mejorando constantemente",
             backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0024.webp")',
         },
     ];
@@ -81,7 +81,7 @@ function HeroTest() {
                     Arquitectos
                 </h1>
                 <br />
-                <div>
+                <div className='text-2xl'>
                     {currentContent.text}
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import { title } from "@/components/primitives";
 import ProyectCards from "@/components/ProyectCards";
-import RendersCards from "@/components/RendersCards"
 
 export default function Proyectos() {
 	return (
@@ -12,7 +11,7 @@ export default function Proyectos() {
 				<h1 className={` ${title({ color: "red" })} text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
 					nuestro Portafolio
 				</h1>
-				<p className='text-balance'>
+				<p className='text-lg'>
 					Inspiración en Cada Diseño
 				</p>
 			</div>

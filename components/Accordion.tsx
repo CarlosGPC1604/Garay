@@ -18,9 +18,9 @@ export default function App() {
             <br />
             compromiso
           </h2>
-          <p className="mt-2">
+          <h3 className="mt-2 text-lg">
             ¿En que consiste muetsros servicios?
-          </p>
+          </h3>
         </div>
       </div>
       {/* Title */}
