@@ -5,19 +5,19 @@ export default function AboutPage() {
 	return (
 		<section>
 			{/* Titulo */}
-			<div className="w-full hero py-[100px]">
+			<div className="w-full contact-paralax py-[125px]">
 				<div className="text-center">
-					<h1 className={` ${title({ color: "red" })} text-[30px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
+				<h1 className={` ${title({ color: "red" })} text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]`}>
 						Contactanos
 					</h1>
-					<h2>
+					<p className="text-lg">
 						Contactanos y te ayudamos a hacerlo realidad
-					</h2>
+					</p>
 				</div>
 			</div>
 			{/* Titulo */}
 			{/* Cards */}
-			<div className="w-full  bg-[#000000]">
+			<div className="w-full py-[40px] bg-[#1b1919]">
 				<div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 px-[10px] py-[30px] break-words">
 					<div className="border-solid">
 						<div>
