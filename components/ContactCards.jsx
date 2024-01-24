@@ -4,7 +4,7 @@ import { title, subtitle } from "@/components/primitives";
 function ContactCards() {
     return (
         <div className="w-full py-[40px] bg-[#000000]">
-            <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 px-[10px] py-[30px] break-words">
+            <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 px-[10px] py-[30px]">
                 {/* card-1 */}
                 <a className="bg-[#1b1919] hover:bg-[#2c2a2a] flex justify-center items-center p-4" href="tel:311 456 7907" target="_blank">
                     <div>
@@ -57,7 +57,7 @@ function ContactCards() {
                             <p className="font-bold">
                                 Correo:
                             </p>
-                            <p>
+                            <p className='break-all'>
                                 garay.arquitectos@gmail.com
                             </p>
                         </div>
