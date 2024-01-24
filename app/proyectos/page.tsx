@@ -1,5 +1,6 @@
 import { title } from "@/components/primitives";
 import ProyectCards from "@/components/ProyectCards";
+import ScrollTop from "@/components/ScrollTop";
 
 export default function Proyectos() {
 	return (
@@ -18,6 +19,9 @@ export default function Proyectos() {
 			{/* ProyectCards */}
 			<ProyectCards />
 			{/* ProyectCards */}
+			{/* Botones flotantes */}
+			<ScrollTop />
+			{/* Botones flotantes */}
 		</section>
 	);
 }
