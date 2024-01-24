@@ -56,7 +56,7 @@ export default function RenderCards() {
                     <div key={index} className='overflow-hidden rounded-[15px] cursor-pointer'>
                         <Image
                             onClick={() => handleOpen(index)}
-                            className='zoom'
+                            className='zoom cursor-pointer'
                             src={image}
                             style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                             alt={`Open ${image}`}

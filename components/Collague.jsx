@@ -120,7 +120,7 @@ export default function Collague() {
                                     Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                                 </p>
                                 <a href="/proyectos">
-                                    <button className="mt-4 py-1 px-3 lg:right-10 bg-[#e12527] hover:bg-[#e0323c]">
+                                    <button className="mt-4 cursor-pointer bg-[#e12527] hover:bg-[#e0323c] text-white px-6 py-5 lg:right-10 bg-[#e12527] hover:bg-[#e0323c]">
                                         Descubre más
                                     </button>
                                 </a>
