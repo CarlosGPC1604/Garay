@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 
 const IframeRender = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -9,19 +9,6 @@ const IframeRender = () => {
         setMenuOpen(!isMenuOpen);
     };
 
-    const closeMenu = (event) => {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
-            setMenuOpen(false);
-        }
-    };
-
-    useEffect(() => {
-        document.addEventListener('click', closeMenu);
-
-        return () => {
-            document.removeEventListener('click', closeMenu);
-        };
-    }, []);
     return (
         <section>
             <div ref={menuRef} className="text-white w-full bg-[#000000]">
