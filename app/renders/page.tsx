@@ -21,9 +21,7 @@ export default function RendersPage() {
 			<RendersCards />
 			{/* RenderCards */}
 			{/* IframeRender */}
-			<div className="hidden lg:block">
-				<IframeRender />
-			</div>
+			<IframeRender />
 			{/* IframeRender */}
 			{/* Botones flotantes */}
 			<ScrollTop />
