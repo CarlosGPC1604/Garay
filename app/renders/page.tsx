@@ -1,6 +1,7 @@
 import { title } from "@/components/primitives";
 import RendersCards from "@/components/RendersCards"
 import ScrollTop from "@/components/ScrollTop";
+import IframeRender from "@/components/IframeRender"
 
 export default function RendersPage() {
 	return (
@@ -19,6 +20,11 @@ export default function RendersPage() {
 			{/* RenderCards */}
 			<RendersCards />
 			{/* RenderCards */}
+			{/* IframeRender */}
+			<div className="hidden lg:block">
+				<IframeRender />
+			</div>
+			{/* IframeRender */}
 			{/* Botones flotantes */}
 			<ScrollTop />
 			{/* Botones flotantes */}
