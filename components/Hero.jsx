@@ -1,26 +1,28 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 function Hero() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fadeAnimation, setFadeAnimation] = useState(false);
+    const [loadedImages, setLoadedImages] = useState([]);
 
     const content = [
         {
             text: "Soluciones arquitectónicas profesionales",
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0044.webp")',
+            image: "/Renders/IMG-20240105-WA0044.webp",
         },
         {
             text: "Proyectos originales y creativos",
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0030.webp")',
+            image: "/Renders/IMG-20240105-WA0030.webp",
         },
         {
             text: "Innovando en cada proyecto",
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0108.webp")',
+            image: "/Renders/IMG-20240105-WA0108.webp",
         },
         {
             text: "Mejorando constantemente",
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Renders/IMG-20240105-WA0024.webp")',
+            image: "/Renders/IMG-20240105-WA0024.webp",
         },
     ];
 
@@ -55,26 +57,34 @@ function Hero() {
     const currentContent = content[currentImageIndex];
 
     const divStyle = {
-        backgroundImage: currentContent.backgroundImage,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${currentContent.image})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundColor: '#000',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
         backgroundPosition: '50% 50%',
         overflow: 'hidden',
         backdropFilter: 'blur(0)',
         WebkitBackdropFilter: 'blur(0)',
         backgroundAttachment: "fixed",
+        transition: 'background-image 0.5s ease-in-out',
     };
 
     return (
         <div className='w-full py-[250px] flex justify-between fade-container' style={divStyle}>
-            <button onClick={handlePrevImage}
-                className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
+            <button
+                onClick={handlePrevImage}
+                className="w-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &lt;
             </button>
             <div className='text-center'>
-                
-                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-[#be1721]">
+                <Image
+                    className='mx-auto'
+                    src="/Logo.svg"
+                    height={0}
+                    width={100}
+                    alt='logo'
+                />
+                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-[#bd1622]">
                     Garay&nbsp;
                     <span className='text-white'>
                         Arquitectos
@@ -84,8 +94,9 @@ function Hero() {
                     {currentContent.text}
                 </p>
             </div>
-            <button onClick={handleNextImage}
-                className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
+            <button
+                onClick={handleNextImage}
+                className="w-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &gt;
             </button>
         </div>
