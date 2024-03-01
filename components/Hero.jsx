@@ -1,8 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { title } from "@/components/primitives";
 
-function HeroTest() {
+function Hero() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fadeAnimation, setFadeAnimation] = useState(false);
 
@@ -73,11 +72,11 @@ function HeroTest() {
                 className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &lt;
             </button>
-            <div className={` text-center ${fadeAnimation ? 'fade-out' : 'fade-in'}`}>
-                <h1 className={` ${title({ color: "red" })} text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
+            <div>
+                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]">
                     Garay&nbsp;
                 </h1>
-                <h1 className={`${title()} text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]`}>
+                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]">
                     Arquitectos
                 </h1>
                 <br />
@@ -93,4 +92,4 @@ function HeroTest() {
     );
 }
 
-export default HeroTest;
+export default Hero;
