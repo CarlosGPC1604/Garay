@@ -73,11 +73,11 @@ function Hero() {
                 &lt;
             </button>
             <div>
-                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]">
-                    Garay&nbsp;
-                </h1>
-                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px]">
-                    Arquitectos
+                <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-[#be1721]">
+                    Garay
+                    <span className='text-white'>
+                        Arquitectos
+                    </span>
                 </h1>
                 <br />
                 <div className='text-2xl'>
