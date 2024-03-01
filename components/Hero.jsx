@@ -72,17 +72,17 @@ function Hero() {
                 className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                 &lt;
             </button>
-            <div>
+            <div className='text-center'>
+                
                 <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-[#be1721]">
-                    Garay
+                    Garay&nbsp;
                     <span className='text-white'>
                         Arquitectos
                     </span>
                 </h1>
-                <br />
-                <div className='text-2xl'>
+                <p className='text-2xl text-white'>
                     {currentContent.text}
-                </div>
+                </p>
             </div>
             <button onClick={handleNextImage}
                 className="w-[50px] text-grey hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
