@@ -9,7 +9,16 @@ function Cards() {
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <div className="w-full">
                         <div className="text-center mx-auto py-0 lg:py-[100px]">
-                          
+                            <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                                Te ofrecemos los mejores
+                            </h2>
+                            <br />
+                            <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                                servicios
+                            </h2>
+                            <p className="text-wrap-balance mt-2 text-balance">
+                                En nuestro estudio, nos dedicamos apasionadamente a cada proyecto con el objetivo de trascender las expectativas y crear obras arquitectónicas que no solo sean funcionales y estéticamente agradables, sino que también cuenten una historia única. Nos esforzamos por fusionar la innovación con la sensibilidad hacia el entorno, incorporando prácticas sostenibles y soluciones creativas en cada diseño.
+                            </p>
                         </div>
                     </div>
                     {/* Cards */}
