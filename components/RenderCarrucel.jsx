@@ -60,13 +60,13 @@ function RenderCarousel() {
             <div>
 
             </div>
+            {/* Carrusel */}
             <div>
                 <button
                     onClick={handlePrevImage}
                     className="w-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 rounded-full">
                     &lt;
                 </button>
-
                 <div>
                     {content.map((item, index) => (
                         <img
@@ -83,7 +83,7 @@ function RenderCarousel() {
                     &gt;
                 </button>
             </div>
-
+            {/* Carrusel */}
         </div>
     );
 }
