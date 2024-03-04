@@ -42,7 +42,7 @@ function RenderCarousel() {
     }, [currentImageIndex]);
 
     return (
-        <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
+        <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[50px] lg:py-[100px] px-[15px]'>
             <div className='flex items-center justify-center text-white'>
                 <div className='text-center lg:text-right text-balance'>
                     <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
@@ -55,7 +55,7 @@ function RenderCarousel() {
                         Ofrecemos servicios de renders fotorealistas, visualización 3D, recorridos virtuales y presentaciones impactantes. Nuestro equipo comprometido y experimentado da vida a tus ideas arquitectónicas con creatividad y precisión técnica. Destaca entre la competencia con imágenes cautivadoras. Colabora con nosotros para proyectos personalizados y entregas puntuales. Transforma tus conceptos en experiencias visuales impresionantes. ¡Contáctanos hoy para obtener más información!
                     </p>
                     <a href="/renders">
-                        <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10 bg-[#e12527] hover:bg-[#e0323c]">
+                        <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10">
                             Descubre más
                         </button>
                     </a>
