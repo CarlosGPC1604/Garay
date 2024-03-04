@@ -4,7 +4,7 @@ import React from 'react';
 
 function Cards() {
     return (
-        <div className='w-full px-[10px] py-[100px] lg:px-0 bg-[#000000]'>
+        <div className='w-full px-[10px] py-[100px] lg:px-0'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <div className="w-full">
