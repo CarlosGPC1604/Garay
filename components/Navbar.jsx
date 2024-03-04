@@ -4,10 +4,10 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Inicio', href: '#', current: false },
+  { name: 'Renders', href: '#', current: false },
+  { name: 'Proyectos', href: '#', current: false },
+  { name: 'Contacto', href: '#', current: false },
 ]
 
 function classNames(...classes) {
