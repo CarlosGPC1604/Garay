@@ -1,13 +1,14 @@
 "use client";
 import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
+import { Link } from 'react-router-dom'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: false },
+  { name: 'Inicio', href: '/', current: false },
   { name: 'Renders', href: '#', current: false },
   { name: 'Proyectos', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Contacto', href: '/Contacto', current: false },
 ]
 
 function classNames(...classes) {
@@ -34,9 +35,9 @@ export default function Navbar() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                          <Link // Use Link component here
                             key={item.name}
-                            href={item.href}
+                            to={item.href} // Use 'to' prop instead of 'href'
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
@@ -46,7 +47,7 @@ export default function Navbar() {
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -96,10 +97,9 @@ export default function Navbar() {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <Link
                       key={item.name}
-                      as="a"
-                      href={item.href}
+                      to={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'block rounded-md px-3 py-2 text-base font-medium'
@@ -107,7 +107,7 @@ export default function Navbar() {
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </Link>
                   ))}
                 </div>
               </Disclosure.Panel>
