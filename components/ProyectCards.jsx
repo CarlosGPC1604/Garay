@@ -117,12 +117,11 @@ const ProyectCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] px-[15px]'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 py-[50px] px-[15px]'>
                 {/* Open modal */}
                 {projects.map((project, index) => (
                     <div key={index} className='relative group cursor-pointer' onClick={() => handleOpenModal(index)}>
                         <Image
-
                             src={project.images[0]}
                             alt={`Open`}
                             width={50}
