@@ -44,6 +44,7 @@ function RenderCarousel({ images }) {
             {/* Imagenes */}
             {images.map((image, index) => (
                 <img
+                    className='w-auto h-[300px] lg:h-[650px] object-contain mx-auto'
                     key={index}
                     src={image}
                     alt={`Image ${index + 1}`}
@@ -122,38 +123,34 @@ const ProyectCards = () => {
                 ))}
                 {/* Render project cards */}
             </div>
-
-            {/* Modal */}
-            {projects.map((project, index) => (
-                <div key={index}>
-                    {openModalIndex === index && (
-                        <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                            <div className="modal bg-black rounded-[15px] w-[360px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px]">
-                                <div className='p-5' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                    {/* cerrar modal */}
-                                    <button
-                                        className="text-white bg-transparent border-none cursor-pointer"
-                                        onClick={handleCloseModal}
-                                        style={{ marginTop: '0' }}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                                        </svg>
-                                    </button>
-                                    {/* cerrar modal */}
-                                </div>
-                                {/* Contenido del modal */}
-                                <div className="w-[80%] mx-auto">
-                                    <RenderCarousel
-                                     images={project.images} 
-                                     />
-                                </div>
-                                {/* Contenido del modal */}
-                            </div>
-                        </div>
-                    )}
+{/* Modal */}
+{projects.map((project, index) => (
+    <div key={index}>
+        {openModalIndex === index && (
+            <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+                <div className="w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                    {/* Contenido del modal */}
+                    <div className="flex justify-end">
+                        <button
+                            className="text-white bg-transparent border-none cursor-pointer m-4"
+                            onClick={handleCloseModal}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="w-full mx-auto pb-[60px]  lg:pb-[80px]">
+                        <RenderCarousel images={project.images} />
+                    </div>
+                    {/* Contenido del modal */}
                 </div>
-            ))}
-            {/* Modal */}
+            </div>
+        )}
+    </div>
+))}
+{/* Modal */}
+
+
         </section>
     );
 }
