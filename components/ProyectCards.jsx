@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // Carousel
 function RenderCarousel({ images }) {
@@ -38,15 +39,21 @@ function RenderCarousel({ images }) {
                 &gt;
             </button>
             {/* Images */}
+
             {images.map((image, index) => (
-                <img
-                    className='w-auto h-[300px] lg:h-[650px] object-contain mx-auto'
-                    key={index}
-                    src={image}
-                    alt={`Image ${index + 1}`}
-                    style={{ display: index === currentImageIndex ? 'block' : 'none' }}
-                />
+                <div key={index} style={{ display: index === currentImageIndex ? 'block' : 'none' }}>
+                    <Image
+                        className='w-auto h-[400px] object-contain mx-auto'
+                        src={image}
+                        alt={`Image ${index + 1}`}
+                        height={0}
+                        width={0}
+                        sizes="100vw"
+                    />
+                </div>
             ))}
+
+
             {/* Images */}
         </div>
     );
@@ -114,14 +121,16 @@ const ProyectCards = () => {
                 {/* Open modal */}
                 {projects.map((project, index) => (
                     <div key={index} className='relative group cursor-pointer' onClick={() => handleOpenModal(index)}>
-                        <img
-                          className="rounded-[15px]"
-                          src={project.images[0]}
-                          alt={`Open`}
-                          loading="lazy"
+                        <Image
+
+                            src={project.images[0]}
+                            alt={`Open`}
+                            width={50}
+                            height={50}
+                            layout="responsive"
                         />
-                        <div className="absolute inset-x-0 bottom-0 py-[15px] rounded-b-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
-                          <p className="text-white text-center">{project.title}</p>
+                        <div className="absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                            <p className="text-white text-center">{project.title}</p>
                         </div>
                     </div>
                 ))}
@@ -143,7 +152,7 @@ const ProyectCards = () => {
                                         </svg>
                                     </button>
                                 </div>
-                                <div className="w-full mx-auto pb-[60px]  lg:pb-[80px]">
+                                <div className="w-full mx-auto pb-[60px] lg:pb-[80px]">
                                     <RenderCarousel
                                         images={project.images}
                                     />
