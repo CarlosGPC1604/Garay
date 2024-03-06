@@ -127,11 +127,12 @@ const Collague = () => {
                 </div>
                 {/* collague */}
                 <div>
-                    <div className="grid grid-cols-5 order-2 lg:order-1">
+                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 order-2 lg:order-1">
                         {/* col 1 */}
-                        <div className="cursor-pointer overflow-hidden bg-black" onClick={handleOpenModal}>
+                        <div className="className='col-span-1 lg:col-span-1 overflow-hidden cursor-pointer'" onClick={handleOpenModal}>
                             <Image
-                                className='w-auto h-[400px] object-contain mx-auto hover:scale-110 transition-transform duration-300'
+                                className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
+                                style={{ objectFit: "cover", width: "100%" }}
                                 src="/collague/item-1.webp"
                                 height={50}
                                 width={50}
@@ -140,20 +141,58 @@ const Collague = () => {
                             />
                         </div>
                         {/* col 1 */}
-                    </div>
-                    <div className="grid grid-cols-5 order-2 lg:order-1">
-                        {/* col 1 */}
-                        <div className="cursor-pointer overflow-hidden bg-black" onClick={handleOpenModal}>
+                        {/* col 2 */}
+                        <div className='col-span-2 lg:col-span-3  overflow-hidden cursor-pointer' onClick={handleOpenModal}>
                             <Image
-                                className='w-auto h-[400px] object-contain mx-auto hover:scale-110 transition-transform duration-300'
-                                src="/collague/item-1.webp"
+                                className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
+                                style={{ objectFit: "cover", width: "100%" }}
+                                src="/collague/item-2.webp"
                                 height={50}
                                 width={50}
                                 sizes="100vw"
                                 alt="collague"
                             />
                         </div>
-                        {/* col 1 */}
+                        {/* col 2 */}
+                        {/* col 3 */}
+                        <div className='col-span-2 lg:col-span-1  overflow-hidden cursor-pointer' onClick={handleOpenModal}>
+                            <Image
+                                className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
+                                style={{ objectFit: "cover", width: "100%" }}
+                                src="/collague/item-3.webp"
+                                height={50}
+                                width={50}
+                                sizes="100vw"
+                                alt="collague"
+                            />
+                        </div>
+                        {/* col 3 */}
+                        {/* col 4 */}
+                        <div className='col-span-1 lg:col-span-2 overflow-hidden cursor-pointer' onClick={handleOpenModal}>
+                            <Image
+                                className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
+                                style={{ objectFit: "cover", width: "100%" }}
+                                src="/collague/item-4.webp"
+                                height={50}
+                                width={50}
+                                sizes="100vw"
+                                alt="collague"
+                            />
+                        </div>
+                        {/* col 4 */}
+                        {/* col 5 */}
+                        <div className='col-span-3 lg:col-span-3 overflow-hidden cursor-pointer' onClick={handleOpenModal}>
+                            <Image
+                                className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
+                                style={{ objectFit: "cover", width: "100%" }}
+                                src="/collague/item-6.webp"
+                                height={50}
+                                width={50}
+                                sizes="100vw"
+                                alt="collague"
+                            />
+                        </div>
+                        {/* col 5 */}
                     </div>
                 </div>
 
