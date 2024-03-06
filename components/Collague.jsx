@@ -14,9 +14,8 @@ const Collague = () => {
     };
 
     const handleKeyDown = (event) => {
-        if (event.keyCode === 27) { // 27 es el código de la tecla Esc
+        if (event.keyCode === 27)
             handleCloseModal();
-        }
     };
 
     useEffect(() => {
@@ -25,6 +24,81 @@ const Collague = () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
+
+    // Componente Carousel
+    const Carousel = () => {
+        const [currentImageIndex, setCurrentImageIndex] = useState(0);
+        const [fadeAnimation, setFadeAnimation] = useState(false);
+        const [loadedImages, setLoadedImages] = useState([]);
+
+        const images = [
+            "/Renders/IMG-20240105-WA0044.webp",
+            "/Renders/IMG-20240105-WA0030.webp",
+            "/Renders/IMG-20240105-WA0108.webp",
+            "/Renders/IMG-20240105-WA0024.webp"
+        ];
+
+        const handleNextImage = () => {
+            setFadeAnimation(true);
+            setTimeout(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+                setFadeAnimation(false);
+            });
+        };
+
+        const handlePrevImage = () => {
+            setFadeAnimation(true);
+            setTimeout(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+                setFadeAnimation(false);
+            });
+        };
+
+        const autoPlayInterval = 5000;
+
+        useEffect(() => {
+            const autoPlayTimer = setInterval(() => {
+                handleNextImage();
+            }, autoPlayInterval);
+
+            return () => {
+                clearInterval(autoPlayTimer);
+            };
+        }, [currentImageIndex]);
+
+        return (
+            <section>
+                {/* Carousel */}
+                <div className="flex items-center justify-center">
+                    <div className="relative">
+                        <button
+                            onClick={handlePrevImage}
+                            className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                            &lt;
+                        </button>
+                        <button
+                            onClick={handleNextImage}
+                            className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                            &gt;
+                        </button>
+                        {images.map((image, index) => (
+                            <Image
+                                className='w-auto h-[400px] object-contain mx-auto'
+                                height={0}
+                                width={0}
+                                key={index}
+                                src={image}
+                                alt={`Image ${index + 1}`}
+                                style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+                                sizes="100vw"
+                            />
+                        ))}
+                    </div>
+                </div>
+                {/* Carousel */}
+            </section>
+        );
+    };
 
     return (
         <section>
@@ -57,7 +131,7 @@ const Collague = () => {
                             </button>
                         </div>
                         <div className="w-full mx-auto pb-[60px] lg:pb-[80px]">
-                            {/* Contenido del modal */}
+                            <Carousel />
                         </div>
                         {/* Modal content */}
                     </div>
