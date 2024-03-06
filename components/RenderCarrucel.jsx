@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 function RenderCarousel() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -75,11 +76,15 @@ function RenderCarousel() {
                         &gt;
                     </button>
                     {images.map((image, index) => (
-                        <img
+                        <Image
+                            className='w-auto h-[400px] object-contain mx-auto'
+                            height={0}
+                            width={0}
                             key={index}
                             src={image}
                             alt={`Image ${index + 1}`}
                             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+                            sizes="100vw"
                         />
                     ))}
                 </div>
