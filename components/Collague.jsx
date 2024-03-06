@@ -129,7 +129,7 @@ const Collague = () => {
                 <div>
                     <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 order-2 lg:order-1">
                         {/* col 1 */}
-                        <div className="className='col-span-1 lg:col-span-1 overflow-hidden cursor-pointer'" onClick={handleOpenModal}>
+                        <div className="col-span-1 lg:col-span-1 overflow-hidden cursor-pointer" onClick={handleOpenModal}>
                             <Image
                                 className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
                                 style={{ objectFit: "cover", width: "100%" }}
