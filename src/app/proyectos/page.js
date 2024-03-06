@@ -1,10 +1,10 @@
-import ProyectCards from "../../../components/ProyectCards";
+import ProjectCards from "../../../components/ProjectCards";
 
 
 export default function Proyectos() {
     return (
         <section>
-          <ProyectCards/>
+          <ProjectCards/>
         </section>
     );
 }

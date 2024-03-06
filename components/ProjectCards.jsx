@@ -60,7 +60,7 @@ function RenderCarousel({ images }) {
 }
 
 // Main component
-const ProyectCards = () => {
+const ProjectCards = () => {
     const [openModalIndex, setOpenModalIndex] = useState(null);
 
     useEffect(() => {
@@ -94,6 +94,13 @@ const ProyectCards = () => {
                 "/carruseles/proyecto-1/item-1.webp",
                 "/carruseles/proyecto-1/item-2.webp",
                 "/carruseles/proyecto-1/item-3.webp",
+                "/carruseles/proyecto-1/item-4.webp",
+                "/carruseles/proyecto-1/item-5.webp",
+                "/carruseles/proyecto-1/item-6.webp",
+                "/carruseles/proyecto-1/item-7.webp",
+                "/carruseles/proyecto-1/item-8.webp",
+                "/carruseles/proyecto-1/item-9.webp",
+                "/carruseles/proyecto-1/item-10.webp",
             ],
             title: "Titulo de proyecto 1"
         },
@@ -102,16 +109,127 @@ const ProyectCards = () => {
                 "/carruseles/proyecto-2/item-1.webp",
                 "/carruseles/proyecto-2/item-2.webp",
                 "/carruseles/proyecto-2/item-3.webp",
+                "/carruseles/proyecto-2/item-4.webp",
+                "/carruseles/proyecto-2/item-5.webp",
+                "/carruseles/proyecto-2/item-6.webp",
+                "/carruseles/proyecto-2/item-7.webp",
+                "/carruseles/proyecto-2/item-8.webp",
+                "/carruseles/proyecto-2/item-9.webp",
+                "/carruseles/proyecto-2/item-10.webp",
             ],
             title: "Titulo de proyecto 2"
         },
         {
             images: [
                 "/carruseles/proyecto-3/item-1.webp",
-                "/carruseles/proyecto-3/item-2.webp",
                 "/carruseles/proyecto-3/item-3.webp",
+                "/carruseles/proyecto-3/item-4.webp",
+                "/carruseles/proyecto-3/item-5.webp",
+                "/carruseles/proyecto-3/item-6.webp",
+                "/carruseles/proyecto-3/item-7.webp",
+                "/carruseles/proyecto-3/item-8.webp",
+                "/carruseles/proyecto-3/item-9.webp",
+                "/carruseles/proyecto-3/item-10.webp",
             ],
             title: "Titulo de proyecto 3"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-4/item-1.webp",
+                "/carruseles/proyecto-4/item-3.webp",
+                "/carruseles/proyecto-4/item-4.webp",
+                "/carruseles/proyecto-4/item-5.webp",
+                "/carruseles/proyecto-4/item-6.webp",
+                "/carruseles/proyecto-4/item-7.webp",
+                "/carruseles/proyecto-4/item-8.webp",
+                "/carruseles/proyecto-4/item-9.webp",
+                "/carruseles/proyecto-4/item-10.webp",
+            ],
+            title: "Titulo de proyecto 4"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-5/item-1.webp",
+                "/carruseles/proyecto-5/item-3.webp",
+                "/carruseles/proyecto-5/item-4.webp",
+                "/carruseles/proyecto-5/item-5.webp",
+                "/carruseles/proyecto-5/item-6.webp",
+                "/carruseles/proyecto-5/item-7.webp",
+                "/carruseles/proyecto-5/item-8.webp",
+                "/carruseles/proyecto-5/item-9.webp",
+                "/carruseles/proyecto-5/item-10.webp",
+            ],
+            title: "Titulo de proyecto 5"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-6/item-1.webp",
+                "/carruseles/proyecto-6/item-3.webp",
+                "/carruseles/proyecto-6/item-4.webp",
+                "/carruseles/proyecto-6/item-5.webp",
+                "/carruseles/proyecto-6/item-6.webp",
+                "/carruseles/proyecto-6/item-7.webp",
+                "/carruseles/proyecto-6/item-8.webp",
+                "/carruseles/proyecto-6/item-9.webp",
+                "/carruseles/proyecto-6/item-10.webp",
+            ],
+            title: "Titulo de proyecto 6"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-7/item-1.webp",
+                "/carruseles/proyecto-7/item-3.webp",
+                "/carruseles/proyecto-7/item-4.webp",
+                "/carruseles/proyecto-7/item-5.webp",
+                "/carruseles/proyecto-7/item-6.webp",
+                "/carruseles/proyecto-7/item-7.webp",
+                "/carruseles/proyecto-7/item-8.webp",
+                "/carruseles/proyecto-7/item-9.webp",
+                "/carruseles/proyecto-7/item-10.webp",
+            ],
+            title: "Titulo de proyecto 7"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-8/item-1.webp",
+                "/carruseles/proyecto-8/item-3.webp",
+                "/carruseles/proyecto-8/item-4.webp",
+                "/carruseles/proyecto-8/item-5.webp",
+                "/carruseles/proyecto-8/item-6.webp",
+                "/carruseles/proyecto-8/item-7.webp",
+                "/carruseles/proyecto-8/item-8.webp",
+                "/carruseles/proyecto-8/item-9.webp",
+                "/carruseles/proyecto-8/item-10.webp",
+            ],
+            title: "Titulo de proyecto 8"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-9/item-1.webp",
+                "/carruseles/proyecto-9/item-3.webp",
+                "/carruseles/proyecto-9/item-4.webp",
+                "/carruseles/proyecto-9/item-5.webp",
+                "/carruseles/proyecto-9/item-6.webp",
+                "/carruseles/proyecto-9/item-7.webp",
+                "/carruseles/proyecto-9/item-8.webp",
+                "/carruseles/proyecto-9/item-9.webp",
+                "/carruseles/proyecto-9/item-10.webp",
+            ],
+            title: "Titulo de proyecto 9"
+        },
+        {
+            images: [
+                "/carruseles/proyecto-10/item-1.webp",
+                "/carruseles/proyecto-30/item-3.webp",
+                "/carruseles/proyecto-10/item-4.webp",
+                "/carruseles/proyecto-10/item-5.webp",
+                "/carruseles/proyecto-10/item-6.webp",
+                "/carruseles/proyecto-10/item-7.webp",
+                "/carruseles/proyecto-10/item-8.webp",
+                "/carruseles/proyecto-10/item-9.webp",
+                "/carruseles/proyecto-10/item-10.webp",
+            ],
+            title: "Titulo de proyecto 10"
         },
     ];
 
@@ -129,7 +247,9 @@ const ProyectCards = () => {
                             layout="responsive"
                         />
                         <div className="absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
-                            <p className="text-white text-center">{project.title}</p>
+                            <p className="text-white text-center">
+                                {project.title}
+                            </p>
                         </div>
                     </div>
                 ))}
@@ -167,4 +287,4 @@ const ProyectCards = () => {
     );
 }
 
-export default ProyectCards;
+export default ProjectCards;
