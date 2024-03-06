@@ -32,10 +32,13 @@ const Collague = () => {
         const [loadedImages, setLoadedImages] = useState([]);
 
         const images = [
-            "/Renders/IMG-20240105-WA0044.webp",
-            "/Renders/IMG-20240105-WA0030.webp",
-            "/Renders/IMG-20240105-WA0108.webp",
-            "/Renders/IMG-20240105-WA0024.webp"
+            "/collague/item-1.webp",
+            "/collague/item-2.webp",
+            "/collague/item-3.webp",
+            "/collague/item-4.webp",
+            "/collague/item-5.webp",
+            "/collague/item-6.webp",
+
         ];
 
         const handleNextImage = () => {
@@ -102,25 +105,66 @@ const Collague = () => {
 
     return (
         <section>
-            <div className="container mx-auto grid grid-cols-5">
-                {/* col 1 */}
-                <div className="cursor-pointer" onClick={handleOpenModal}>
-                    <Image
-                        className='w-auto h-[400px] object-contain mx-auto'
-                        src="/collague/item-1.webp"
-                        height={50}
-                        width={50}
-                        sizes="100vw"
-                        alt="collague"
-                    />
+            {/* Main container */}
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div className="lg:text-left order-1 lg:order-2 flex items-center justify-center">
+                    <div>
+                        <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                            Armonia&nbsp;
+                        </h2>
+                        <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                            urbana
+                        </h2>
+                        <p className='mt-2 text-balance'>
+                            Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
+                        </p>
+                        <a href="/proyectos">
+                            <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10">
+                                Descubre más
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                {/* col 1 */}
+                {/* collague */}
+                <div>
+                    <div className="grid grid-cols-5 order-2 lg:order-1">
+                        {/* col 1 */}
+                        <div className="cursor-pointer overflow-hidden bg-black" onClick={handleOpenModal}>
+                            <Image
+                                className='w-auto h-[400px] object-contain mx-auto hover:scale-110 transition-transform duration-300'
+                                src="/collague/item-1.webp"
+                                height={50}
+                                width={50}
+                                sizes="100vw"
+                                alt="collague"
+                            />
+                        </div>
+                        {/* col 1 */}
+                    </div>
+                    <div className="grid grid-cols-5 order-2 lg:order-1">
+                        {/* col 1 */}
+                        <div className="cursor-pointer overflow-hidden bg-black" onClick={handleOpenModal}>
+                            <Image
+                                className='w-auto h-[400px] object-contain mx-auto hover:scale-110 transition-transform duration-300'
+                                src="/collague/item-1.webp"
+                                height={50}
+                                width={50}
+                                sizes="100vw"
+                                alt="collague"
+                            />
+                        </div>
+                        {/* col 1 */}
+                    </div>
+                </div>
+
+                {/* collague */}
             </div>
+            {/* Main container */}
             {/* Modal */}
             {isOpen && (
                 <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
                     <div className="w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
-                        {/* Modal content */}
+                        {/* Modal header */}
                         <div className="flex justify-end">
                             <button
                                 className="text-white bg-transparent border-none cursor-pointer m-4"
@@ -130,6 +174,8 @@ const Collague = () => {
                                 </svg>
                             </button>
                         </div>
+                        {/* Modal header */}
+                        {/* Modal content */}
                         <div className="w-full mx-auto pb-[60px] lg:pb-[80px]">
                             <Carousel />
                         </div>
