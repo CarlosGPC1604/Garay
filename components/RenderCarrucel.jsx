@@ -10,7 +10,7 @@ function RenderCarousel() {
         "/Renders/IMG-20240105-WA0044.webp",
         "/Renders/IMG-20240105-WA0030.webp",
         "/Renders/IMG-20240105-WA0108.webp",
-        "/Renders/IMG-20240105-WA0024.webp",
+        "/Renders/IMG-20240105-WA0024.webp"
     ];
 
     const handleNextImage = () => {
@@ -62,25 +62,27 @@ function RenderCarousel() {
                 </div>
             </div>
             {/* Carrusel */}
-            <div className="relative">
-                <button
-                    onClick={handlePrevImage}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
-                    &lt;
-                </button>
-                <button
-                    onClick={handleNextImage}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
-                    &gt;
-                </button>
-                {images.map((image, index) => (
-                    <img
-                        key={index}
-                        src={image}
-                        alt={`Image ${index + 1}`}
-                        style={{ display: index === currentImageIndex ? 'block' : 'none' }}
-                    />
-                ))}
+            <div className="flex items-center justify-center">
+                <div className="relative">
+                    <button
+                        onClick={handlePrevImage}
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                        &lt;
+                    </button>
+                    <button
+                        onClick={handleNextImage}
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                        &gt;
+                    </button>
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`Image ${index + 1}`}
+                            style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+                        />
+                    ))}
+                </div>
             </div>
             {/* Carrusel */}
         </div>
