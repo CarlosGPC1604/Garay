@@ -39,7 +39,6 @@ function RenderCarousel({ images }) {
                 &gt;
             </button>
             {/* Images */}
-
             {images.map((image, index) => (
                 <div key={index} style={{ display: index === currentImageIndex ? 'block' : 'none' }}>
                     <Image
@@ -52,8 +51,6 @@ function RenderCarousel({ images }) {
                     />
                 </div>
             ))}
-
-
             {/* Images */}
         </div>
     );
@@ -86,7 +83,6 @@ const ProjectCards = () => {
     const handleCloseModal = () => {
         setOpenModalIndex(null);
     };
-
 
     const projects = [
         {
