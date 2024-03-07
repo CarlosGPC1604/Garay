@@ -10,19 +10,19 @@ function Hero() {
     const content = [
         {
             text: "Soluciones arquitectónicas profesionales",
-            image: "/Renders/IMG-20240105-WA0044.webp",
+            image: "/hero/item-1.webp",
         },
         {
             text: "Proyectos originales y creativos",
-            image: "/Renders/IMG-20240105-WA0030.webp",
+            image: "/hero/item-2.webp",
         },
         {
             text: "Innovando en cada proyecto",
-            image: "/Renders/IMG-20240105-WA0108.webp",
+            image: "/hero/item-3.webp",
         },
         {
             text: "Mejorando constantemente",
-            image: "/Renders/IMG-20240105-WA0024.webp",
+            image: "/hero/item-4.webp",
         },
     ];
 
