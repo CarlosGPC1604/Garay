@@ -71,7 +71,7 @@ const Collague = () => {
         return (
             <section>
                 {/* Carousel */}
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center w-full">
                     <div className="relative">
                         <button
                             onClick={handlePrevImage}
