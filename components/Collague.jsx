@@ -105,7 +105,7 @@ const Collague = () => {
     return (
         <section>
             {/* Main container */}
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 px-[15px]">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 px-[15px] text-white">
                 <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2">
                     <div>
                         <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
