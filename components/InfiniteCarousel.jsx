@@ -56,7 +56,7 @@ const slides = [
 
 const InfiniteCarousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
@@ -68,11 +68,18 @@ const InfiniteCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto px-[15px]">
+    <div className="container mx-auto py-[50px] lg:py-[100px] px-[15px]">
       <Slider className="w-[95%] mx-auto" {...settings}>
         {slides.map((slide, index) => (
-          <div key={index}>
-            <Image src={slide.image} alt={`Slide ${index + 1}`} width={300} height={200} />
+          <div className="px-3" key={index}>
+            <Image
+              className='w-auto h-[400px] object-contain mx-auto'
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              height={0}
+              width={0}
+              sizes="100vw"
+            />
           </div>
         ))}
       </Slider>
