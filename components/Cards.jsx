@@ -3,6 +3,7 @@ import React from 'react';
 const cardsData = [
     {
         id: 1,
+        service:"Ofrecemos planificación de construcción eficiente y dentro del presupuesto.",
         icon: (
             <svg
                 className="mx-auto"
@@ -14,6 +15,7 @@ const cardsData = [
     },
     {
         id: 2,
+        service:"Ofrecemos diseño arquitectónico completo, adaptado a tus necesidades y estándares.",
         icon: (
             <svg
                 className="mx-auto"
@@ -25,6 +27,7 @@ const cardsData = [
     },
     {
         id: 3,
+        service:"Brindamos supervisión en sitio para cumplir estándares y planos, asegurando proyectos exitosos.",
         icon: (
             <svg
                 className="mx-auto"
@@ -36,6 +39,7 @@ const cardsData = [
     },
     {
         id: 4,
+        service:"El render 3D es clave en proyectos arquitectónicos para decisiones, presentaciones y aprobaciones.",
         icon: (
             <svg
                 className="mx-auto"
@@ -70,17 +74,25 @@ function Cards() {
                     <div className="grid grid-cols-2 gap-2 overflow-hidden">
                         {/* cards */}
                         {cardsData.map(card => (
-                            <div key={card.id} className="mx-auto flex items-center justify-center overflow-hidden bg-[#1b1b1b] hover:bg-[#2c2a2a] py-12 w-full">
+                            <div key={card.id} className="mx-auto flex items-center justify-center relative overflow-hidden bg-[#1b1b1b] hover:bg-[#2c2a2a] py-12 w-full">
                                 <div>
                                     {card.icon}
                                     <p className="mt-3 text-center">
                                         {card.description}
                                     </p>
+                                    <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full flex items-center justify-center transition-opacity duration-300">
+                                        <div className="absolute inset-0 bg-black opacity-80 backdrop-blur-lg"></div>
+                                        <div className="text-white relative z-10 text-center p-1 lg:p-3">
+                                            <p>
+                                                {card.service}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))}
-                        {/* cards */}
                     </div>
+                    {/* cards */}
                 </div>
             </div>
         </div>

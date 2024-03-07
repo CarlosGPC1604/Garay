@@ -38,7 +38,6 @@ const Collague = () => {
             "/collague/item-4.webp",
             "/collague/item-5.webp",
             "/collague/item-6.webp",
-
         ];
 
         const handleNextImage = () => {
