@@ -64,7 +64,47 @@ const InfiniteCarousel = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />
+    prevArrow: <CustomPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1280, // xl breakpoint
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '60px',
+        },
+      },
+      {
+        breakpoint: 1024, // lg breakpoint
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '30px',
+        },
+      },
+      {
+        breakpoint: 768, // md breakpoint
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 640, // sm breakpoint
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '60px',
+        },
+      },
+      {
+        breakpoint: 360, // xs breakpoint
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '0px',
+        },
+      },
+    ],
   };
 
   return (
