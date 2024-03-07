@@ -8,10 +8,16 @@ function RenderCarousel() {
     const [loadedImages, setLoadedImages] = useState([]);
 
     const images = [
-        "/Renders/IMG-20240105-WA0044.webp",
-        "/Renders/IMG-20240105-WA0030.webp",
-        "/Renders/IMG-20240105-WA0108.webp",
-        "/Renders/IMG-20240105-WA0024.webp"
+        "/renders-carousel/item-1.webp",
+        "/renders-carousel/item-2.webp",
+        "/renders-carousel/item-3.webp",
+        "/renders-carousel/item-4.webp",
+        "/renders-carousel/item-5.webp",
+        "/renders-carousel/item-6.webp",
+        "/renders-carousel/item-7.webp",
+        "/renders-carousel/item-8.webp",
+        "/renders-carousel/item-9.webp",
+        "/renders-carousel/item-10.webp",
     ];
 
     const handleNextImage = () => {
