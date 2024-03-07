@@ -105,8 +105,8 @@ const Collague = () => {
     return (
         <section>
             {/* Main container */}
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
-                <div className="lg:text-left order-1 lg:order-2 flex items-center justify-center">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 px-[15px]">
+                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2">
                     <div>
                         <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Armonia&nbsp;
@@ -125,8 +125,8 @@ const Collague = () => {
                     </div>
                 </div>
                 {/* collague */}
-                <div>
-                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 order-2 lg:order-1">
+                <div className="order-2 lg:order-1">
+                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 ">
                         {/* col 1 */}
                         <div className="col-span-1 lg:col-span-1 overflow-hidden cursor-pointer" onClick={handleOpenModal}>
                             <Image

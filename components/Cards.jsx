@@ -54,7 +54,7 @@ const cardsData = [
 
 function Cards() {
     return (
-        <div className='w-full px-[15px] py-[100px]'>
+        <div className='w-full px-[15px] py-[50px]'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 flex items-center justify-center'>
                     <div>
