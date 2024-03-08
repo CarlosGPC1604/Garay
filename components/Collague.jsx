@@ -31,12 +31,14 @@ function RenderCarousel({ images }) {
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &lt;
             </button>
+            {/* Previous button */}
             {/* Next button */}
             <button
                 onClick={handleNextImage}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &gt;
             </button>
+            {/* Next button */}
             {/* Images */}
             {images.map((image, index) => (
                 <div key={index} style={{ display: index === currentImageIndex ? 'block' : 'none' }}>
@@ -84,16 +86,11 @@ const ProjectCards = () => {
     const projects = [
         {
             images: [
-                "/carruseles/proyecto-1/item-1.webp",
-                "/carruseles/proyecto-1/item-2.webp",
-                "/carruseles/proyecto-1/item-3.webp",
-                "/carruseles/proyecto-1/item-4.webp",
-                "/carruseles/proyecto-1/item-5.webp",
-                "/carruseles/proyecto-1/item-6.webp",
-                "/carruseles/proyecto-1/item-7.webp",
-                "/carruseles/proyecto-1/item-8.webp",
-                "/carruseles/proyecto-1/item-9.webp",
-                "/carruseles/proyecto-1/item-10.webp",
+                "/collague/item-1.webp",
+                "/collague/item-2.webp",
+                "/collague/item-3.webp",
+                "/collague/item-4.webp",
+                "/collague/item-5.webp",
             ],
         },
     ];
@@ -189,7 +186,7 @@ const ProjectCards = () => {
                                 <Image
                                     className='zoom h-[167px] w-[112px] sm:h-[307px] md:h-[371px]'
                                     style={{ objectFit: "cover", width: "100%" }}
-                                    src="/collague/item-6.webp"
+                                    src="/collague/item-5.webp"
                                     height={50}
                                     width={50}
                                     sizes="100vw"
@@ -201,8 +198,8 @@ const ProjectCards = () => {
                     </div>
                 </div>
                 {/* collague */}
-                {/* Open modal */}
-                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2">
+                {/* texto */}
+                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2 text-white">
                     <div>
                         <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Armonia&nbsp;
@@ -220,6 +217,7 @@ const ProjectCards = () => {
                         </a>
                     </div>
                 </div>
+                {/* texto */}
             </div>
             {/* Modal */}
             {projects.map((project, index) => (
