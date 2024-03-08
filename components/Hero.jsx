@@ -31,7 +31,7 @@ function Hero() {
         setTimeout(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % content.length);
             setFadeAnimation(false);
-        }, 500);
+        },);
     };
 
     const handlePrevImage = () => {
@@ -39,7 +39,7 @@ function Hero() {
         setTimeout(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex - 1 + content.length) % content.length);
             setFadeAnimation(false);
-        }, 500);
+        },);
     };
 
     const autoPlayInterval = 5000;
