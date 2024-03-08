@@ -1,5 +1,6 @@
 import React from 'react';
 import InfiniteCarousel from '../../../components/InfiniteCarousel';
+import Render from '../../../components/Render';
 
 export default function Renders() {
   return (
@@ -15,7 +16,8 @@ export default function Renders() {
           Inspiración en Cada Diseño
         </p>
       </div>
-      <InfiniteCarousel/>
+      <Render />
+      <InfiniteCarousel />
     </section>
   );
 }
