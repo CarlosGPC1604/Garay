@@ -1,6 +1,6 @@
 import React from 'react';
 import InfiniteCarousel from '../../../components/InfiniteCarousel';
-import Render from '../../../components/Render';
+import FBXLoader from "../../../components/ThreeJSFBX"
 
 export default function Renders() {
   return (
@@ -16,7 +16,7 @@ export default function Renders() {
           Inspiración en Cada Diseño
         </p>
       </div>
-      <Render />
+      <FBXLoader/>
       <InfiniteCarousel />
     </section>
   );
