@@ -49,8 +49,8 @@ function RenderCarousel() {
     }, [currentImageIndex]);
 
     return (
-        <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[50px] px-[15px]'>
-            <div className='glass p-4 flex items-center justify-center text-white'>
+        <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2  py-[50px] px-[15px]'>
+            <div className=' glass p-4 flex items-center justify-center text-black'>
                 <div className='text-center lg:text-right text-balance'>
                     <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                         Perspectivas&nbsp;
@@ -62,7 +62,7 @@ function RenderCarousel() {
                         Ofrecemos servicios de renders fotorealistas, visualización 3D, recorridos virtuales y presentaciones impactantes. Nuestro equipo comprometido y experimentado da vida a tus ideas arquitectónicas con creatividad y precisión técnica. Destaca entre la competencia con imágenes cautivadoras. Colabora con nosotros para proyectos personalizados y entregas puntuales. Transforma tus conceptos en experiencias visuales impresionantes. ¡Contáctanos hoy para obtener más información!
                     </p>
                     <a href="/renders">
-                        <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10">
+                        <button className="mt-4 cursor-pointer text-black px-5 py-4 lg:right-10">
                             Descubre más
                         </button>
                     </a>
@@ -73,12 +73,12 @@ function RenderCarousel() {
                 <div className="relative">
                     <button
                         onClick={handlePrevImage}
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                         &lt;
                     </button>
                     <button
                         onClick={handleNextImage}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                         &gt;
                     </button>
                     {images.map((image, index) => (

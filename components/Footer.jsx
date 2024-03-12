@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="container mx-auto py-[40px] text-white"
+        <footer className="container mx-auto py-[40px] text-black"
             style={{
                 background: 'rgba(0, 0, 0, 0.7)',
                 backdropFilter: 'blur(10px)',

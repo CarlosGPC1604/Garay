@@ -29,13 +29,13 @@ function RenderCarousel({ images }) {
             {/* Previous button */}
             <button
                 onClick={handlePrevImage}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &lt;
             </button>
             {/* Next button */}
             <button
                 onClick={handleNextImage}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &gt;
             </button>
             {/* Images */}
@@ -243,7 +243,7 @@ const ProjectCards = () => {
                             layout="responsive"
                         />
                         <div className="absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
-                            <p className="text-white text-center">
+                            <p className="text-black text-center">
                                 {project.title}
                             </p>
                         </div>
@@ -260,7 +260,7 @@ const ProjectCards = () => {
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
-                                        className="text-white bg-transparent border-none cursor-pointer m-4"
+                                        className="text-black bg-transparent border-none cursor-pointer m-4"
                                         onClick={handleCloseModal}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
                                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />

@@ -58,7 +58,7 @@ function Cards() {
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <div className='glass p-4 h-full flex items-center justify-center'>
-                        <div className="mx-auto text-white text-center lg:text-right">
+                        <div className="mx-auto text-black text-center lg:text-right">
                             <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                                 Te ofrecemos los mejores
                             </h2>
@@ -82,7 +82,7 @@ function Cards() {
                                     </p>
                                     <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full flex items-center justify-center">
                                         <div className="absolute inset-0 opacity-80 backdrop-blur-lg"></div>
-                                        <div className="text-white relative z-10 text-center p-1 lg:p-3">
+                                        <div className="text-black relative z-10 text-center p-1 lg:p-3">
                                             <p>
                                                 {card.service}
                                             </p>

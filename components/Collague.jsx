@@ -28,14 +28,14 @@ function RenderCarousel({ images }) {
             {/* Previous button */}
             <button
                 onClick={handlePrevImage}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &lt;
             </button>
             {/* Previous button */}
             {/* Next button */}
             <button
                 onClick={handleNextImage}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &gt;
             </button>
             {/* Next button */}
@@ -199,7 +199,7 @@ const ProjectCards = () => {
                 </div>
                 {/* collague */}
                 {/* texto */}
-                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2 text-white">
+                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2 text-black">
                     <div className='glass p-4'>
                         <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Armonia&nbsp;
@@ -211,7 +211,7 @@ const ProjectCards = () => {
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
                         <a href="/proyectos">
-                            <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10">
+                            <button className="mt-4 cursor-pointer text-black px-5 py-4 lg:right-10">
                                 Descubre más
                             </button>
                         </a>
@@ -228,7 +228,7 @@ const ProjectCards = () => {
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
-                                        className="text-white bg-transparent border-none cursor-pointer m-4"
+                                        className="text-black bg-transparent border-none cursor-pointer m-4"
                                         onClick={handleCloseModal}
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">

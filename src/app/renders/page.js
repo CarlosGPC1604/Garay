@@ -5,7 +5,7 @@ import FBXLoader from "../../../components/ThreeJSFBX"
 export default function Renders() {
   return (
     <section>
-      <div className="container mx-auto text-center text-white">
+      <div className="container mx-auto text-center text-black">
         <h1 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
           Explora&nbsp;
         </h1>
