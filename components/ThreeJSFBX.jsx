@@ -22,6 +22,11 @@ const ThreeJSFBX = () => {
     loader.load(
       'casa.fbx',
       (fbx) => {
+        // Ajustar la posición del modelo
+        fbx.position.x = -550; // Mueve el modelo hacia la izquierda
+        fbx.position.y = -250; // Mueve el modelo hacia abajo
+
+        // Agregar el modelo a la escena
         scene.add(fbx);
       },
       (progress) => {
@@ -65,11 +70,9 @@ const ThreeJSFBX = () => {
 
   return (
     <section>
-      <div className='container mx-auto overflow-hidden'>
-        <div
-          ref={sceneRef}
-        />
-      </div>
+ 
+        <div ref={sceneRef} />
+
     </section>
   );
 };
