@@ -1,9 +1,8 @@
-
 "use client";
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const ThreeJSFBX = () => {
   const sceneRef = useRef(null);
@@ -11,58 +10,53 @@ const ThreeJSFBX = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-    const renderer = new THREE.WebGLRenderer();
+    camera.position.z = 1000; // Aumenta el valor z para alejar la cámara
+    camera.near = 1; // Ajuste de distancia mínima de visión
+    camera.far = 10000; // Ajuste de distancia máxima de visión
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x3f3f3f); // Cambiar color de fondo a #3f3f3f
+    renderer.setClearColor(0x3f3f3f); // Cambia el color de fondo
     sceneRef.current.appendChild(renderer.domElement);
-
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableRotate = true;
-    controls.enablePan = false;
-    controls.update();
-
-    camera.position.z = 1000; // Cambiar la posición Z
 
     const loader = new FBXLoader();
     loader.load(
       'casa.fbx',
-      function (object) {
-        scene.add(object);
+      (fbx) => {
+        scene.add(fbx);
       },
-      function (xhr) {
-        console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+      (progress) => {
+        console.log('Loading model...', (progress.loaded / progress.total) * 100 + '%');
       },
-      function (error) {
-        console.error('Error loading FBX:', error);
+      (error) => {
+        console.error('Error loading model:', error);
       }
     );
 
-    const renderScene = () => {
-      renderer.render(scene, camera);
-    };
+    // Agregamos los controles de órbita
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true; // Movimiento suave de la cámara
+    controls.dampingFactor = 0.25; // Factor de amortiguación
+    controls.enableZoom = true; // Habilitar zoom
 
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update();
-      renderScene();
+      controls.update(); // Actualiza los controles en cada cuadro de animación
+      renderer.render(scene, camera);
     };
+
+    animate();
 
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      renderScene();
     };
 
     window.addEventListener('resize', handleResize);
 
-    renderScene();
-    animate();
-
     return () => {
       window.removeEventListener('resize', handleResize);
-      scene.clear();
-      renderer.dispose();
+      sceneRef.current.removeChild(renderer.domElement);
     };
   }, []);
 
