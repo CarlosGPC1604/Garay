@@ -8,3 +8,39 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: grey;
 }
+
+.scene {
+  width: 345px;
+  height: 300px;
+}
+
+@media (min-width: 640px) {
+  .scene {
+    width: 625px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scene {
+    width: 753px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scene {
+    width: 1009px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .scene {
+    width: 1265px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .scene {
+    width: 1521px;
+  }
+}

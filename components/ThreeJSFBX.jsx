@@ -6,27 +6,25 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const ThreeJSFBX = () => {
   const sceneRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-    camera.position.z = 1000; // Aumenta el valor z para alejar la cámara
-    camera.near = 1; // Ajuste de distancia mínima de visión
-    camera.far = 10000; // Ajuste de distancia máxima de visión
+    const camera = new THREE.PerspectiveCamera(75, containerRef.current.clientWidth / containerRef.current.clientHeight, 0.1, 10000);
+    camera.position.z = 1000;
+    camera.near = 1;
+    camera.far = 10000;
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x3f3f3f); // Cambia el color de fondo
+    renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
+    renderer.setClearColor(0x3f3f3f);
     sceneRef.current.appendChild(renderer.domElement);
 
     const loader = new FBXLoader();
     loader.load(
       'casa.fbx',
       (fbx) => {
-        // Ajustar la posición del modelo
-        fbx.position.x = -550; // Mueve el modelo hacia la izquierda
-        fbx.position.y = -250; // Mueve el modelo hacia abajo
-
-        // Agregar el modelo a la escena
+        fbx.position.x = -550;
+        fbx.position.y = -250;
         scene.add(fbx);
       },
       (progress) => {
@@ -37,23 +35,22 @@ const ThreeJSFBX = () => {
       }
     );
 
-    // Agregamos los controles de órbita
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true; // Movimiento suave de la cámara
-    controls.dampingFactor = 0.25; // Factor de amortiguación
-    controls.enableZoom = true; // Habilitar zoom
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
+    controls.enableZoom = true;
 
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update(); // Actualiza los controles en cada cuadro de animación
+      controls.update();
       renderer.render(scene, camera);
     };
 
     animate();
 
     const handleResize = () => {
-      const width = sceneRef.current.clientWidth;
-      const height = sceneRef.current.clientHeight;
+      const width = containerRef.current.clientWidth;
+      const height = containerRef.current.clientHeight;
 
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
@@ -70,9 +67,14 @@ const ThreeJSFBX = () => {
 
   return (
     <section>
- 
-        <div ref={sceneRef} />
-
+      <div className='py-[50px]'>
+        <div
+          ref={containerRef}
+          className='scene mx-auto'
+        >
+          <div ref={sceneRef} />
+        </div>
+      </div>
     </section>
   );
 };
