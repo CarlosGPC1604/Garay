@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   min-width: 360px;
   font-family: 'Roboto', sans-serif;
-  background-color: grey;
 }
 
 .scene {
@@ -43,4 +42,12 @@ body {
   .scene {
     width: 1521px;
   }
+}
+
+.glass {
+  background: rgba(0, 0, 0, 0.2); /* Hice el fondo un poco más oscuro */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Reduje la opacidad y el tamaño de la sombra */
+  backdrop-filter: blur(7px); /* Ligeramente más de desenfoque */
+  -webkit-backdrop-filter: blur(7px); /* También para navegadores basados en WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Reduje la opacidad del borde */
 }

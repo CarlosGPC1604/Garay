@@ -50,7 +50,7 @@ function RenderCarousel() {
 
     return (
         <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[50px] px-[15px]'>
-            <div className='flex items-center justify-center text-white'>
+            <div className='glass p-4 flex items-center justify-center text-white'>
                 <div className='text-center lg:text-right text-balance'>
                     <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                         Perspectivas&nbsp;
