@@ -47,9 +47,12 @@ const ThreeJSFBX = () => {
     animate();
 
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const width = sceneRef.current.clientWidth;
+      const height = sceneRef.current.clientHeight;
+
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(width, height);
     };
 
     window.addEventListener('resize', handleResize);
@@ -60,7 +63,15 @@ const ThreeJSFBX = () => {
     };
   }, []);
 
-  return <div ref={sceneRef} />;
+  return (
+    <section>
+      <div className='container mx-auto overflow-hidden'>
+        <div
+          ref={sceneRef}
+        />
+      </div>
+    </section>
+  );
 };
 
 export default ThreeJSFBX;
