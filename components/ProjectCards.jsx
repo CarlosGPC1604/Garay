@@ -242,7 +242,7 @@ const ProjectCards = () => {
                             height={50}
                             layout="responsive"
                         />
-                        <div className="absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                        <div className="glass absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
                             <p className="text-black text-center">
                                 {project.title}
                             </p>
@@ -256,7 +256,7 @@ const ProjectCards = () => {
                 <div key={index}>
                     {openModalIndex === index && (
                         <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                            <div className="w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                            <div className="glass w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col">
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button

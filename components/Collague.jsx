@@ -211,7 +211,7 @@ const ProjectCards = () => {
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
                         <a href="/proyectos">
-                            <button className="mt-4 cursor-pointer text-black px-5 py-4 lg:right-10">
+                            <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10 bg-[#bc212c]">
                                 Descubre más
                             </button>
                         </a>
@@ -224,7 +224,7 @@ const ProjectCards = () => {
                 <div key={index}>
                     {openModalIndex === index && (
                         <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                            <div className="w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(10px)' }}>
+                            <div className="glass w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col">
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
