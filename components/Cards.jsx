@@ -54,7 +54,7 @@ const cardsData = [
 
 function Cards() {
     return (
-        <div className='w-full px-[15px] py-[50px]'>
+        <section className='w-full px-[15px] py-[50px]  bg-[#c5c5c5]'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <div className='glass light:bg-white dark:bg-[#1f1f1f] p-4 h-full flex items-center justify-center'>
@@ -95,7 +95,7 @@ function Cards() {
                     {/* cards */}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

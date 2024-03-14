@@ -17,7 +17,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-    className={`bg-gray-800 dark:bg-gray-300 hover:bg-gray-700 dark:hover:bg-gray-400 text-white dark:text-black font-bold py-2 px-4 rounded`}
+    className={`bg-gray-800 dark:bg-gray-300 hover:bg-gray-700 dark:hover:bg-gray-400 text-white dark:text-black font-bold py-2 px-4 rounded mr-[60px]`}
     onClick={toggleDarkMode}
     >
       {darkMode ? (
