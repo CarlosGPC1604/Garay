@@ -57,7 +57,7 @@ function Cards() {
         <div className='w-full px-[15px] py-[50px]'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                    <div className='glass p-4 h-full flex items-center justify-center'>
+                    <div className='glass light:bg-white dark:bg-[#1f1f1f] p-4 h-full flex items-center justify-center'>
                         <div className="mx-auto text-black text-center lg:text-right">
                             <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                                 Te ofrecemos los mejores
