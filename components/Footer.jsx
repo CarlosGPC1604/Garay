@@ -5,10 +5,10 @@ function Footer() {
         <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#231f20]'>
             <footer className="container mx-auto">
                 <div className="text-[#231f20] dark:text-white text-center space-x-4">
-                    <a href="/">Inicio</a>
-                    <a href="/renders">renders</a>
-                    <a href="/proyectos">Proyectos</a>
-                    <a href="/contacto">Contacto</a>
+                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/">Inicio</a>
+                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/renders">renders</a>
+                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/proyectos">Proyectos</a>
+                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/contacto">Contacto</a>
                 </div>
                 <div className="flex justify-items-center justify-center gap-5 mt-5">
                     <a href="https://www.facebook.com/garay.arquitectos/">
