@@ -96,7 +96,7 @@ const ProjectCards = () => {
     ];
 
     return (
-        <section>
+        <section className='bg-[#c5c5c5] dark:bg-[#231f20]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[50px] px-[15px]'>
                 {/* collague */}
                 <div className="order-2 lg:order-1">
@@ -199,19 +199,19 @@ const ProjectCards = () => {
                 </div>
                 {/* collague */}
                 {/* texto */}
-                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2 text-black">
+                <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2">
                     <div className='glass p-4'>
-                        <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                        <h2 className="text-[#231f20] dark:text-white text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Armonia&nbsp;
                         </h2>
-                        <h2 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
+                        <h2 className="text-[#c21e25] text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             urbana
                         </h2>
-                        <p className='mt-2 text-balance'>
+                        <p className='text-[#231f20] dark:text-white mt-2 text-balance'>
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
                         <a href="/proyectos">
-                            <button className="mt-4 cursor-pointer text-white px-5 py-4 lg:right-10 bg-[#bc212c]">
+                            <button className="text-[#231f20] dark:text-white mt-8 hover:underline hover:text-[#c21e25] dark:hover:text-[#c21e25]">
                                 Descubre más
                             </button>
                         </a>
@@ -228,7 +228,7 @@ const ProjectCards = () => {
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
-                                        className="text-black bg-transparent border-none cursor-pointer m-4"
+                                        className="bg-transparent border-none cursor-pointer m-4"
                                         onClick={handleCloseModal}
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
