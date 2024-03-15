@@ -73,7 +73,7 @@ function Hero() {
         <div className='w-full py-[250px] flex justify-between fade-container' style={divStyle}>
             <button
                 onClick={handlePrevImage}
-                className="w-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300">
+                className="w-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300">
                 &lt;
             </button>
             <div className='text-center'>
@@ -96,7 +96,7 @@ function Hero() {
             </div>
             <button
                 onClick={handleNextImage}
-                className="w-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300">
+                className="w-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300">
                 &gt;
             </button>
         </div>
