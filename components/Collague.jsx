@@ -28,14 +28,14 @@ function RenderCarousel({ images }) {
             {/* Previous button */}
             <button
                 onClick={handlePrevImage}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &lt;
             </button>
             {/* Previous button */}
             {/* Next button */}
             <button
                 onClick={handleNextImage}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-black hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[50px] h-[50px] text-white hover:text-black bg-transparent hover:bg-gray-50 bg-opacity-70 hover:bg-opacity-80 transition-all duration-300 z-10">
                 &gt;
             </button>
             {/* Next button */}
@@ -228,7 +228,7 @@ const ProjectCards = () => {
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
-                                        className="bg-transparent border-none cursor-pointer m-4"
+                                        className="bg-transparent border-none cursor-pointer m-4 text-white"
                                         onClick={handleCloseModal}
                                     >
                                         <svg xmlns="https://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
