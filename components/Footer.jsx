@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
     return (
-        <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#231f20]'>
+        <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#231f20] overflow-hidden'>
             <footer className="container mx-auto">
-                <div className="text-[#231f20] dark:text-white text-center space-x-4">
+                <div className="text-[#231f20] dark:text-white text-center space-x-1 lg:space-x-4">
                     <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/">Inicio</a>
                     <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/renders">renders</a>
                     <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/proyectos">Proyectos</a>
