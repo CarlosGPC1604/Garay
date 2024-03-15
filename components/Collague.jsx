@@ -96,7 +96,7 @@ const ProjectCards = () => {
     ];
 
     return (
-        <section className='bg-[#c5c5c5] dark:bg-[#231f20] py-[50px] px-[15px]'>
+        <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 {/* collague */}
                 <div className="order-2 lg:order-1">

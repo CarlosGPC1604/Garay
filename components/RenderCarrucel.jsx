@@ -49,7 +49,7 @@ function RenderCarousel() {
     }, [currentImageIndex]);
 
     return (
-        <section className='py-[50px] px-[15px] bg-[#c5c5c5] dark:bg-[#231f20]'>
+        <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className=' glass p-4 lg:p-8 flex items-center justify-center'>
                     <div className='text-center lg:text-right text-balance'>

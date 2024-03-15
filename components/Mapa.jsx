@@ -2,7 +2,7 @@ import React from 'react';
 
 function Mapa() {
     return (
-        <section className='bg-[#c5c5c5] dark:bg-[#231f20]'>
+        <section>
             <div className="container mx-auto">
                 <iframe
                     title="Mapa de Garay Arquitectos"

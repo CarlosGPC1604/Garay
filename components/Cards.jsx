@@ -52,9 +52,12 @@ const cardsData = [
     }
 ];
 
+
+
+
 function Cards() {
     return (
-        <section className='w-full px-[15px] py-[50px] bg-[#c5c5c5] dark:bg-[#231f20]'>
+        <section className='w-full px-[15px] py-[50px] '>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <div className='glass p-4 lg:p-8 h-full flex items-center justify-center'>
