@@ -84,7 +84,7 @@ function RenderCarousel() {
                         </button>
                         {images.map((image, index) => (
                             <Image
-                                className='w-full h-auto object-contain mx-auto'
+                                className='h-auto w-[345px] sm:w-[625px] md:w-[753px] object-contain mx-auto'
                                 height={0}
                                 width={0}
                                 key={index}
