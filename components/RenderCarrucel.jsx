@@ -51,7 +51,7 @@ function RenderCarousel() {
     return (
         <section className='py-[50px] px-[15px] bg-[#c5c5c5] dark:bg-[#231f20]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                <div className=' glass p-4 flex items-center justify-center'>
+                <div className=' glass p-4 lg:p-8 flex items-center justify-center'>
                     <div className='text-center lg:text-right text-balance'>
                         <h2 className="text-[#231f20] dark:text-white text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Perspectivas&nbsp;
@@ -63,7 +63,7 @@ function RenderCarousel() {
                             Ofrecemos servicios de renders fotorealistas, visualización 3D, recorridos virtuales y presentaciones impactantes. Nuestro equipo comprometido y experimentado da vida a tus ideas arquitectónicas con creatividad y precisión técnica. Destaca entre la competencia con imágenes cautivadoras. Colabora con nosotros para proyectos personalizados y entregas puntuales. Transforma tus conceptos en experiencias visuales impresionantes. ¡Contáctanos hoy para obtener más información!
                         </p>
                         <a href="/renders">
-                            <button className="text-[#231f20] dark:text-white mt-8 hover:underline hover:text-[#c21e25] dark:hover:text-[#c21e25]">
+                            <button className="text-[#231f20] dark:text-white mt-4 hover:underline hover:text-[#c21e25] dark:hover:text-[#c21e25]">
                                 Descubre más
                             </button>
                         </a>

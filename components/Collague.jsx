@@ -200,7 +200,7 @@ const ProjectCards = () => {
                 {/* collague */}
                 {/* texto */}
                 <div className="text-center lg:text-left order-1 lg:order-2 flex items-center justify-center order-1 lg:order-2">
-                    <div className='glass p-4'>
+                    <div className='glass p-4 lg:p-8'>
                         <h2 className="text-[#231f20] dark:text-white text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
                             Armonia&nbsp;
                         </h2>
@@ -211,7 +211,7 @@ const ProjectCards = () => {
                             Sumérgete en nuestro collage visual que captura la diversidad y creatividad de la arquitectura moderna. Desde imponentes rascacielos hasta íntimos espacios públicos, cada imagen es una pieza clave en la sinfonía de formas, líneas y texturas que define nuestro entorno urbano. Celebra la belleza e innovación en la creación de espacios urbanos en este viaje visual único. ¡Bienvenido a Armonía Urbana!
                         </p>
                         <a href="/proyectos">
-                            <button className="text-[#231f20] dark:text-white mt-8 hover:underline hover:text-[#c21e25] dark:hover:text-[#c21e25]">
+                            <button className="text-[#231f20] dark:text-white mt-4 hover:underline hover:text-[#c21e25] dark:hover:text-[#c21e25]">
                                 Descubre más
                             </button>
                         </a>
