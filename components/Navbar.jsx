@@ -3,6 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import ThemeToggle from '../components/ThemeToggle';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -38,7 +39,7 @@ export default function Navbar() {
                     <div className="hidden lg:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
                             href={item.href}
                             className={classNames(
@@ -50,7 +51,7 @@ export default function Navbar() {
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
