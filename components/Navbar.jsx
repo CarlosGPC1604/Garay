@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <section className='sticky top-0 z-50'>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-[#e4e6e5] dark:bg-[#231f20]">
+        <Disclosure as="nav" className="bg-[#e4e6e5] dark:bg-[#3f3f41]">
           {({ open }) => (
             <div>
               <div className="container mx-auto px-[15px]">
@@ -45,8 +45,8 @@ export default function Navbar() {
                             className={classNames(
                               item.current
                                 ? 'bg-[#3f3f41]'
-                                : 'hover:bg-[#3f3f41]',
-                              'rounded-md px-3 py-2 text-sm font-medium text-[#231f20] dark:text-white hover:text-white'
+                                : 'text-[#3f3f41] dark:text-white hover:bg-[#3f3f41] hover:text-white hover:dark:bg-[#231f20]',
+                              'px-3 py-2 text-sm font-medium text-[#231f20]'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
@@ -79,7 +79,7 @@ export default function Navbar() {
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                       </svg>
                     </a>
-                    <div className='border-l-2 border-[#231f20] px-4'>
+                    <div className='border-l-2 border-[#231f20] dark:border-white px-4'>
                       <ThemeToggle />
                     </div>
                   </div>

@@ -3,26 +3,26 @@ import Link from 'next/link';
 
 function Footer() {
     return (
-        <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#231f20] overflow-hidden'>
+        <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#3f3f41] overflow-hidden'>
             <footer className="container mx-auto">
                 <div className="flex justify-center space-x-1 lg:space-x-4 text-[#231f20] dark:text-white text-center">
                     <Link href="/">
-                        <div className='hover:bg-[#3f3f41] hover:text-white p-3'>
+                        <div className='hover:bg-[#3f3f41] hover:text-white hover:dark:bg-[#231f20] p-3'>
                             Inicio
                         </div>
                     </Link>
                     <Link href="/renders">
-                        <div className='hover:bg-[#3f3f41] hover:text-white p-3'>
+                        <div className='hover:bg-[#3f3f41] hover:text-white hover:dark:bg-[#231f20] p-3'>
                             Renders
                         </div>
                     </Link>
                     <Link href="/proyectos">
-                        <div className='hover:bg-[#3f3f41] hover:text-white p-3' >
+                        <div className='hover:bg-[#3f3f41] hover:text-white hover:dark:bg-[#231f20] p-3'>
                             Proyectos
                         </div>
                     </Link>
                     <Link href="/contacto">
-                        <div className='hover:bg-[#3f3f41] hover:text-white p-3' >
+                        <div className='hover:bg-[#3f3f41] hover:text-white hover:dark:bg-[#231f20] p-3'>
                             Contacto
                         </div>
                     </Link>
