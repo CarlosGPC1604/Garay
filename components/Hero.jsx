@@ -79,7 +79,7 @@ function Hero() {
             <div className='text-center'>
                 <Image
                     className='mx-auto'
-                    src="/Logo.svg"
+                    src="/Logo.webp"
                     height={0}
                     width={100}
                     alt='logo'
