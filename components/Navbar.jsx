@@ -1,8 +1,8 @@
 "use client";
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
-import hemeToggle from "../components/ThemeToggle"
 import ThemeToggle from '../components/ThemeToggle';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -26,10 +26,13 @@ export default function Navbar() {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img
+                      <Image
                         className="h-8 w-8"
                         src="/logo-xs.ico"
                         alt="logo"
+                        height={0}
+                        width={0}
+                        sizes="100vw"
                       />
                     </div>
                     <div className="hidden lg:block">

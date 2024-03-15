@@ -1,14 +1,31 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Footer() {
     return (
         <section className='py-[40px] bg-[#e4e6e5] dark:bg-[#231f20] overflow-hidden'>
             <footer className="container mx-auto">
-                <div className="text-[#231f20] dark:text-white text-center space-x-1 lg:space-x-4">
-                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/">Inicio</a>
-                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/renders">renders</a>
-                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/proyectos">Proyectos</a>
-                    <a className='hover:bg-[#3f3f41] hover:text-white p-3' href="/contacto">Contacto</a>
+                <div className="flex justify-center space-x-1 lg:space-x-4 text-[#231f20] dark:text-white text-center">
+                    <Link href="/">
+                        <div className='hover:bg-[#3f3f41] hover:text-white p-3'>
+                            Inicio
+                        </div>
+                    </Link>
+                    <Link href="/renders">
+                        <div className='hover:bg-[#3f3f41] hover:text-white p-3'>
+                            Renders
+                        </div>
+                    </Link>
+                    <Link href="/proyectos">
+                        <div className='hover:bg-[#3f3f41] hover:text-white p-3' >
+                            Proyectos
+                        </div>
+                    </Link>
+                    <Link href="/contacto">
+                        <div className='hover:bg-[#3f3f41] hover:text-white p-3' >
+                            Contacto
+                        </div>
+                    </Link>
                 </div>
                 <div className="flex justify-items-center justify-center gap-5 mt-5">
                     <a href="https://www.facebook.com/garay.arquitectos/">
