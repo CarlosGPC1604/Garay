@@ -4,7 +4,7 @@ import FBXLoader from "../../../components/ThreeJSFBX"
 
 export default function Renders() {
   return (
-    <section>
+    <section className="bg-[#c5c5c5] dark:bg-[#231f20] section-bg">
       {/* Hero */}
       <div className='w-full py-[150px] flex items-center justify-center hero-bg renders'>
         <div className='text-center'>
