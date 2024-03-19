@@ -5,7 +5,6 @@ import FBXLoader from "../../../components/ThreeJSFBX"
 export default function Renders() {
   return (
     <section>
-
       {/* Hero */}
       <div className='w-full py-[150px] flex items-center justify-center hero-bg renders'>
         <div className='text-center'>
