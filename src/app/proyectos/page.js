@@ -3,7 +3,7 @@ import ProjectCards from "../../../components/ProjectCards";
 export default function Proyectos() {
 
   return (
-    <section>
+    <section className="section-bg bg-[#c5c5c5] dark:bg-[#231f20]">
       {/* Hero */}
       <div className='w-full py-[150px] flex items-center justify-center hero-bg proyectos'>
         <div className='text-center'>

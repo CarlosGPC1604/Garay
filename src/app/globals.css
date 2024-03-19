@@ -8,7 +8,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.proyectos{
+.renders {
+  background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/renders-paaralax.webp);
+}
+
+.proyectos {
   background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/proyects-paralax.webp);
 }
 
@@ -25,6 +29,15 @@ body {
   backdrop-filter: blur(0);
   -webkit-backdrop-filter: blur(0);
   background-attachment: fixed;
+}
+
+.section-bg {
+  background-image: url(../../public/dark-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .glass {

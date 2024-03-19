@@ -230,7 +230,7 @@ const ProjectCards = () => {
     ];
 
     return (
-        <section className='bg-[#c5c5c5] dark:bg-[#231f20]'>
+        <section>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 py-[50px] px-[15px]'>
                 {/* Open modal */}
                 {projects.map((project, index) => (

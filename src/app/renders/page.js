@@ -5,18 +5,23 @@ import FBXLoader from "../../../components/ThreeJSFBX"
 export default function Renders() {
   return (
     <section>
-      <div className="container mx-auto text-center text-black">
-        <h1 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-          Explora&nbsp;
-        </h1>
-        <h1 className="text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]">
-          nuestros renders
-        </h1>
-        <p className='text-lg'>
-          Inspiración en Cada Diseño
-        </p>
+
+      {/* Hero */}
+      <div className='w-full py-[150px] flex items-center justify-center hero-bg renders'>
+        <div className='text-center'>
+          <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-white">
+            Explora nuestros
+            <span className='text-[#bd1622]'>
+              &nbsp;renders
+            </span>
+          </h1>
+          <p className='text-2xl text-white'>
+            Inspiración en Cada Diseño
+          </p>
+        </div>
       </div>
-      <FBXLoader/>
+      {/* Hero */}
+      <FBXLoader />
       <InfiniteCarousel />
     </section>
   );
