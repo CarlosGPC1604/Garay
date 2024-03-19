@@ -2,7 +2,7 @@ import React from 'react';
 
 function Mapa() {
     return (
-        <section>
+        <section className='py-[50px] px-[15px]'>
             <div className="container mx-auto">
                 <iframe
                     title="Mapa de Garay Arquitectos"
