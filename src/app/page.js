@@ -5,7 +5,7 @@ import RenderCarrucel from "../../components/RenderCarrucel";
 import Collague from "../../components/Collague";
 
 const divStyle = {
-  backgroundImage: 'url(./vectores.svg)',
+  backgroundImage: 'url(./light-bg.svg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: '50% 50%',
