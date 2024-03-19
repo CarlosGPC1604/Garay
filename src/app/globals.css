@@ -8,6 +8,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.contacto {
+  background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/contact-paralax.webp);
+}
+
+.hero-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-position: 50% 50%;
+  overflow: hidden;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+  background-attachment: fixed;
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
