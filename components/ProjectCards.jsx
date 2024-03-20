@@ -242,8 +242,8 @@ const ProjectCards = () => {
                             height={50}
                             layout="responsive"
                         />
-                        <div className="glass absolute inset-x-0 bottom-0 py-[15px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
-                            <p className="text-black text-center">
+                        <div className="glass py-[15px] flex items-center justify-center">
+                            <p className="text-[#3f3f41] dark:text-white text-center">
                                 {project.title}
                             </p>
                         </div>
