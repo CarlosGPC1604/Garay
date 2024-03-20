@@ -224,7 +224,7 @@ const ProjectCards = () => {
                 <div key={index}>
                     {openModalIndex === index && (
                         <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                            <div className="glass w-[345px] sm:w-[600px] md:w-[720px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1300px] flex flex-col">
+                            <div className="glass px-8 flex flex-col">
                                 {/* Modal content */}
                                 <div className="flex justify-end">
                                     <button
