@@ -8,9 +8,8 @@ import 'slick-carousel/slick/slick-theme.css';
 const CustomNextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
-    <div
+    <button
       className={className}
-      style={{ ...style, display: 'block', background: 'red' }}
       onClick={onClick}
     />
   );
@@ -19,9 +18,8 @@ const CustomNextArrow = (props) => {
 const CustomPrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
-    <div
+    <button
       className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
       onClick={onClick}
     />
   );
@@ -108,22 +106,24 @@ const InfiniteCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto py-[50px] lg:py-[100px] px-[15px]">
-      <Slider className="w-[95%] mx-auto" {...settings}>
-        {slides.map((slide, index) => (
-          <div className="px-3" key={index}>
-            <Image
-              className='w-auto h-[400px] object-contain mx-auto'
-              src={slide.image}
-              alt={`Slide ${index + 1}`}
-              height={0}
-              width={0}
-              sizes="100vw"
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <section className='py-[50px] px-[15px]'>
+      <div className="container mx-auto">
+        <Slider className="w-[95%] mx-auto" {...settings}>
+          {slides.map((slide, index) => (
+            <div className="px-3" key={index}>
+              <Image
+                className='w-full h-auto object-contain mx-auto'
+                src={slide.image}
+                alt={`Slide ${index + 1}`}
+                height={0}
+                width={0}
+                sizes="50vw"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 }
 
