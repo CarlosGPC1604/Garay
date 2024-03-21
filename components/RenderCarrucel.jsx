@@ -92,6 +92,7 @@ function RenderCarousel() {
                                 alt={`Image ${index + 1}`}
                                 style={{ display: index === currentImageIndex ? 'block' : 'none' }}
                                 sizes="100vw"
+                                loading='eager'
                             />
                         ))}
                     </div>
