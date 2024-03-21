@@ -1,21 +1,15 @@
 import { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    // Verificar si el usuario ha seleccionado el modo oscuro previamente
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode ? JSON.parse(savedMode) : false;
-  });
+  const [darkMode, setDarkMode] = useState(false); // Eliminamos la lógica de localStorage
 
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
-    // Guardar el modo en localStorage
     localStorage.setItem('darkMode', JSON.stringify(newMode));
   };
 
   useEffect(() => {
-    // Aplicar el modo oscuro al cargar el componente
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
