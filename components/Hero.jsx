@@ -83,6 +83,7 @@ function Hero() {
                     height={0}
                     width={100}
                     alt='logo'
+                    loading='eager'
                 />
                 <h1 className="text-[33px] sm:text-[36px] md:font-[40px] lg:text-[44px] xl:text-[48px] 2xl:[55px] font-medium text-[#bd1622]">
                     Garay&nbsp;
