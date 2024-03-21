@@ -21,6 +21,7 @@ const ThemeToggle = () => {
     <button
       className={`bg-gray-800 dark:bg-gray-300 hover:bg-gray-700 dark:hover:bg-gray-400 text-white font-bold py-3 px-3`}
       onClick={toggleDarkMode}
+      title={darkMode ? "Light Mode" : "Dark Mode"}
     >
       {darkMode ? (
         <svg className='text-[#3f3f41]' xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
