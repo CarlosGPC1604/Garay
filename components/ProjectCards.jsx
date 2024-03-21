@@ -191,11 +191,6 @@ const ProjectCards = () => {
                 "/carruseles/proyecto-8/item-3.webp",
                 "/carruseles/proyecto-8/item-4.webp",
                 "/carruseles/proyecto-8/item-5.webp",
-                "/carruseles/proyecto-8/item-6.webp",
-                "/carruseles/proyecto-8/item-7.webp",
-                "/carruseles/proyecto-8/item-8.webp",
-                "/carruseles/proyecto-8/item-9.webp",
-                "/carruseles/proyecto-8/item-10.webp",
             ],
             title: "Titulo de proyecto 8"
         },
@@ -216,7 +211,8 @@ const ProjectCards = () => {
         {
             images: [
                 "/carruseles/proyecto-10/item-1.webp",
-                "/carruseles/proyecto-30/item-3.webp",
+                "/carruseles/proyecto-10/item-2.webp",
+                "/carruseles/proyecto-10/item-3.webp",
                 "/carruseles/proyecto-10/item-4.webp",
                 "/carruseles/proyecto-10/item-5.webp",
                 "/carruseles/proyecto-10/item-6.webp",
