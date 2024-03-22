@@ -45,7 +45,7 @@ const slides = [
   { image: '/renders-carousel/item-17.webp' },
   { image: '/renders-carousel/item-18.webp' },
   { image: '/renders-carousel/item-19.webp' },
-  { image: '/renders-carousel/item20.webp' },
+  { image: '/renders-carousel/item-20.webp' },
   { image: '/renders-carousel/item-21.webp' },
   { image: '/renders-carousel/item-22.webp' },
   { image: '/renders-carousel/item-23.webp' },
