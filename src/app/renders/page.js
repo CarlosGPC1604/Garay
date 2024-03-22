@@ -1,6 +1,6 @@
 import React from 'react';
 import InfiniteCarousel from '../../../components/InfiniteCarousel';
-import FBXLoader from "../../../components/ThreeJSFBX"
+import Model from "../../../components/Model"
 
 export default function Renders() {
   return (
@@ -20,7 +20,7 @@ export default function Renders() {
         </div>
       </div>
       {/* Hero */}
-      <FBXLoader />
+     <Model/>
       <InfiniteCarousel />
     </section>
   );

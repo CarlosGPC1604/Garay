@@ -18,6 +18,21 @@ function RenderCarousel() {
         "/renders-carousel/item-8.webp",
         "/renders-carousel/item-9.webp",
         "/renders-carousel/item-10.webp",
+        "/renders-carousel/item-11.webp",
+        "/renders-carousel/item-12.webp",
+        "/renders-carousel/item-13.webp",
+        "/renders-carousel/item-14.webp",
+        "/renders-carousel/item-15.webp",
+        "/renders-carousel/item-16.webp",
+        "/renders-carousel/item-17.webp",
+        "/renders-carousel/item-18.webp",
+        "/renders-carousel/item-19.webp",
+        "/renders-carousel/item-20.webp",
+        "/renders-carousel/item-21.webp",
+        "/renders-carousel/item-22.webp",
+        "/renders-carousel/item-23.webp",
+        "/renders-carousel/item-24.webp",
+        "/renders-carousel/item-25.webp",
     ];
 
     const handleNextImage = () => {
